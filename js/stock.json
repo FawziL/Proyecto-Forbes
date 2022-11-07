@@ -15,11 +15,11 @@
         "nombre" : "Honda Civic",
         "precio" : 6800,
         "descripcion" : "2007 | 145.000 km",
-        "img" : "../img/product.jpg"},
+        "img" : "img/product.jpg"},
 
     {   "id":4,
         "nombre" : "Honda Civic Emotion",
         "precio" : 7600,
         "descripcion" : "2008 | 67.000 km ",
-        "img" : "../img/product.jpg"}
+        "img" : "img/product.jpg"}
 ]
