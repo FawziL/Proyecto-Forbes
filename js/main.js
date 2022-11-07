@@ -29,7 +29,7 @@ fetch(stock)
          const btnFavorito = document.createElement('button');
          btnFavorito.textContent = "Ver más detalles";
          btnFavorito.onclick =  () => {
-            agregarAFavorito(producto.id)
+            location= producto.location
         };
         info.appendChild(tituloProducto);
         info.appendChild(precioProducto);
@@ -45,4 +45,8 @@ fetch(stock)
 
 })
 
+const welcomeButton = document.querySelector("#welcomeButton");
+welcomeButton.onclick =  () => {
+    location= "./pages/ventas.html"
+};
    

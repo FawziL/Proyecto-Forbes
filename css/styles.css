@@ -11,7 +11,10 @@
 .bodyPages{
     background-color: rgb(247, 242, 242);
 }
-
+a{
+    color: black;
+    font-size: 20px;
+}
 .navIndex, .footerIndex{
     opacity: 0.7;
     color: transparent;
@@ -29,16 +32,15 @@ button{
 .welcome{
     background-image: url(../img/forbes.png);
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.welcomeButton{
+#welcomeButton{
     background-color: rgb(170, 21, 21);
     border-radius: 10px;
 }
 header{
-    min-height: 580px;
+    min-height: 590px;
 }
 .welcomeText{
     padding: 150px;
@@ -48,7 +50,7 @@ header{
 
 #productos{
     display: flex;
-    margin: 10px 80px 40px 80px;
+    margin: 10px 80px 30px 80px;
     justify-content: space-between;
     padding: 20px;
     flex-wrap: wrap;
@@ -119,7 +121,6 @@ h2{
 .contacto{
     background-image: url(../img/referencia.jpg);
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -128,4 +129,8 @@ h2{
 .center{
     padding: 120px;
     color: white;
+}
+.footerDown{
+    position: absolute;
+    bottom: 0;
 }
