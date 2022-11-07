@@ -3,7 +3,7 @@
         "nombre" : "Volkswagen Boraxd",
         "precio" : 2500,
         "descripcion" : "2008 | 100.000 km",
-        "img" : "../img/product.jpg"},
+        "img" : "img/product.jpg"},
 
     {   "id":2,
         "nombre" : "Honda Crv",

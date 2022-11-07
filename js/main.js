@@ -15,9 +15,6 @@ fetch(stock)
          const imagenProducto = document.createElement('img');
          imagenProducto.classList.add('imgProduct')
          imagenProducto.src = producto.img;
-         imagenProducto.onclick =  () => {
-            hola()
-         };
 
          const tituloProducto = document.createElement('h3');
          tituloProducto.textContent = producto.nombre;
