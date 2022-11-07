@@ -1,8 +1,5 @@
-    const contenedorProductos = document.querySelector("#productos");
-    const contenido = document.getElementById('contenido');
-    const botones = document.getElementById('botones');
-    const stock = "js/stock.json"
-
+const contenedorProductos = document.querySelector("#productos");
+const stock = "js/stock.json"
 
 fetch(stock)
 .then(respuesta => respuesta.json())
@@ -11,10 +8,14 @@ fetch(stock)
     productos.forEach(producto =>{
 
          const casilla = document.createElement('section');
+         casilla.classList.add('productSection')
 
          const imagenProducto = document.createElement('img');
          imagenProducto.classList.add('imgProduct')
          imagenProducto.src = producto.img;
+
+         const info = document.createElement('section');
+         info.classList.add('productInfo')
 
          const tituloProducto = document.createElement('h3');
          tituloProducto.textContent = producto.nombre;
@@ -29,21 +30,19 @@ fetch(stock)
          btnFavorito.textContent = "Ver más detalles";
          btnFavorito.onclick =  () => {
             agregarAFavorito(producto.id)
-         };
+        };
+        info.appendChild(tituloProducto);
+        info.appendChild(precioProducto);
+        info.appendChild(descripcionProducto);
 
          casilla.appendChild(imagenProducto);
-         casilla.appendChild(tituloProducto);
-         casilla.appendChild(precioProducto);
-         casilla.appendChild(descripcionProducto);
+         casilla.appendChild(info);
          casilla.appendChild(btnFavorito);
          
          contenedorProductos.appendChild(casilla)
 
 });
 
-function hola(){
-    console.log("hola")
-}
 })
 
    

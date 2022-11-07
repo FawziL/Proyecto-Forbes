@@ -1,6 +1,6 @@
 [
     {   "id":1,
-        "nombre" : "Volkswagen Boraxd",
+        "nombre" : "Volkswagen Bora",
         "precio" : 2500,
         "descripcion" : "2008 | 100.000 km",
         "img" : "img/product.jpg"},
@@ -18,7 +18,7 @@
         "img" : "img/product.jpg"},
 
     {   "id":4,
-        "nombre" : "Honda Civic Emotion",
+        "nombre" : "Honda C Emotion",
         "precio" : 7600,
         "descripcion" : "2008 | 67.000 km ",
         "img" : "img/product.jpg"}

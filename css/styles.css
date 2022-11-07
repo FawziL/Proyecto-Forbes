@@ -20,10 +20,10 @@ img{
     margin-left: 40px;
     max-width: 300px;
     max-height: 500px;
-    margin: 10px;
 }
 button{
-    margin-right: 15px;
+    margin-left: 65px;
+    border-radius: 15px;
 }
 
 .welcome{
@@ -38,10 +38,10 @@ button{
     border-radius: 10px;
 }
 header{
-    min-height: 550px;
+    min-height: 580px;
 }
 .welcomeText{
-    padding: 120px;
+    padding: 150px;
     font-size: 24px;
     text-align: center;  
 }
@@ -57,7 +57,7 @@ header{
 .imgProduct{
     width: 300px;
     height: 200px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 0px;
 }
 .infoProduct{
@@ -66,6 +66,14 @@ header{
 .products{
     background-color: #72b183;
     border-style: solid;
+}
+.productSection{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+
+}
+.productInfo{
+    text-align: center;
 }
 h2{
     padding: 15px;
