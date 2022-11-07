@@ -9,7 +9,7 @@
         "nombre" : "Honda Crv",
         "precio" : 7700,
         "descripcion" : "2006 | 165.000 km",
-        "img" : "../img/product.jpg"},
+        "img" : "img/product.jpg"},
 
     {   "id":3,
         "nombre" : "Honda Civic",
