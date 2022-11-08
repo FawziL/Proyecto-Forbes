@@ -46,6 +46,7 @@ header{
     padding: 150px;
     font-size: 24px;
     text-align: center;  
+    color: white;
 }
 
 #productos{
@@ -80,7 +81,6 @@ header{
 h2{
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
     border-radius: 15px;
 }
 .flex{
@@ -95,6 +95,7 @@ h2{
 }
 .padding{
     padding: 50px;
+    color:#146128
 }
 .porcentajes{
     display: flex;
@@ -103,8 +104,8 @@ h2{
 }
 .oferta{
     background-color: black;
-    color: white;
     text-align: center;
+    color:#146128
 }
 .imagenOferta{
     margin-left: 300px;
