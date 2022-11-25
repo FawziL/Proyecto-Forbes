@@ -18,12 +18,9 @@ a{
 .navIndex, .footerIndex{
     opacity: 0.7;
     color: transparent;
-    height: 100%;
-}
-nav img{
-    margin-left: 40px;
 }
 img{
+    margin-left: 40px;
     max-width: 300px;
     max-height: 500px;
 }
@@ -140,26 +137,6 @@ h2{
 .footerDown{
     position: absolute;
     bottom: 0;
-}
-.opiniones{
-    padding: 60px 300px 60px 300px;
-    border-style: solid;
-    text-align: center;
-}
-
-.personal{
-    background-color: black;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 40px;
-}
-
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    border-radius: 15px;
 }
 
 .centrado{
