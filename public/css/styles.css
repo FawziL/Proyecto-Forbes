@@ -163,3 +163,23 @@ h2{
 .contactos{
     margin-bottom: 40px;
 }
+.opiniones{
+    padding: 60px 300px 60px 300px;
+    border-style: solid;
+    text-align: center;
+}
+
+.personal{
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px;
+}
