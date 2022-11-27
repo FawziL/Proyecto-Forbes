@@ -9,7 +9,7 @@ const rutas = require('./routes/index')
 const config = require("./config/config.js");
 
 const mongoose = require("mongoose");
-mongoose.connect(config.mongodb, () => {
+mongoose.connect("mongodb+srv://Fawzi:Fawzi123@cluster0.5qcwzcb.mongodb.net/?retryWrites=true&w=majority", () => {
     console.log("Conectada la base de datos");
   });
 
