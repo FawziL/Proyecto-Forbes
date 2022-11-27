@@ -50,4 +50,8 @@ welcomeButton.onclick =  () => {
     location= `./pages/ventas.html`
     
 };
+/*fetch(stock)
+  .then(response => {
+      return console.log(response.json())
+  })*/
    
