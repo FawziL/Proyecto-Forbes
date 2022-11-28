@@ -1,0 +1,19 @@
+.imgProductId{
+    height: 400px;
+    width: 500x;
+    margin: 40px;
+    border-radius: 15px;
+}
+.carProduct{
+    margin: 40px;
+    font-size: 20px;
+    max-width: 400px;
+}
+.dContainer{
+    display: flex;
+    justify-content: center;
+}
+.titeId{
+    margin: 15px;
+    text-align: center;
+}

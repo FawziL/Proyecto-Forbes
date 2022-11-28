@@ -27,7 +27,8 @@ fetch(stock)
          descripcionProducto.textContent = producto.descripcion;
 
          const btnFavorito = document.createElement('button');
-         btnFavorito.textContent = "Ver más detalles";
+         btnFavorito.classList.add('buttonPreview')
+         btnFavorito.textContent = "Ver detalles";
          btnFavorito.onclick =  () => {
             location = producto.location
         };
@@ -47,11 +48,6 @@ fetch(stock)
 
 const welcomeButton = document.querySelector("#welcomeButton");
 welcomeButton.onclick =  () => {
-    location= `./pages/ventas.html`
+    location= `ventas`
     
-};
-/*fetch(stock)
-  .then(response => {
-      return console.log(response.json())
-  })*/
-   
+}

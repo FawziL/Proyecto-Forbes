@@ -2,8 +2,8 @@
 
 *{
     font-family: 'Montserrat Alternates', sans-serif;
-}
 
+}
 .navbar, .footer{
     background-color: #146128;
 }
@@ -11,7 +11,7 @@
 .bodyPages{
     background-color: rgb(247, 242, 242);
 }
-a{
+nav{
     color: black;
     font-size: 20px;
 }
@@ -21,8 +21,6 @@ a{
 }
 img{
     margin-left: 40px;
-    max-width: 300px;
-    max-height: 500px;
 }
 button{
     margin-left: 65px;
@@ -36,8 +34,9 @@ button{
     background-size: cover;
 }
 #welcomeButton{
-    background-color: rgb(170, 21, 21);
-    border-radius: 10px;
+    background-color: rgb(81, 79, 79);
+    border-radius: 15px;
+    padding: 5px;
 }
 header{
     min-height: 590px;
@@ -52,19 +51,20 @@ header{
 #productos{
     display: flex;
     margin: 10px 80px 30px 80px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
     flex-wrap: wrap;
-    min-width: 290px;
+    min-width: 300px;
 }
 .imgProduct{
-    width: 300px;
+    width: 290px;
     height: 200px;
     border-radius: 15px;
     margin: 0px;
 }
-.infoProduct{
-    font-size: 24px;
+.buttonPreview{
+    margin: 10px;
+    margin-left: 90px;
 }
 .products{
     background-color: #72b183;
@@ -73,15 +73,22 @@ header{
 .productSection{
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    box-shadow: 5px 5px 5px #908c8c;
+    box-shadow: 5px 5px 5px #454141;
+    margin: 5px;
 }
 .productInfo{
     text-align: center;
+    font-size: 24px;
+    margin: 10px;
 }
 h2{
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
+}
+.products h2{
+    margin: 10px;
+    padding: 10px;
 }
 .flex{
     display: flex;
@@ -149,6 +156,8 @@ h2{
 }
 .personalImg{
     border-radius: 15px;
+    height: 200px;
+    width: 250px;
 }
 .contacto{
     display: flex;
@@ -182,4 +191,8 @@ h2{
     text-align: center;
     margin: 20px;
     border-radius: 15px;
+}
+div h2{
+    margin: 10px;
+    text-align: center;
 }
