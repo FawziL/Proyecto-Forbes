@@ -15,23 +15,83 @@
 </head>
 <body>
     {{> navBar }}
-<div>
-  <h1 class='titeId'>{{house.title}}</h1>
 
-  <div class='dContainer'>
 
-    <img src='{{house.thumbnail}}' class='imgProductId'/>
-
+<div class='dContainer'>
+      {{#each house.welcome}}
+    <img src='{{thumbnail}}' class='imgProductId'/>
     <div class='carProduct'>
-      <p class='card-text'>Precio: ${{house.price}}</p>
-      <p class='card-text'>Código: {{house.code}}</p>
-      <p class='card-text'>Category: {{house.description}}</p>
-      <p class='card-text'>Category: {{house.category}}</p>
+      <h1>{{title}}</h1>
+      <p>{{content}}</p>
+      <button>Quiero más información</button>
     </div>
-
-  </div>
-
+      {{/each}}
 </div>
+
+
+<div class="beneficios">
+  {{#each house.benefits}}
+    <div class="carD">     
+        <img src='{{thumbnail}}'/>
+        <div class="textHouse">
+          <h3>{{title}}</h3>
+          <p>{{content}}</p>
+        </div>
+    </div>
+  {{/each}}
+</div>
+
+<div class="detalles">
+  <h2>Sientete en casa</h2>
+  <p>Las agradables áreas sociales de este inmueble son versátiles y espaciosas</p>
+  <div class="espacios">
+          {{#each house.details}}
+    <div class="izquierda">
+      <div>
+        <h3>{{title1}}</h3>
+        <p>{{benefit1}}</p>
+      </div>
+      <div>
+        <h3>{{title2}}</h3>
+        <p>{{benefit2}}</p>
+      </div>
+    </div>
+    <div>
+        <img src='{{thumbnail}}'/>
+    </div>
+    <div class="derecha">
+      <div>
+        <h3>{{title3}}</h3>
+        <p>{{benefit3}}</p>
+      </div>
+      <div>
+        <h3>{{title4}}</h3>
+        <p>{{benefit4}}</p>
+      </div>
+    </div>
+          {{/each}}
+  </div>
+</div>
+
+<div class="citas">
+  <h3>PIDE TU CITA Y CONOCELO</h3>
+  <p>Los acabados de este PH son de primera, totalmente manejable, funcional y disfrutable, definitivamente una propiedad ideal</p>
+  <button>Quiero más información</button>
+</div>
+
+<div class="seller">
+        {{#each house.seller}}
+  <div>
+    <img src='{{thumbnail}}' class='imgProductId'/>
+  </div>
+  <div>
+    <h3>{{name}}</h3>
+    <p><b>{{work}}</b></p>
+    <p>{{description}}</p>
+  </div>
+        {{/each}}
+</div>
+
 
     {{> footer }}
 </body>

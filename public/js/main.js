@@ -10,10 +10,6 @@ fetch(stock)
          const casilla = document.createElement('section');
          casilla.classList.add('productSection')
 
-         const imagenProducto = document.createElement('img');
-         imagenProducto.classList.add('imgProduct')
-         imagenProducto.src = producto.img;
-
          const info = document.createElement('section');
          info.classList.add('productInfo')
 
@@ -35,8 +31,7 @@ fetch(stock)
         info.appendChild(tituloProducto);
         info.appendChild(precioProducto);
         info.appendChild(descripcionProducto);
-
-         casilla.appendChild(imagenProducto);
+        
          casilla.appendChild(info);
          casilla.appendChild(btnFavorito);
          
