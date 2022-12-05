@@ -196,3 +196,26 @@ div h2{
     margin: 10px;
     text-align: center;
 }
+.flexContact{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+}
+
+
+.padding60{
+    padding: 80px;
+    text-align: center;
+    color: white;
+
+}
+input, textarea{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+}
+.button{
+    background-color: green;
+    margin-left: 150px;
+}
