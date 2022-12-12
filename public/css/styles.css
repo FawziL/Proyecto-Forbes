@@ -50,11 +50,14 @@ header{
 
 #productos{
     display: flex;
-    margin: 10px 80px 30px 80px;
-    justify-content: space-evenly;
+    margin: 10px 10px 30px 10px;
     padding: 20px;
-    flex-wrap: wrap;
     min-width: 300px;
+}
+.productosprueba{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .imgProduct{
     width: 288px;
@@ -101,7 +104,7 @@ h2{
     margin: 100px;
 }
 .padding{
-    padding: 50px;
+    padding: 30px;
     color:#146128
 }
 .porcentajes{
@@ -119,18 +122,20 @@ h2{
 }
 .imagenOferta{
     margin-left: 300px;
-    width: 300px;
+    width: 350px;
     height: 350px;
     border-radius: 15px;
+    margin-top: 20px;
 }
 .textOferta{
     font-size: 18px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 300px;
+    margin-top: 20px;
+    text-align: justify;
 }
 .back{
-    background-image: url(../img/referencia.jpg);
+    background-image: url(../img/back.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,7 +205,6 @@ div h2{
     display: flex;
     justify-content: center;
     background-color: black;
-
 }
 
 
@@ -218,4 +222,8 @@ input, textarea{
 .button{
     background-color: green;
     margin-left: 150px;
+}
+.dropdown-toggle{
+    margin-left: 0px;
+    margin-right: 70px;
 }

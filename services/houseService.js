@@ -37,6 +37,10 @@ class HouseMongoDAO {
     }
 
 }
+getByLocation = async(location) => {
+  const doc = await this.collection.find({location:location});
+  return doc 
+}
 
   
   updateProducts = async(product, id) => {

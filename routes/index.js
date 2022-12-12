@@ -1,9 +1,11 @@
 const { Router } = require('express')
 const routes = Router()
 const path = require('path')
-const {getById, createProduct, updateProducts, deleteById, renderProducts, renderProductById} = require("../controllers/houseController.js")
+const {getById, createProduct, updateProducts, deleteById, getByLocation, renderProducts, renderProductById} = require("../controllers/houseController.js")
  
 routes.get('/ventas', renderProducts)
+
+routes.get('/ventas/category/:location', getByLocation)
 
 routes.get('/ventas/:_id', renderProductById)
 
