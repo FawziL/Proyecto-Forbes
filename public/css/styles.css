@@ -34,9 +34,10 @@ button{
     background-size: cover;
 }
 #welcomeButton{
-    background-color: rgb(81, 79, 79);
-    border-radius: 15px;
-    padding: 5px;
+    background-color:  #FFAD40;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
 }
 header{
     min-height: 590px;
