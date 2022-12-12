@@ -9,7 +9,7 @@
 }
 
 .bodyPages{
-    background-color: rgb(247, 242, 242);
+    background-color: #f4f1e9;
 }
 nav{
     color: black;
@@ -48,37 +48,39 @@ header{
     text-align: center;  
     color: white;
 }
-
 #productos{
     display: flex;
     margin: 10px 10px 30px 10px;
     padding: 20px;
-    min-width: 300px;
 }
 .productosprueba{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: #72b183;
 }
 .imgProduct{
-    width: 288px;
+    width: 268px;
     height: 200px;
     border-radius: 15px;
     margin: 0px;
 }
 .buttonPreview{
     margin: 10px;
-    margin-left: 90px;
+    margin-left: 80px;
 }
 .products{
-    background-color: #72b183;
+    background-color:  #f4f1e9;
     border-style: solid;
 }
 .productSection{
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 5px 5px 5px #454141;
-    margin: 5px;
+    margin: 10px;
+    max-width: 268px;
 }
 .productInfo{
     text-align: center;
@@ -93,6 +95,7 @@ h2{
 .products h2{
     margin: 10px;
     padding: 10px;
+    background-color:  #f4f1e9;
 }
 .flex{
     display: flex;
@@ -100,6 +103,7 @@ h2{
 }
 .text{
     width: 65%;
+    text-align: justify;
 }
 .margin{
     margin: 100px;
@@ -111,10 +115,19 @@ h2{
 .porcentajes{
     display: flex;
     justify-content: space-between;
-    margin: 100px;
+    padding: 100px;
+    background-color: #f4f1e9;
 }
 .verde{
     color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+.verde h4{
+    font-size: 34px;
+}
+.verde p{
+    width: 150px;
 }
 .oferta{
     background-color: black;
@@ -165,7 +178,8 @@ h2{
     width: 250px;
 }
 .contact{
-    margin: 70px;
+    padding: 70px;
+    background-color: #f4f1e9;
 }
 .contacto{
     display: flex;
@@ -208,24 +222,50 @@ div h2{
     justify-content: center;
     background-color: black;
 }
-
+.contactForbes{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    border-radius: 0px;
+    padding-top: 20px;
+}
 
 .padding60{
-    padding: 80px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-left: 40px;
     text-align: center;
     color: white;
-
+    width: 500px;
 }
-input, textarea{
+textarea{
+    padding: 16px;
+    margin: 5px;
+    border-radius: 15px;
+    width: 300px;
+}
+.formulario{
+    width: 300px;
+}
+input{
     padding: 10px;
     margin: 5px;
     border-radius: 15px;
 }
 .button{
     background-color: green;
-    margin-left: 150px;
+    margin-left: 230px;
+}
+.formEmail{
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.formEmail form{
+    margin: 0px;
 }
 .dropdown-toggle{
     margin-left: 0px;
-    margin-right: 70px;
+    margin-right: 60px;
 }
