@@ -64,9 +64,9 @@ try {
 }
 } 
 
-getByCategory = async(category) => {
-  const doc = await this.collection.find({category:category});
-  return doc || { error: 'producto no encontrado' }
+getByPrice = async(price) => {
+  const doc = await this.collection.find({price:{$lte:price}});
+  return doc
 }
 
   static getInstance() {

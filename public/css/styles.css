@@ -138,12 +138,11 @@ h2{
     background-image: url(../img/back.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+    background-size: 100% 100%;
     text-align: center;
 }
 .center{
-    padding: 120px;
+    padding: 140px;
     color: white;
 }
 .footerDown{
@@ -164,18 +163,20 @@ h2{
     height: 200px;
     width: 250px;
 }
+.contact{
+    margin: 70px;
+}
 .contacto{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    padding: 70px;
-    border-style: solid;
+    padding: 10px;
 }
 .contacto h3 {
     color: #146128;
 }
 .contactos{
-    margin-bottom: 40px;
+    width: 30%;
 }
 .opiniones{
     padding: 60px 300px 60px 300px;

@@ -57,6 +57,15 @@ const getAll = async (req, res) => {
     } catch (err) {
       console.log(err)
     }
+  };
+  const getByPrice = async (req, res) => {
+    try {
+        const products = await houseService.getByPrice(req.params.price)
+        res.render('products', { products })
+      
+    } catch (err) {
+      console.log(err)
+    }
   }; 
 
   const deleteById = async (req, res) => {
@@ -80,4 +89,4 @@ const getAll = async (req, res) => {
     }
   }; 
 
-  module.exports =  {getAll, getById, createProduct, updateProducts, deleteById, renderProducts, getByLocation, renderProductById}
+  module.exports =  {getAll, getById, createProduct, updateProducts, deleteById, getByPrice, renderProducts, getByLocation, renderProductById}
