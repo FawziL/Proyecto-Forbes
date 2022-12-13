@@ -269,3 +269,11 @@ input{
     margin-left: 0px;
     margin-right: 60px;
 }
+.formulario{
+   background-color: #969897;
+   justify-content: center;
+   align-items: center;
+   width: 700px;
+   margin: 0 auto;
+   padding: 20px;
+}

@@ -17,16 +17,16 @@ const getAll = async (req, res) => {
       res.render('products', { products })
       
     } catch (err) {
-      logger.error(` ${err}`)
+      console.log(err)
     }
   };
 
   const createProduct = async (req, res) => {
     try {
+        console.log(req.body)
         res.json(await houseService.createProduct(req.body))
-      
     } catch (err) {
-      logger.error(` ${err}`)
+      console.log(err)
     }
   };
 
@@ -35,7 +35,7 @@ const getAll = async (req, res) => {
         res.json(await houseService.updateProducts(req.body, req.params.id))
       
     } catch (err) {
-      logger.error(` ${err}`)
+      console.log(err)
     }
   }; 
 
@@ -73,7 +73,7 @@ const getAll = async (req, res) => {
         res.json(await houseService.deleteById(req.params.id))
       
     } catch (err) {
-      logger.error(` ${err}`)
+      console.log(err)
     }
   }; 
 
