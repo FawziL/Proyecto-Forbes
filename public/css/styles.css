@@ -311,9 +311,9 @@ input{
     text-align: center;
 }
 .contact svg{
-    height: 30px;
-    width: 30px;
-    margin-bottom: 5x;
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
 }
 .contacto{
     display: flex;
