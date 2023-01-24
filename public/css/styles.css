@@ -1,31 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+@font-face {
+    font-family: 'neogrey';
+    src:url('NeogreyMedium.otf'),
+        url('NeogreyRegular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+/* --------------------- Cosas generales ---------------------  */
+
+h1, h2, h3{
+    font-family: 'neogrey';
+}
+a{
+    text-decoration: none;
+    color: white;
+}
 *{
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
-.navbar, .footer{
-    background-color: #146128;
-}
-
-.bodyPages{
-    background-color: #f4f1e9;
-}
-nav{
-    color: black;
-    font-size: 20px;
-}
-.navIndex, .footerIndex{
-    opacity: 0.7;
-    color: transparent;
+button{
+    border-radius: 15px;
 }
 img{
     margin-left: 40px;
 }
-button{
-    margin-left: 65px;
+h2{
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
+
+/* --------------------- Welcome, header, navBar --------------------- */
 
 .welcome{
     background-image: url(../img/Imagen1.png);
@@ -33,14 +39,16 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#welcomeButton{
-    background-color:  #FFAD40;
+.welcomeButton{
+    background-color:  #136c2b;
     padding: 10px;
     border-radius: 7px;
     color: white;
+    width: 250px;
+    font-size: 22px;
 }
 header{
-    min-height: 590px;
+    min-height: 640px;
 }
 .welcomeText{
     padding: 150px;
@@ -48,18 +56,28 @@ header{
     text-align: center;  
     color: white;
 }
+nav{
+    color: black;
+    font-size: 20px;
+}
+.navbar, .footer{
+    background-color: #146128;
+}
+.navIndex, .footerIndex{
+    opacity: 0.7;
+    color: transparent;
+}
+
+/* --------------------- Productos, secciòn ventas --------------------- */
+
 #productos{
     display: flex;
-    margin: 10px 10px 30px 10px;
-    padding: 20px;
 }
 .productosprueba{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border-style: solid;
-    border-radius: 15px;
-    background-color: #72b183;
+    width: 100%;  
 }
 .imgProduct{
     width: 268px;
@@ -79,7 +97,7 @@ header{
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 5px 5px 5px #454141;
-    margin: 10px;
+    margin: 20px 10px 10px 10px;
     max-width: 268px;
 }
 .productInfo{
@@ -87,41 +105,66 @@ header{
     font-size: 24px;
     margin: 10px;
 }
-h2{
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
+.products h2{
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to right, #000000, #101111, #252a2a, #3c3f3f, #585858); 
+}
+.categorias{
+    font-size: 22px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    background-image: linear-gradient(to right, #000000, #101111, #252a2a, #3c3f3f, #585858); 
+    height: 100%;
+}
+.buttonCategry{
+    margin: 0px;
+}
+.categorias a, h3{
+    color: white;
+}
+.categorias a{
+    text-decoration: none;
+    padding-top: 15px;
+}
+.togleCategory{
+    background-image: linear-gradient(to right, #000000, #101111, #252a2a, #3c3f3f, #585858); 
+}
+.togleCategory svg{
+    background-color: #f4f1e9;
+    height: 35px;
+    width: 35px;
     border-radius: 15px;
 }
-.products h2{
-    margin: 10px;
-    padding: 10px;
-    background-color:  #f4f1e9;
-}
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-.text{
-    width: 65%;
-    text-align: justify;
-}
-.margin{
-    margin: 100px;
-}
-.padding{
-    padding: 30px;
-    color:#146128
-}
+
+/*  ---------------------   Sección Porcentajes  ---------------------  */
+
 .porcentajes{
     display: flex;
     justify-content: space-between;
-    padding: 100px;
+    padding: 30px 100px 30px 100px;
     background-color: #f4f1e9;
 }
 .verde{
-    color: green;
+    color: #136c2b;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 16px;
+}
+.verderSvg{
+    display: flex;
+    justify-content: center;
+}
+.bordeVerde{
+    border-radius: 15px;
+    border-style: solid;
+    margin: 10px;
+}
+.verde svg{
+    height: 35px;
+    width: 25px;
+    margin-left: 10px;
 }
 .verde h4{
     font-size: 34px;
@@ -129,10 +172,19 @@ h2{
 .verde p{
     width: 150px;
 }
+.text{
+    width: 60%;
+    text-align: justify;
+    font-size: 26px;
+    padding-top: 56px;
+}
+
+/*  ---------------------   Sección Oferta  ---------------------  */
+
 .oferta{
     background-color: black;
     text-align: center;
-    color:#146128
+    color:#2CCE50;
 }
 .imagenOferta{
     margin-left: 300px;
@@ -148,12 +200,27 @@ h2{
     margin-top: 20px;
     text-align: justify;
 }
+.padding{
+    padding: 30px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  ---------------------   Sección Back  ---------------------  */
+
 .back{
     background-image: url(../img/back.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
+}
+.textBack{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
 }
 .center{
     padding: 140px;
@@ -164,62 +231,11 @@ h2{
     bottom: 0;
 }
 
-.centrado{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    color: black;
-}
-.personalImg{
-    border-radius: 15px;
-    height: 200px;
-    width: 250px;
-}
-.contact{
-    padding: 70px;
-    background-color: #f4f1e9;
-}
-.contacto{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 10px;
-}
-.contacto h3 {
-    color: #146128;
-}
-.contactos{
-    width: 30%;
-}
-.opiniones{
-    padding: 60px 300px 60px 300px;
-    border-style: solid;
-    text-align: center;
-}
+/*  ---------------------   Sección contacto Ws y Mail  ---------------------  */
 
-.personal{
-    background-color: black;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 40px;
-}
-
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    border-radius: 15px;
-}
-div h2{
-    margin: 10px;
-    text-align: center;
-}
 .flexContact{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: black;
 }
 .contactForbes{
@@ -227,16 +243,20 @@ div h2{
     color: white;
     margin: 0px;
     border-radius: 0px;
-    padding-top: 20px;
+    padding: 20px;
+    font-size: 36px;
 }
-
-.padding60{
+.ws{
     padding-top: 30px;
     padding-bottom: 40px;
     margin-left: 40px;
     text-align: center;
-    color: white;
     width: 500px;
+}
+.wsText{
+    font-size: 24px;
+    color: white;
+    padding: 10px;
 }
 textarea{
     padding: 16px;
@@ -253,22 +273,111 @@ input{
     border-radius: 15px;
 }
 .button{
-    background-color: green;
-    margin-left: 230px;
+    background-color: #136c2b;
+    color: white;
+    margin-left: 150px;
+    width: 150px;
 }
 .formEmail{
     color: white;
     border-style: solid;
     border-radius: 15px;
     padding: 10px;
+    border-color: #136c2b;
+    margin: 20px 100px 20px 0px;
+}
+.wsForm{
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    text-align: center;
+    color: white;
+    border-color: #136c2b;
+    width: 500px;
 }
 .formEmail form{
     margin: 0px;
 }
-.dropdown-toggle{
-    margin-left: 0px;
-    margin-right: 60px;
+
+/*  ---------------------   Sección contacto  ---------------------  */
+
+.contact{
+    padding: 50px;
+    background-color: #f4f1e9;
+    text-align: center;
 }
+.contact svg{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5x;
+}
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.contact h3 {
+    color: #136c2b;
+}
+.contactos{
+    width: 30%;
+}
+.contactos a{
+    color: black;
+    text-decoration:underline;
+}
+
+/*  ---------------------   Sección personas, AboutUs  ---------------------  */
+
+.centrado{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    color: black;
+}
+.personalImg{
+    border-radius: 15px;
+    height: 200px;
+    width: 250px;
+}
+.personal{
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/*  ---------------------   Sección personas, Opiniones  ---------------------  */
+
+.opiniones{
+    padding: 60px 300px 60px 300px;
+    border-style: solid;
+    text-align: center;
+}
+div h2{
+    margin: 10px;
+    text-align: center;
+}
+.carruselT{
+    font-size: 32px;
+    font-weight: bold;
+}
+.carruselP{
+    color: black;
+    font-size: 28px;
+}
+
+/*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
 .formulario{
    background-color: #969897;
    justify-content: center;
@@ -277,3 +386,4 @@ input{
    margin: 0 auto;
    padding: 20px;
 }
+

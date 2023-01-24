@@ -1,13 +1,33 @@
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Categorías
-  </button>
-  <ul class="dropdown-menu dropdown-menu-dark">
-    <li><a class="dropdown-item active" href="/ventas/category/Caracas">Caracas</a></li>
-    <li><a class="dropdown-item" href="/ventas/category/San Antonio">San Antonio</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="/ventas/price/20000">Menor a 20k</a></li>
-    <li><a class="dropdown-item" href="/ventas/price/40000">Menor a 40k</a></li>
-    <li><a class="dropdown-item" href="/ventas/price/60000">Menor a 60k</a></li>
-  </ul>
+<div class="togleCategory">
+  <div class="x">
+    <button
+      class="btn buttonCategry"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapseWidthExample"
+      aria-expanded="false"
+      aria-controls="collapseWidthExample">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8Zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5Z"/>
+</svg>
+    </button>
+  </div>
+  <div>
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="categorias">
+        <h3>Categorías</h3>
+        <br>
+        <h3>Ubicaciones:</h3>
+        <a
+          class="dropdown-item"href="/ventas/category/Caracas">Caracas</a>
+        <a class="dropdown-item" href="/ventas/category/San Antonio">San Antonio</a>
+        <br>
+        <h3>Precios:</h3>
+        <a class="dropdown-item" href="/ventas/price/50000">Hasta 50k</a>
+        <a class="dropdown-item" href="/ventas/price/100000">Hasta 100k</a>
+        <a class="dropdown-item" href="/ventas/price/200000">Hasta 200k</a>
+        <a class="dropdown-item" href="/ventas/price/200000">Más de 200k</a>
+      </div>
+    </div>
+  </div>
 </div>
