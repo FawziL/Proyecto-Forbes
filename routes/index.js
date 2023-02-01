@@ -2,7 +2,8 @@ const { Router } = require('express')
 const routes = Router()
 const path = require('path')
 const {getById, createProduct, updateProducts, deleteById, getByLocation, getByPrice, renderProducts, renderProductById} = require("../controllers/houseController.js")
- 
+const {formContact, } = require("../controllers/mailerController.js")
+
 routes.get('/ventas', renderProducts)
 
 routes.get('/ventas/price/:price', getByPrice)
@@ -14,10 +15,7 @@ routes.get('/ventas/:_id', renderProductById)
 routes.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"))
 })
-
-/*routes.get('/alquiler', (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/pages/alquiler.html"))
-})*/
+routes.post('/', formContact)
 
 routes.get('/contacto', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/pages/contacto.html"))

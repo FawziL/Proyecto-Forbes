@@ -83,7 +83,12 @@
 <div class="citas">
   <h3>PIDE TU CITA Y CONOCELO</h3>
   <p>Los acabados de este PH son de primera, totalmente manejable, funcional y disfrutable, definitivamente una propiedad ideal</p>
-  <button>Quiero más información</button>
+  <button>
+    <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes%2C%20quisiera%20conocer%20más%20información%20al%20respecto.%20" target="blank_" class="wspLink">
+        Quiero más información
+    </a>
+  </button>
+  
 </div>
 
 <div class="seller">
@@ -93,7 +98,8 @@
   <div>
     <h3>{{house.sellerName}}</h3>
     <p><b>Inmobiliaria</b></p>
-    <p>{{house.sellerDescription}}</p>
+    <p><b>{{house.sellerDescription}}</b></p>
+    <p><b>Número telefónico: {{house.tlf}}</b></p>
   </div>
 </div>
 

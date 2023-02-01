@@ -29,6 +29,7 @@ const houseSchema = new mongoose.Schema({
     sellerThumbnail:{type:String},
     sellerName:{type:String},
     sellerDescription:{type:String},
+    tlf:{type:String},
 });
 
 const houseModel = mongoose.model('House', houseSchema);

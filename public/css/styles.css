@@ -13,10 +13,11 @@ h1, h2, h3{
 }
 a{
     text-decoration: none;
+    font-family: 'neogrey';
     color: white;
 }
 *{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 
 }
 button{
@@ -40,11 +41,11 @@ h2{
     background-size: cover;
 }
 .welcomeButton{
-    background-color:  #136c2b;
+    background-color:  #FFAD40;
     padding: 10px;
     border-radius: 7px;
     color: white;
-    width: 250px;
+    width: 220px;
     font-size: 22px;
 }
 header{
@@ -89,8 +90,12 @@ nav{
     margin: 0px;
 }
 .buttonPreview{
-    margin: 10px;
-    margin-left: 80px;
+    margin: 6px;
+    padding: 2px;
+    margin-left: 90px;
+    background-color:  #FFAD40;
+    border-color: white;
+    color: white;
 }
 .products{
     background-color:  #f4f1e9;
@@ -125,7 +130,10 @@ nav{
 .buttonCategry{
     margin: 0px;
 }
-.categorias a, h3{
+.categorias a{
+    color: white;
+}
+.categorias h3{
     color: white;
 }
 .categorias a{
@@ -136,7 +144,7 @@ nav{
     background-image: linear-gradient(to right, #000000, #101111, #252a2a, #3c3f3f, #585858); 
 }
 .togleCategory svg{
-    background-color: #f4f1e9;
+    color: #f4f1e9;
     height: 35px;
     width: 35px;
     border-radius: 15px;
@@ -153,16 +161,22 @@ nav{
 .verde{
     color: #136c2b;
     text-align: center;
-    margin-top: 16px;
 }
 .verderSvg{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
+}
+.verderSvgNoMargin{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
 }
 .bordeVerde{
     border-radius: 15px;
     border-style: solid;
     margin: 10px;
+    padding: 10px;
 }
 .verde svg{
     height: 35px;
@@ -175,11 +189,15 @@ nav{
 .verde p{
     width: 150px;
 }
+.verdeP{
+    margin-bottom: 0px;
+}
 .text{
     width: 60%;
     text-align: justify;
     font-size: 26px;
-    padding-top: 56px;
+    padding-top: 70px;
+    font-weight: bold;
 }
 
 /*  ---------------------   Sección Oferta  ---------------------  */
@@ -302,6 +320,14 @@ input{
 .formEmail form{
     margin: 0px;
 }
+#texto{
+    background-color: black;
+    color: #0edc45;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    font-size: 36px;
+}
 
 /*  ---------------------   Sección contacto  ---------------------  */
 
@@ -331,36 +357,7 @@ input{
     text-decoration:underline;
 }
 
-/*  ---------------------   Sección personas, AboutUs  ---------------------  */
-
-.centrado{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    color: black;
-}
-.personalImg{
-    border-radius: 15px;
-    height: 200px;
-    width: 250px;
-}
-.personal{
-    background-color: black;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 40px;
-}
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    border-radius: 15px;
-}
-
-/*  ---------------------   Sección personas, Opiniones  ---------------------  */
+/*  ---------------------   Sección Carrusel  ---------------------  */
 
 .opiniones{
     padding: 60px 300px 60px 300px;
@@ -378,6 +375,46 @@ div h2{
 .carruselP{
     color: black;
     font-size: 28px;
+    text-align: justify;
+}
+
+/*  ---------------------   Sección personas, AboutUs  ---------------------  */
+
+.personal{
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+.contenedor{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+}
+.centrado{
+    border-radius: 15px;
+    color: rgb(195, 59, 59);
+}
+.personalImg{
+    border-radius: 5px;
+    height: 200px;
+    width: 150px;
+    margin: 20px;
+}
+
+.WIA{
+    padding: 50px;
+    text-align: center;
+}
+.WIA h2{
+    background-color: white;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.WIA p{
+    font-size: 22px;
+    margin: 0px 60px 0px 60px;
 }
 
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
