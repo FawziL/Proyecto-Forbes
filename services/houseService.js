@@ -17,9 +17,13 @@ class HouseMongoDAO {
     }
   }
 
-    createProduct = async(newProduct) => {
+    createProduct = async(newProduct, user) => {
     try {
-      const createdProduct = await this.collection.create(newProduct);
+      const {name, phone, description, avatar} = user
+      console.log(avatar)
+      const product = {...newProduct, name, phone, description, avatar}
+      console.log(product)
+      const createdProduct = await this.collection.create(product);
       return createdProduct;
     } catch (err) {
       console.log(err);

@@ -1,429 +1,461 @@
 @font-face {
-    font-family: 'neogrey';
-    src:url('NeogreyMedium.otf'),
-        url('NeogreyRegular.otf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "neogrey";
+  src: url("NeogreyMedium.otf"), url("NeogreyRegular.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* --------------------- Cosas generales ---------------------  */
 
-h1, h2, h3{
-    font-family: 'neogrey';
+h1,
+h2,
+h3 {
+  font-family: "neogrey";
 }
-a{
-    text-decoration: none;
-    font-family: 'neogrey';
-    color: white;
+a {
+  text-decoration: none;
+  font-family: "neogrey";
+  color: white;
 }
-*{
-    font-family:'Times New Roman', Times, serif;
-
+* {
+  font-family: "Times New Roman", Times, serif;
 }
-button{
-    border-radius: 15px;
+button {
+  border-radius: 15px;
 }
-img{
-    margin-left: 40px;
+img {
+  margin-left: 80px;
 }
-h2{
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+h2 {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 
 /* --------------------- Welcome, header, navBar --------------------- */
 
-.welcome{
-    background-image: url(../img/Imagen1.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+.welcome {
+  background-image: url(../imgs/Imagen1.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.welcomeButton{
-    background-color:  #FFAD40;
-    padding: 10px;
-    border-radius: 7px;
-    color: white;
-    width: 220px;
-    font-size: 22px;
+.welcomeButton {
+  background-color: #ffad40;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  width: 220px;
+  font-size: 22px;
 }
-header{
-    min-height: 640px;
+header {
+  min-height: 640px;
 }
-.welcomeText{
-    padding: 150px;
-    font-size: 24px;
-    text-align: center;  
-    color: white;
+.welcomeText {
+  padding: 150px;
+  font-size: 24px;
+  text-align: center;
+  color: white;
 }
-nav{
-    color: black;
-    font-size: 20px;
+nav {
+  color: black;
+  font-size: 20px;
 }
-.navbar, .footer{
-    background-color: #146128;
+.navbar,
+.footer {
+  background-color: #146128;
 }
-.navIndex, .footerIndex{
-    opacity: 0.7;
-    color: transparent;
+.navIndex,
+.footerIndex {
+  opacity: 0.8;
+  color: transparent;
 }
 
 /* --------------------- Productos, secciòn ventas --------------------- */
 
-#productos{
-    display: flex;
+#productos {
+  display: flex;
 }
-.productosprueba{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;  
+.productosprueba {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.productosprueba2{
-    width: 100%;  
+.productosprueba2 {
+  width: 100%;
 }
-.imgProduct{
-    width: 268px;
-    height: 200px;
-    border-radius: 15px;
-    margin: 0px;
+.imgProduct {
+  width: 268px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 0px;
 }
-.buttonPreview{
-    margin: 6px;
-    padding: 2px;
-    margin-left: 90px;
-    background-color:  #FFAD40;
-    border-color: white;
-    color: white;
+.buttonPreview {
+  margin: 15px;
+  padding: 2px;
+  margin-left: 90px;
+  background-color: #ffad40;
+  border-color: white;
+  color: white;
 }
-.products{
-    background-color:  #f4f1e9;
-    border-style: solid;
+.products {
+  background-color: #f4f1e9;
+  border-style: solid;
 }
-.productSection{
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px #454141;
-    margin: 20px 10px 20px 10px;
-    max-width: 268px;
+.productSection {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #454141;
+  margin: 20px 10px 20px 10px;
+  max-width: 268px;
 }
-.productInfo{
-    text-align: center;
-    font-size: 24px;
-    margin: 10px;
+.productInfo {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px;
 }
-.products h2{
-    padding: 10px;
-    color: white;
-    background-image: linear-gradient(to right, #000000, #101111, #252a2a, #3c3f3f, #585858); 
+.products h2 {
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
 }
-.categorias{
-    font-size: 22px;
-    padding: 26px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; 
-    background-image: linear-gradient(to right, #000000, #101111, #252a2a, #3c3f3f, #585858); 
-    height: 100%;
+.categorias {
+  font-size: 22px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  height: 100%;
 }
-.buttonCategry{
-    margin: 0px;
+.buttonCategry {
+  margin: 0px;
 }
-.categorias a{
-    color: white;
+.categorias a {
+  color: white;
 }
-.categorias h3{
-    color: white;
+.categorias h3 {
+  color: white;
 }
-.categorias a{
-    text-decoration: none;
-    padding-top: 15px;
+.categorias a {
+  text-decoration: none;
+  padding-top: 15px;
 }
-.togleCategory{
-    background-image: linear-gradient(to right, #000000, #101111, #252a2a, #3c3f3f, #585858); 
+.togleCategory {
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
 }
-.togleCategory svg{
-    color: #f4f1e9;
-    height: 35px;
-    width: 35px;
-    border-radius: 15px;
+.togleCategory svg {
+  color: #f4f1e9;
+  height: 35px;
+  width: 35px;
+  border-radius: 15px;
 }
 
 /*  ---------------------   Sección Porcentajes  ---------------------  */
 
-.porcentajes{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 100px 30px 100px;
-    background-color: #f4f1e9;
+.porcentajes {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px 30px 100px;
+  background-color: #f4f1e9;
 }
-.verde{
-    color: #136c2b;
-    text-align: center;
+.verde {
+  color: #136c2b;
+  text-align: center;
 }
-.verderSvg{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.verderSvg {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
-.verderSvgNoMargin{
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
+.verderSvgNoMargin {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
-.bordeVerde{
-    border-radius: 15px;
-    border-style: solid;
-    margin: 10px;
-    padding: 10px;
+.bordeVerde {
+  border-radius: 15px;
+  border-style: solid;
+  margin: 10px;
+  padding: 10px;
 }
-.verde svg{
-    height: 35px;
-    width: 25px;
-    margin-left: 10px;
+.verde svg {
+  height: 35px;
+  width: 25px;
+  margin-left: 10px;
 }
-.verde h4{
-    font-size: 34px;
+.verde h4 {
+  font-size: 34px;
 }
-.verde p{
-    width: 150px;
+.verde p {
+  width: 150px;
 }
-.verdeP{
-    margin-bottom: 0px;
+.verdeP {
+  margin-bottom: 0px;
 }
-.text{
-    width: 60%;
-    text-align: justify;
-    font-size: 26px;
-    padding-top: 70px;
-    font-weight: bold;
+.text {
+  width: 60%;
+  text-align: justify;
+  font-size: 26px;
+  padding-top: 70px;
+  font-weight: bold;
 }
 
 /*  ---------------------   Sección Oferta  ---------------------  */
 
-.oferta{
-    background-color: black;
-    text-align: center;
-    color:#2CCE50;
+.oferta {
+  background-color: black;
+  text-align: center;
+  color: #2cce50;
 }
-.imagenOferta{
-    margin-left: 300px;
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
-    margin-top: 20px;
+.imagenOferta {
+  margin-left: 300px;
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  margin-top: 20px;
 }
-.textOferta{
-    font-size: 18px;
-    margin-left: 80px;
-    margin-right: 300px;
-    margin-top: 20px;
-    text-align: justify;
+.textOferta {
+  font-size: 18px;
+  margin-left: 80px;
+  margin-right: 300px;
+  margin-top: 20px;
+  text-align: justify;
 }
-.padding{
-    padding: 30px;
+.padding {
+  padding: 30px;
 }
-.flex{
-    display: flex;
-    justify-content: space-between;
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*  ---------------------   Sección Back  ---------------------  */
 
-.back{
-    background-image: url(../img/back.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
+.back {
+  background-image: url(../imgs/back.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
 }
-.textBack{
-    font-size: 24px;
-    font-weight: bold;
-    padding: 15px;
+.textBack {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
 }
-.center{
-    padding: 140px;
-    color: white;
+.center {
+  padding: 140px;
+  color: white;
 }
-.footerDown{
-    position: absolute;
-    bottom: 0;
+.footerDown {
+  position: absolute;
+  bottom: 0;
 }
 
 /*  ---------------------   Sección contacto Ws y Mail  ---------------------  */
 
-.flexContact{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: black;
+.flexContact {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
 }
-.contactForbes{
-    background-color: black;
-    color: white;
-    margin: 0px;
-    border-radius: 0px;
-    padding: 20px;
-    font-size: 36px;
+.contactForbes {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  border-radius: 0px;
+  padding: 20px;
+  font-size: 36px;
 }
-.ws{
-    padding-top: 30px;
-    padding-bottom: 40px;
-    margin-left: 40px;
-    text-align: center;
-    width: 500px;
+.ws {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-left: 40px;
+  text-align: center;
+  width: 500px;
 }
-.wsText{
-    font-size: 24px;
-    color: white;
-    padding: 10px;
+.wsText {
+  font-size: 24px;
+  color: white;
+  padding: 10px;
 }
-textarea{
-    padding: 16px;
-    margin: 5px;
-    border-radius: 15px;
-    width: 300px;
+textarea {
+  padding: 16px;
+  margin: 5px;
+  border-radius: 15px;
+  width: 300px;
 }
-.formularioIndex{
-    width: 300px;
+.formularioIndex {
+  width: 300px;
 }
-input{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 15px;
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
 }
-.button{
-    background-color: #136c2b;
-    color: white;
-    margin-left: 150px;
-    width: 150px;
+.button {
+  background-color: #136c2b;
+  color: white;
+  margin-left: 150px;
+  width: 150px;
 }
-.formEmail{
-    color: white;
-    border-style: solid;
-    border-radius: 15px;
-    padding: 10px;
-    border-color: #136c2b;
-    margin: 20px 100px 20px 0px;
+.formEmail {
+  color: white;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 10px;
+  border-color: #136c2b;
+  margin: 20px 100px 20px 0px;
 }
-.wsForm{
-    font-size: 24px;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    margin-left: 40px;
-    text-align: center;
-    color: white;
-    border-color: #136c2b;
-    width: 500px;
+.wsForm {
+  font-size: 24px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  margin-left: 40px;
+  text-align: center;
+  color: white;
+  border-color: #136c2b;
+  width: 500px;
 }
-.formEmail form{
-    margin: 0px;
+.formEmail form {
+  margin: 0px;
 }
-#texto{
-    background-color: black;
-    color: #0edc45;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 0px;
-    font-size: 36px;
+#texto {
+  background-color: black;
+  color: #0edc45;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  font-size: 36px;
 }
 
 /*  ---------------------   Sección contacto  ---------------------  */
 
-.contact{
-    padding: 50px;
-    background-color: #f4f1e9;
-    text-align: center;
+.contact {
+  padding: 50px;
+  background-color: #f4f1e9;
+  text-align: center;
 }
-.contact svg{
-    height: 35px;
-    width: 35px;
-    margin-bottom: 10px;
+.contact svg {
+  height: 35px;
+  width: 35px;
+  margin-bottom: 10px;
 }
-.contacto{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 .contact h3 {
-    color: #136c2b;
+  color: #136c2b;
 }
-.contactos{
-    width: 30%;
+.contactos {
+  width: 30%;
 }
-.contactos a{
-    color: black;
-    text-decoration:underline;
+.contactos a {
+  color: black;
+  text-decoration: underline;
 }
 
 /*  ---------------------   Sección Carrusel  ---------------------  */
 
-.opiniones{
-    padding: 60px 300px 60px 300px;
-    border-style: solid;
-    text-align: center;
+.opiniones {
+  padding: 60px 300px 60px 300px;
+  border-style: solid;
+  text-align: center;
 }
-div h2{
-    margin: 10px;
-    text-align: center;
+div h2 {
+  margin: 10px;
+  text-align: center;
 }
-.carruselT{
-    font-size: 32px;
-    font-weight: bold;
+.carruselT {
+  font-size: 32px;
+  font-weight: bold;
 }
-.carruselP{
-    color: black;
-    font-size: 28px;
-    text-align: justify;
+.carruselP {
+  color: black;
+  font-size: 28px;
+  text-align: justify;
 }
 
 /*  ---------------------   Sección personas, AboutUs  ---------------------  */
 
-.personal{
-    background-color: black;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 40px;
+.personal {
+  background-color: black;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 40px;
 }
-.contenedor{
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    border-radius: 5px;
+.contenedor {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  border-radius: 5px;
 }
-.centrado{
-    border-radius: 15px;
-    color: rgb(195, 59, 59);
+.centrado {
+  border-radius: 15px;
+  color: rgb(195, 59, 59);
 }
-.personalImg{
-    border-radius: 5px;
-    height: 200px;
-    width: 150px;
-    margin: 20px;
+.personalImg {
+  border-radius: 5px;
+  height: 200px;
+  width: 150px;
+  margin: 20px;
 }
 
-.WIA{
-    padding: 50px;
-    text-align: center;
+.WIA {
+  padding: 50px;
+  text-align: center;
 }
-.WIA h2{
-    background-color: white;
-    padding-top: 0px;
-    margin-top: 0px;
+.WIA h2 {
+  background-color: white;
+  padding-top: 0px;
+  margin-top: 0px;
 }
-.WIA p{
-    font-size: 22px;
-    margin: 0px 60px 0px 60px;
+.WIA p {
+  font-size: 22px;
+  margin: 0px 60px 0px 60px;
 }
 
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
-.formulario{
-   background-color: #969897;
-   justify-content: center;
-   align-items: center;
-   width: 700px;
-   margin: 0 auto;
-   padding: 20px;
+.formulario {
+  background-color: #969897;
+  text-align: center;
+  width: 550px;
+  margin: 0 auto;
+  padding: 20px;
 }
-
+.formularioLogin {
+  background-color: #969897;
+  text-align: center;
+  padding: 20px;
+  margin: 60px;
+  border-radius: 15px;
+  border-style: solid;
+}
+.formularioLogin img{
+margin: 0px;
+}

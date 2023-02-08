@@ -29,9 +29,7 @@
                 <p class='card-text'>Precio: ${{price}}</p>
                 <p class='card-text'>Ubicación: {{location}}</p>
               </div>
-              <form action='/ventas/{{_id}}' method='GET'>
-                  <button type='submit' class='buttonPreview'>Ver detalles</button>
-              </form>
+              <a href="/ventas/{{_id}}"><button  class="buttonPreview">Ver detalles</button></a>
             </div> 
           {{/each}}
         </div>

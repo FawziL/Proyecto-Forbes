@@ -1,8 +1,11 @@
 const { Router } = require('express')
 const routes = Router()
 const path = require('path')
-const {getById, createProduct, updateProducts, deleteById, getByLocation, getByPrice, renderProducts, renderProductById} = require("../controllers/houseController.js")
+const {createProduct, getByLocation, getByPrice, renderProducts, renderProductById} = require("../controllers/houseController.js")
 const {formContact, } = require("../controllers/mailerController.js")
+const routerUser = require("./routerUser.js")
+
+routes.use(routerUser);
 
 routes.get('/ventas', renderProducts)
 

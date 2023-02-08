@@ -26,10 +26,10 @@ const houseSchema = new mongoose.Schema({
     detailBenefit2:{type:String},
     detailBenefit3:{type:String},
     detailBenefit4:{type:String},
-    sellerThumbnail:{type:String},
-    sellerName:{type:String},
-    sellerDescription:{type:String},
-    tlf:{type:String},
+    avatar:{type:String},
+    name:{type:String},
+    description:{type:String},
+    phone:{type:Number},
 });
 
 const houseModel = mongoose.model('House', houseSchema);
