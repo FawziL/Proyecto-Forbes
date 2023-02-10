@@ -1,10 +1,8 @@
 const { Router} = require('express');
 const router = Router()
 const auth = require("../middlewares/isAuth")
-const {getAcount, formulario, login, failedLogin, signup, failedSignup, logout} = require("../controllers/userController.js")
+const {formulario, login, failedLogin, signup, failedSignup, logout} = require("../controllers/userController.js")
 const passport = require ('passport') 
-
-router.get("/micuenta", auth, getAcount);
 
 router.get('/formulario', auth, formulario);
 

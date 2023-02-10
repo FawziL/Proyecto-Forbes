@@ -21,7 +21,9 @@
     <div class='carProduct'>
       <h1>{{house.welcomeTitle}}</h1>
       <p>{{house.welcomeContent}}</p>
-      <button>Quiero más información</button>
+    <a href="https://api.whatsapp.com/send?phone={{house.phone}}&text=Buenas%20tardes" target="blank_" class="wspLink">
+        <button>Quiero más información</button>
+    </a>
     </div>
 </div>
 
@@ -82,12 +84,11 @@
 
 <div class="citas">
   <h3>PIDE TU CITA Y CONOCELO</h3>
-  <p>Los acabados de este PH son de primera, totalmente manejable, funcional y disfrutable, definitivamente una propiedad ideal</p>
-  <button>
+  <p>Los acabados de este PH son de primera, totalmente manejable, funcional y disfrutable, definitivamente una propiedad ideal.</p>
+  
     <a href="https://api.whatsapp.com/send?phone={{house.phone}}&text=Buenas%20tardes" target="blank_" class="wspLink">
-        Quiero más información
+        <button>Quiero más información</button>
     </a>
-  </button>
   
 </div>
 
@@ -97,11 +98,10 @@
   </div>
   <div>
     <h3>{{house.name}}</h3>
-    <p><b>{{house.description}}</b></p>
+    <p>{{house.description}}</p>
     <p><b>Número telefónico: +58 {{house.phone}}</b></p>
   </div>
 </div>
-
     {{> footer }}
 </body>
 </html>

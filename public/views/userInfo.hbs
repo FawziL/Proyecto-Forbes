@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../index.css' rel='stylesheet' />
         <link
       href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css'
       rel='stylesheet'
@@ -29,6 +28,22 @@
         <h3>Descripción: {{description}}</h3>
         <hr>
         <img src="{{avatar}}" alt="avatar" style="width:12rem;height:12rem;">
+  </div>
+  <div>
+    <h2>Propiedades subidas por {{name}}</h2>
+    <div class="productosprueba">
+      {{#each housesByName}} 
+        <div class='productSection' style='width: 18rem;'>
+          <img src='{{thumbnail}}' class='imgProduct' alt='...' />
+          <div class= "productInfo">
+            <p class='card-text'>Precio: ${{price}}</p>
+            <p class='card-text'>Ubicación: {{location}}</p>
+          </div>
+          <a href="/ventas/{{_id}}"><button class="buttonPreview">Ver detalles</button></a>
+          <a href="/delete/{{_id}}"><button class="buttonPreview">Eliminar</button></a>
+        </div> 
+      {{/each}}
+    </div>
   </div>
 
 </body>

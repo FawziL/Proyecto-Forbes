@@ -20,9 +20,7 @@ a {
 * {
   font-family: "Times New Roman", Times, serif;
 }
-button {
-  border-radius: 15px;
-}
+
 img {
   margin-left: 80px;
 }
@@ -93,8 +91,8 @@ nav {
 }
 .buttonPreview {
   margin: 15px;
-  padding: 2px;
-  margin-left: 90px;
+  padding: 4px;
+  border-radius: 15px;
   background-color: #ffad40;
   border-color: white;
   color: white;
@@ -109,6 +107,7 @@ nav {
   box-shadow: 5px 5px 5px #454141;
   margin: 20px 10px 20px 10px;
   max-width: 268px;
+  text-align: center;
 }
 .productInfo {
   text-align: center;
@@ -267,8 +266,9 @@ nav {
   padding: 15px;
 }
 .center {
-  padding: 140px;
+  padding: 140px;  
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .footerDown {
   position: absolute;

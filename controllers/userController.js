@@ -27,24 +27,11 @@ const logout = async (req, res, next) => {
           </script>`);
   });
 };
-const getAcount = async (req, res) => {
-  const { username, name, address, age, phone, description, avatar } = req.user;
-  res.render("userInfo", {
-    username,
-    name,
-    address,
-    age,
-    phone,
-    description,
-    avatar,
-  });
-};
 const formulario = async (req, res) => {
   res.sendFile(path.join(__dirname, "../public/pages/formularioUser.html"));
 };
 
 module.exports = {
-  getAcount,
   formulario,
   login,
   failedLogin,

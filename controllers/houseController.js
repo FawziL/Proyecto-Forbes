@@ -26,7 +26,24 @@ const createProduct = async (req, res) => {
     console.log(err);
   }
 };
-
+const getByName = async (req, res) => {
+  try {
+    const { username, name, address, age, phone, description, avatar } = req.user;
+    const housesByName = await houseService.getByName(req.user.name);
+    res.render("userInfo", {
+      username,
+      name,
+      address,
+      age,
+      phone,
+      description,
+      avatar,
+      housesByName
+    });
+  } catch (err) {
+    console.log(err);
+  }
+};
 const updateProducts = async (req, res) => {
   try {
     res.json(await houseService.updateProducts(req.body, req.params.id));
@@ -63,7 +80,7 @@ const getByPrice = async (req, res) => {
 
 const deleteById = async (req, res) => {
   try {
-    res.json(await houseService.deleteById(req.params.id));
+    res.json(await houseService.deleteById(req.params._id));
   } catch (err) {
     console.log(err);
   }
@@ -89,4 +106,5 @@ module.exports = {
   renderProducts,
   getByLocation,
   renderProductById,
+  getByName
 };

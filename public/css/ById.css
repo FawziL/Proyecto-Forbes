@@ -85,14 +85,12 @@ h3{
 }
 .citas{
     background-color: #1d4934;
-    height: 300px;
     padding: 50px;
     text-align: center;
+    color: white;
 }
 .citas p{
-    font-size: 22px;
-    width: 600px;
-    margin-left: 390px;
+    font-size: 20px;
 }
 
 .seller{
@@ -102,13 +100,14 @@ h3{
     background-color:  #f4f1e9;
 }
 .seller img{
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
+    height: 200px;
+    width: 140px;
+    border-radius: 45%;
     margin: 40px;
 }
 .seller p{
     max-width: 600px;
+    text-align: justify;
 }
 .seller h3{
     padding: 0px;

@@ -42,7 +42,10 @@ getByLocation = async(location) => {
   const doc = await this.collection.find({location:location});
   return doc 
 }
-
+getByName = async(name) => {
+  const doc = await this.collection.find({name:name});
+  return doc 
+}
   
 updateProducts = async(product, id) => {
     try {
