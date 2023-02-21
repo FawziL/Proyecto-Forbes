@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../css/ById.css' rel='stylesheet' />
+</head>
+<body>
+
+  {{> navBar }}
+
+<div class="created">
+  <h1>¡Los datos han sido enviados a nuestro servidor!</h1>
+
+  <div class="displayFlexCenter">
+    <div class="sectionForm">
+      <div class="displayFlex">
+        <p>Nombre y Apellido:</p><h5>{{name}}</h5>
+      </div>
+      <div class="displayFlex">
+        <p>Telefóno:</p><h5>{{phone}}</h5>
+      </div>
+      <div class="displayFlex">
+        <p>Email: </p><h5>{{email}}</h5>
+      </div>
+      <div class="displayFlex">
+        <p>Ubicación: </p><h5>{{location}}</h5>
+      </div>
+      <div class="displayFlex">
+        <p>Agente: </p><h5>{{agent}}</h5>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+    {{> footer }}
+</body>
+</html>

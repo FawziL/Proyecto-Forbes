@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="imgs/logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,7 +17,7 @@
   <body>
     <div>
       <nav class="navbar navbar-dark navbar-expand-lg navIndex">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
           <img
             src="./imgs/logo.png"
             alt="logo"
@@ -44,82 +45,154 @@
             <a class="nav-link" href="ventas">Comprar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="alquiler">Vender</a>
+            <a class="nav-link" href="vender">Vender</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aboutUs"
-              >Sobre nosotros...</a
-            >
+            <a class="nav-link" href="aboutUs">Sobre nosotros...</a>
           </li>
-          <l1>  
-            <a href='/micuenta' class='nav-link'>Mi perfil</a>
-            </l1>
-          <l1>  
-            <a href='/formulario' class='nav-link'>Formulario</a>
+          <l1>
+            <a href="/clientes" class="nav-link">Clientes</a>
           </l1>
-          <l1>  
-            <a href='/logout' class='nav-link'>Salir</a>
+          <l1>
+            <a href="/micuenta" class="nav-link">Mi perfil</a>
+          </l1>
+          <l1>
+            <a href="/formulario" class="nav-link">Formulario</a>
+          </l1>
+          <l1>
+            <a href="/logout" class="nav-link">Salir</a>
           </l1>
         </ul>
       </nav>
     </div>
 
-      <div class="formulario">
-        <h1>FORMULARIO DE INMUEBLES</h1>
-        <form action="/createProduct" method="POST">
-          <hr>
-          <h3>Datos generales</h3>
-          <input type="text" name="title" placeholder="title">
-          <input type="number" name="price" placeholder="price">
-          <input type="text" name="location" placeholder="location">
-          <input type="text" name="thumbnail" placeholder="thumbnail-miniatura">
-          <hr>
-          <h3>Datos de bienvenida</h3>
-          <input type="text" name="welcomeThumbnail" placeholder="welcomeThumbnail">
-          <input type="text" name="welcomeTitle" placeholder="welcomeTitle">
-          <input type="text" name="welcomeContent" placeholder="welcomeContent">
-          <hr>
-          <h3>Datos de beneficios</h3>
-          <p>Beneficio 1</p>
-          <input type="text" name="benefitThumbnail1" placeholder="benefitThumbnail1">
-          <input type="text" name="benefitTitle1" placeholder="benefitTitle1">
-          <input type="text" name="benefitContent1" placeholder="benefitContent1">
-  
-          <p>Beneficio 2</p>
-          <input type="text" name="benefitThumbnail2" placeholder="benefitThumbnail2">
-          <input type="text" name="benefitTitle2" placeholder="benefitTitle2">
-          <input type="text" name="benefitContent2" placeholder="benefitContent2">
-  
-          <p>Beneficio 3</p>
-          <input type="text" name="benefitThumbnail3" placeholder="benefitThumbnail3">
-          <input type="text" name="benefitTitle3" placeholder="benefitTitle3">
-          <input type="text" name="benefitContent3" placeholder="benefitContent3">
-  
-          <hr>
-          <h3>Detalles</h3>
-          <input type="text" name="detailThumbnail" placeholder="detailThumbnail">
-  
-          <p>Caracterìstica 1</p>
-          <input type="text" name="detailTitle1" placeholder="detailTitle1">
-          <input type="text" name="detailBenefit1" placeholder="detailBenefit1">
-  
-          <p>Caracterìstica 2</p>
-          <input type="text" name="detailTitle2" placeholder="detailTitle2">
-          <input type="text" name="detailBenefit2" placeholder="detailBenefit2">
-  
-          <p>Caracterìstica 3</p>
-          <input type="text" name="detailTitle3" placeholder="detailTitle3">
-          <input type="text" name="detailBenefit3" placeholder="detailBenefit3">
-  
-          <p>Caracterìstica 4</p>
-          <input type="text" name="detailTitle4" placeholder="detailTitle4">
-          <input type="text" name="detailBenefit4" placeholder="detailBenefit4">
-  
-          <hr>
-          <input type="submit">
-        </form>
-      </div>
+    <div class="formulario">
+      <h1>FORMULARIO DE INMUEBLES</h1>
+      <form action="/createProduct" method="POST">
+        <hr />
+        <h3>Datos generales</h3>
+        <input type="text" name="title" placeholder="title" />
+        <input type="number" name="price" placeholder="price" />
+        <input type="text" name="location" placeholder="location" />
+        <input type="text" name="thumbnail" placeholder="thumbnail-miniatura" />
+        <hr />
+        <h3>Datos de bienvenida</h3>
+        <input
+          type="text"
+          name="welcomeThumbnail"
+          placeholder="welcomeThumbnail"
+        />
+        <input type="text" name="welcomeTitle" placeholder="welcomeTitle" />
+        <input type="text" name="welcomeContent" placeholder="welcomeContent" />
+        <hr />
+        <h3>Datos de beneficios</h3>
+        <p>Beneficio 1</p>
+        <input
+          type="text"
+          name="benefitThumbnail1"
+          placeholder="benefitThumbnail1"
+        />
+        <input type="text" name="benefitTitle1" placeholder="benefitTitle1" />
+        <input
+          type="text"
+          name="benefitContent1"
+          placeholder="benefitContent1"
+        />
 
+        <p>Beneficio 2</p>
+        <input
+          type="text"
+          name="benefitThumbnail2"
+          placeholder="benefitThumbnail2"
+        />
+        <input type="text" name="benefitTitle2" placeholder="benefitTitle2" />
+        <input
+          type="text"
+          name="benefitContent2"
+          placeholder="benefitContent2"
+        />
+
+        <p>Beneficio 3</p>
+        <input
+          type="text"
+          name="benefitThumbnail3"
+          placeholder="benefitThumbnail3"
+        />
+        <input type="text" name="benefitTitle3" placeholder="benefitTitle3" />
+        <input
+          type="text"
+          name="benefitContent3"
+          placeholder="benefitContent3"
+        />
+
+        <hr />
+        <h3>Detalles</h3>
+        <input
+          type="text"
+          name="detailThumbnail"
+          placeholder="detailThumbnail"
+        />
+
+        <p>Caracterìstica 1</p>
+        <input type="text" name="detailTitle1" placeholder="detailTitle1" />
+        <input type="text" name="detailBenefit1" placeholder="detailBenefit1" />
+
+        <p>Caracterìstica 2</p>
+        <input type="text" name="detailTitle2" placeholder="detailTitle2" />
+        <input type="text" name="detailBenefit2" placeholder="detailBenefit2" />
+
+        <p>Caracterìstica 3</p>
+        <input type="text" name="detailTitle3" placeholder="detailTitle3" />
+        <input type="text" name="detailBenefit3" placeholder="detailBenefit3" />
+
+        <p>Caracterìstica 4</p>
+        <input type="text" name="detailTitle4" placeholder="detailTitle4" />
+        <input type="text" name="detailBenefit4" placeholder="detailBenefit4" />
+
+        <hr />
+        <input type="submit" />
+      </form>
+    </div>
+    <footer class="footer p-1 mt-auto footerIndex">
+      <div class="footerRedesSociales">
+        <a href="/"><img
+            src="../../imgs/logo.png"
+            alt="logo"
+            width="120"
+            height="80"
+            class="d-inline-block align-text-center"
+          /></a>
+        <a href="https://www.facebook.com/forbesinmobiliaria" target="blank_">
+          <img
+            src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor&colored=false"
+            alt="facebook logo"
+          />
+        </a>
+        <a href="https://www.instagram.com/forbesinmobiliaria/" target="blank_">
+          <img
+            src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor&colored=false"
+            alt="instagram logo"
+          />
+        </a>
+        <a href="https://www.tiktok.com/@forbesinmobiliaria" target="blank_">
+          <img
+            src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor&colored=false"
+            alt="tiktok logo"
+          />
+        </a>
+        <a
+          href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes%2C%20quisiera%20conocer%20más%20información%20al%20respecto.%20"
+          target="blank_"
+          class="wspLink"
+        >
+        <img src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor&colored=false" alt="whatsapp logo">
+        </a>
+      </div>
+      <p class="seguir">
+        Síguenos en nuestras redes sociales!
+      </p>
+      <p class="text-center text-muted">Sitio web</p>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

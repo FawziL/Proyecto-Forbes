@@ -3,6 +3,7 @@ const routes = Router()
 const path = require('path')
 const auth = require("../middlewares/isAuth")
 const {createProduct, getByLocation, getByPrice, renderProducts, renderProductById, getByName, deleteById} = require("../controllers/houseController.js")
+const {getAll, sellHouse} = require("../controllers/sellHouseController.js")
 const {formContact} = require("../controllers/mailerController.js")
 const routerUser = require("./routerUser.js")
 
@@ -10,7 +11,13 @@ routes.use(routerUser);
 
 routes.get('/ventas', renderProducts)
 
+routes.post('/createProduct', createProduct)
+
 routes.get('/micuenta', auth, getByName)
+
+routes.get('/clientes', auth, getAll)
+
+routes.post('/sellHouse', sellHouse)
 
 routes.get('/ventas/price/:price', getByPrice)
 
@@ -33,10 +40,8 @@ routes.get('/aboutUs', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/pages/aboutUs.html"))
 })
 
-routes.get('/alquiler', (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/pages/inmuebles.html"))
+routes.get('/vender', (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/pages/vender.html"))
 })
-
-routes.post('/createProduct', createProduct)
 
 module.exports = routes

@@ -119,3 +119,28 @@ button{
     color: white;
     border: none;
 }
+.created{
+    background-color:  #f4f1e9;
+    padding: 40px;
+    text-align: center;
+}
+.sectionForm{
+    background-color: white;
+    border-radius: 15px;
+    border-style: solid;
+    width: 600px;
+    margin: 15px;
+}
+
+.sectionForm p, h5{
+    font-size: 20px;
+    width: 300px;
+    padding-top: 10px;
+}
+.productSectionSell{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #454141;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+}

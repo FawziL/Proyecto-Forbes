@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='../css/ById.css' rel='stylesheet' />
+</head>
+<body>
+  {{> navbarUser }}
+
+    <div class="products">
+      <div id="productos">
+        <div class="productosprueba2">
+          <h2>Nuevas propiedades:</h2>
+        <div class="productosprueba">
+          {{#each products}} 
+            <div class='productSectionSell' style='width: 18rem;'>
+              <div class= "productInfo">
+                <p class='card-text'>Agente: {{agent}}</p>
+                <p class='card-text'>Nombre y Apellido: {{name}}</p>
+                <p class='card-text'>Telefóno: {{phone}}</p>
+                <p class='card-text'>Email: {{email}}</p>
+                <p class='card-text'>Ubicación: {{location}}</p>
+              </div>
+            </div> 
+          {{/each}}
+        </div>
+      </div>
+      </div>
+</div>
+
+</div>
+    {{> footer }}
+</body>
+</html>

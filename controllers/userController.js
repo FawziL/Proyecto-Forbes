@@ -4,18 +4,18 @@ const login = async (req, res) => {
   if (req.isAuthenticated()) {
     res.redirect("/micuenta");
   } else {
-    res.sendFile(path.join(__dirname, ".././public/login.html"));
+    res.sendFile(path.join(__dirname, "../public/pages/login.html"));
   }
 };
 const failedLogin = async (req, res) => {
-  res.sendFile(path.join(__dirname, ".././public/faillogin.html"));
+  res.sendFile(path.join(__dirname, "../public/pages/faillogin.html"));
 };
 
 const signup = async (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/register.html"));
+  res.sendFile(path.join(__dirname, "../public/pages/register.html"));
 };
 const failedSignup = async (req, res) => {
-  res.sendFile(path.join(__dirname, "../public/failsignup.html"));
+  res.sendFile(path.join(__dirname, "../public/pages/failsignup.html"));
 };
 const logout = async (req, res, next) => {
   let user = req.user.username;

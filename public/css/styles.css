@@ -21,7 +21,7 @@ a {
   font-family: "Times New Roman", Times, serif;
 }
 
-img {
+nav img {
   margin-left: 80px;
 }
 h2 {
@@ -67,6 +67,19 @@ nav {
 .footerIndex {
   opacity: 0.8;
   color: transparent;
+}
+.seguir{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "neogrey";
+}
+.footerRedesSociales{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
 }
 
 /* --------------------- Productos, secciòn ventas --------------------- */
@@ -230,25 +243,20 @@ nav {
   color: #2cce50;
 }
 .imagenOferta {
-  margin-left: 300px;
   width: 350px;
-  height: 350px;
+  height: 320px;
   border-radius: 15px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .textOferta {
   font-size: 18px;
-  margin-left: 80px;
-  margin-right: 300px;
+  width: 350px;
   margin-top: 20px;
   text-align: justify;
 }
 .padding {
   padding: 30px;
-}
-.flex {
-  display: flex;
-  justify-content: space-between;
 }
 
 /*  ---------------------   Sección Back  ---------------------  */
@@ -402,33 +410,46 @@ div h2 {
 }
 
 /*  ---------------------   Sección personas, AboutUs  ---------------------  */
-
-.personal {
+.areaPersonal{
   background-color: black;
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 40px;
 }
+.personal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .contenedor {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  background-color: white;
+  color: #000000;
   margin: 20px;
   border-radius: 5px;
+  width: 310px;
 }
 .centrado {
-  border-radius: 15px;
-  color: rgb(195, 59, 59);
+  color: rgb(0, 0, 0);
+  width: 160px;
+  padding: 5px;
+}
+.centrado p{
+  margin: 0px;
 }
 .personalImg {
   border-radius: 5px;
   height: 200px;
   width: 150px;
-  margin: 20px;
 }
 
 .WIA {
+  width: 100%;
+}
+.WIA div{
+  width: 1000px;
   padding: 50px;
-  text-align: center;
+  text-align: justify;
 }
 .WIA h2 {
   background-color: white;
@@ -448,14 +469,52 @@ div h2 {
   margin: 0 auto;
   padding: 20px;
 }
+.formularioEspacio{
+  width: 100%;
+  display: flex;
+  justify-content: center ;
+}
 .formularioLogin {
   background-color: #969897;
   text-align: center;
   padding: 20px;
-  margin: 60px;
+  margin: 40px;
   border-radius: 15px;
   border-style: solid;
+  width: 600px;
 }
-.formularioLogin img{
-margin: 0px;
+
+.formularioVender {
+  background-color: #969897;
+  padding: 20px;
+  width: 700px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 25px;
+  border-style: solid;
+}
+.formularioVender h2{
+  background-color: #969897;
+}
+.formularioVender p{
+  font-size: 20px;
+  padding-top: 10px;
+  width: 200px;
+}
+
+.displayFlexCenter {
+  display: flex;
+  justify-content: center;
+}
+.displayFlex {
+  display: flex;
+}
+.buttonVender{
+  background-color: #136c2b;
+  color: white;
+  margin-left: 320px;
+  width: 100px;
+}
+.textAlign{
+  text-align: center;
 }
