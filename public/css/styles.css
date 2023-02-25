@@ -29,6 +29,9 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
+.navbar-dark .navbar-toggler {
+  margin-right: 30px;
+}
 
 /* --------------------- Welcome, header, navBar --------------------- */
 
@@ -251,9 +254,13 @@ nav {
 }
 .textOferta {
   font-size: 18px;
-  width: 350px;
+  width: 320px;
   margin-top: 20px;
+  margin-left: 30px;
   text-align: justify;
+}
+.textOferta p{
+  margin-bottom: 0px;
 }
 .padding {
   padding: 30px;
