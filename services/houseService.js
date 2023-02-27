@@ -68,8 +68,13 @@ try {
 }
 } 
 
-getByPrice = async(price) => {
+getByPriceMenor = async(price) => {
   const doc = await this.collection.find({price:{$lte:price}});
+  return doc
+}
+
+getByPriceMayor = async(price) => {
+  const doc = await this.collection.find({price:{$gte:price}});
   return doc
 }
 

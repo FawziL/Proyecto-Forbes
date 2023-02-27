@@ -69,9 +69,18 @@ const getByLocation = async (req, res) => {
     console.log(err);
   }
 };
-const getByPrice = async (req, res) => {
+const getByPriceMenor = async (req, res) => {
   try {
-    const products = await houseService.getByPrice(req.params.price);
+    const products = await houseService.getByPriceMenor(req.params.price);
+    res.render("products", { products });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const getByPriceMayor = async (req, res) => {
+  try {
+    const products = await houseService.getByPriceMayor(req.params.price);
     res.render("products", { products });
   } catch (err) {
     console.log(err);
@@ -102,7 +111,8 @@ module.exports = {
   createProduct,
   updateProducts,
   deleteById,
-  getByPrice,
+  getByPriceMenor,
+  getByPriceMayor,
   renderProducts,
   getByLocation,
   renderProductById,
