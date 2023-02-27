@@ -6,13 +6,14 @@ class mailerDAO {
 
 formContact = async(name, email, message) => {
   const mailOptions = {
-    from: `${email}`,
-    to: "pg394261@gmail.com",
+    from: "pg394261@gmail.com",
+    to: "xerxeszerofjlr11@gmail.com",
     subject: `Nuevo mensaje de ${name}`,
     html: 
     `
-    <h1>Hola, te escribe:${name}</h1>
-    <p>${message}</p>
+    <h2>Hola, te escribe: ${name}</h2>
+    <h3>Te escribo por: ${message}</h3>
+    <h3>Mis datos de contacto son:</h3>
     <p>${email}</p>
     `,
   };

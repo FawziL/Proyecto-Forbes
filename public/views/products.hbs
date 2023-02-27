@@ -17,12 +17,14 @@
         <div class="productosprueba">
           {{#each products}} 
             <div class='productSection' style='width: 18rem;'>
-              <img src='{{thumbnail}}' class='imgProduct' alt='...' />
-              <div class= "productInfo">
-                <p class='card-text'>Precio: ${{price}}</p>
-                <p class='card-text'>Ubicación: {{location}}</p>
-              </div>
-              <a href="/ventas/{{_id}}"><button  class="buttonPreview">Ver detalles</button></a>
+              <a href="/ventas/{{_id}}">
+                <img src='{{thumbnail}}' class='imgProduct' alt='...' />
+                <div class= "productInfo">
+                  <p class='card-text'>Precio: ${{price}}</p>
+                  <p class='card-text'>Ubicación: {{location}}</p>
+                </div>
+                <a href="/ventas/{{_id}}"><button  class="buttonPreview">Ver detalles</button></a>
+              </a>
             </div> 
           {{/each}}
         </div>

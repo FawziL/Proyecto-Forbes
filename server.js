@@ -14,7 +14,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://Fawzi:Fawzi123@cluster0.5qcwzcb.mongodb.net/?retryWrites=true&w=majority", () => {
+mongoose.connect("mongodb+srv://Forbes:HgBs21TwhWEug78F@forbes.1jc0amk.mongodb.net/Forbes?retryWrites=true&w=majority", () => {
     console.log("Conectada la base de datos");
   });
 
@@ -26,7 +26,7 @@ mongoose.connect("mongodb+srv://Fawzi:Fawzi123@cluster0.5qcwzcb.mongodb.net/?ret
   app.use(
     session({
       store: MongoStore.create({
-        mongoUrl: "mongodb+srv://Fawzi:Fawzi123@cluster0.5qcwzcb.mongodb.net/?retryWrites=true&w=majority",
+        mongoUrl: "mongodb+srv://Forbes:HgBs21TwhWEug78F@forbes.1jc0amk.mongodb.net/Forbes?retryWrites=true&w=majority",
       }),
       secret: "forbes",
       resave: false,

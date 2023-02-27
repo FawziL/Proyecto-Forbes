@@ -32,6 +32,16 @@ h2 {
 .navbar-dark .navbar-toggler {
   margin-right: 30px;
 }
+.displayFlexCenter {
+  display: flex;
+  justify-content: center;
+}
+.displayFlex {
+  display: flex;
+}
+.textAlign{
+  text-align: center;
+}
 
 /* --------------------- Welcome, header, navBar --------------------- */
 
@@ -124,6 +134,9 @@ nav {
   margin: 20px 10px 20px 10px;
   max-width: 268px;
   text-align: center;
+}
+.productSection a{
+  color: #000000;
 }
 .productInfo {
   text-align: center;
@@ -285,10 +298,6 @@ nav {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.footerDown {
-  position: absolute;
-  bottom: 0;
-}
 
 /*  ---------------------   Sección contacto Ws y Mail  ---------------------  */
 
@@ -399,7 +408,6 @@ input {
 
 .opiniones {
   padding: 60px 300px 60px 300px;
-  border-style: solid;
   text-align: center;
 }
 div h2 {
@@ -407,12 +415,12 @@ div h2 {
   text-align: center;
 }
 .carruselT {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 .carruselP {
   color: black;
-  font-size: 28px;
+  font-size: 22px;
   text-align: justify;
 }
 
@@ -430,14 +438,15 @@ div h2 {
 }
 .contenedor {
   display: flex;
-  background-color: white;
-  color: #000000;
+  background-color: black;
+  color: white;
   margin: 20px;
   border-radius: 5px;
-  width: 310px;
+  width: 280px;
+
 }
 .centrado {
-  color: rgb(0, 0, 0);
+  color: white;
   width: 160px;
   padding: 5px;
 }
@@ -470,7 +479,7 @@ div h2 {
 
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
 .formulario {
-  background-color: #969897;
+  background-color: #c9cac9;
   text-align: center;
   width: 550px;
   margin: 0 auto;
@@ -482,7 +491,7 @@ div h2 {
   justify-content: center ;
 }
 .formularioLogin {
-  background-color: #969897;
+  background-color: #c9cac9;
   text-align: center;
   padding: 20px;
   margin: 40px;
@@ -490,38 +499,47 @@ div h2 {
   border-style: solid;
   width: 600px;
 }
-
+.color-rosa{
+  background-color: #f4f1e9;
+}
 .formularioVender {
-  background-color: #969897;
-  padding: 20px;
-  width: 700px;
+  background-color: #c9cac9;
+  width: 650px;
   margin: 20px;
   text-align: center;
   border-radius: 25px;
   border-style: solid;
 }
 .formularioVender h2{
-  background-color: #969897;
+  background-color: #c9cac9;
 }
 .formularioVender p{
   font-size: 20px;
   padding-top: 10px;
   width: 200px;
 }
-
-.displayFlexCenter {
-  display: flex;
-  justify-content: center;
-}
-.displayFlex {
-  display: flex;
-}
 .buttonVender{
   background-color: #136c2b;
   color: white;
   margin-left: 320px;
   width: 100px;
+  margin-bottom: 20px;
 }
-.textAlign{
+
+
+/*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
+
+.userAccount{
+  background-color: #c9cac9;
   text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  width: 400px;
+}
+.imgUserAccount{
+  border-radius: 5px;
+  height: 200px;
+  width: 110px;
 }
