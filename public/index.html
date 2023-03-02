@@ -60,7 +60,6 @@
       </div>
     </header>
 
-
     <div class="color-rosa">
     <section class="scroll-animation porcentajes">
       <div class="text">
@@ -157,7 +156,6 @@
     </section>
     </div>
 
-
     <section class="oferta">
       <div class="padding">
         <h2>OFERTA DEL MES</h2>
@@ -200,6 +198,18 @@
     <div>
       <h2 class="contactForbes">Contactar a Forbes</h2>
       <div class="flexContact">
+        <form action="/" method="POST" id="formMessage">
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" placeholder="Ingrese su nombre">
+      
+          <label for="email">Correo electrónico:</label>
+          <input type="text" name="email" placeholder="Ingrese su correo electrónico">
+      
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" placeholder="Ingrese su mensaje"></textarea>
+      
+          <button type="submit">Enviar</button>
+        </form>
         <div class="ws">
           <p class="wsText">
             Atenderle es prioridad para nosotros, comuníquese a nuestro WhatsApp
@@ -224,37 +234,12 @@
             </svg>
           </a>
         </div>
-        <div class="formEmail">
-          <form action="/" method="POST" id="formMessage">
-            <input
-              class="formularioIndex"
-              type="text"
-              placeholder="Nombre"
-              name="name"
-            />
-            <br />
-            <input
-              class="formularioIndex"
-              type="email"
-              placeholder="Email"
-              name="email"
-            />
-            <br />
-            <textarea
-              class="Hola"
-              placeholder="Mensaje"
-              name="message"
-            ></textarea>
-            <br />
-            <input class="button" type="submit" id="buttonForm" />
-          </form>
-        </div>
       </div>
       <div class="confirmation-message" style="display: none">¡Gracias por enviar tu formulario!</div>
     </div>
 
     <section class="contact">
-      <div class="contacto">
+      <div class="contacto scroll-animation">
         <div class="contactos">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +312,7 @@
 
       <div>
         <h3>Conctactos</h3>
-        <div class="contacto">
+        <div class="contacto scroll-animation">
           <div class="contactos">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -380,7 +365,7 @@
       </div>
     </section>
 
-    <footer class="footer p-1 mt-auto footerIndex">
+    <footer>
       <div class="footerRedesSociales">
         <a href="/"
           ><img
@@ -388,40 +373,45 @@
             alt="logo"
             width="120"
             height="80"
-            class="d-inline-block align-text-center"
+            class=""
         /></a>
-        <a href="https://www.facebook.com/forbesinmobiliaria" target="blank_">
-          <img
-            src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor&colored=false"
-            alt="facebook logo"
-          />
+        <a href="https://www.facebook.com/forbesinmobiliaria">
+          <i class="fab">
+            <img
+              src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor"
+              alt="facebook logo"
+            />
+          </i>
         </a>
-        <a href="https://www.instagram.com/forbesinmobiliaria/" target="blank_">
-          <img
-            src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor&colored=false"
+        <a href="https://www.instagram.com/forbesinmobiliaria/">
+          <i class="fab">
+            <img
+            src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor"
             alt="instagram logo"
           />
+          </i>
         </a>
-        <a href="https://www.tiktok.com/@forbesinmobiliaria" target="blank_">
-          <img
-            src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor&colored=false"
-            alt="tiktok logo"
-          />
+        <a href="https://www.tiktok.com/@forbesinmobiliaria">
+          <i class="fab">
+            <img
+              src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor"
+              alt="tiktok logo"
+            />
+          </i>
         </a>
-        <a
-          href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes%2C%20quisiera%20conocer%20más%20información%20al%20respecto.%20"
-          target="blank_"
-          class="wspLink"
-        >
-          <img
-            src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor&colored=false"
-            alt="whatsapp logo"
-          />
+        <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes">
+          <i class="fab">
+            <img
+              src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor"
+              alt="whatsapp logo"
+            />
+          </i>
         </a>
       </div>
       <p class="seguir">Síguenos en nuestras redes sociales!</p>
-      <p class="text-center text-muted">Sitio web</p>
+      <p class="textFooter">Sitio web</p>
     </footer>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

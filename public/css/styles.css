@@ -20,10 +20,6 @@ a {
 * {
   font-family: "Times New Roman", Times, serif;
 }
-
-nav img {
-  margin-left: 80px;
-}
 h2 {
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -42,6 +38,10 @@ h2 {
 .textAlign{
   text-align: center;
 }
+input, textarea {
+  padding: 10px;
+  border-radius: 15px;
+}
 
 /* --------------------- Welcome, header, navBar --------------------- */
 
@@ -51,6 +51,12 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.welcomeText {
+  padding: 150px;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
 .welcomeButton {
   background-color: #ffad40;
   padding: 10px;
@@ -59,25 +65,21 @@ h2 {
   width: 220px;
   font-size: 22px;
 }
-header {
-  min-height: 640px;
+.welcomeButton:hover {
+  background-color: #ca852b;
 }
-.welcomeText {
-  padding: 150px;
-  font-size: 24px;
-  text-align: center;
-  color: white;
+header {
+  height: 96vh;
+}
+nav img {
+  margin-left: 80px;
 }
 nav {
   color: black;
   font-size: 20px;
 }
-.navbar,
-.footer {
+nav, footer{
   background-color: #146128;
-}
-.navIndex,
-.footerIndex {
   opacity: 0.8;
   color: transparent;
 }
@@ -94,7 +96,11 @@ nav {
   align-items: center;
   padding: 5px;
 }
-
+.textFooter{
+  text-align: center;
+  margin: 0px;
+  color: #000000;
+}
 /* --------------------- Productos, secciòn ventas --------------------- */
 
 #productos {
@@ -122,6 +128,9 @@ nav {
   background-color: #ffad40;
   border-color: white;
   color: white;
+}
+.buttonPreview:hover {
+  background-color: #ca852b;
 }
 .products {
   background-color: #f4f1e9;
@@ -176,13 +185,11 @@ nav {
 }
 .categorias a {
   color: white;
+  text-decoration: none;
+  padding-top: 15px;
 }
 .categorias h3 {
   color: white;
-}
-.categorias a {
-  text-decoration: none;
-  padding-top: 15px;
 }
 .togleCategory {
   background-image: linear-gradient(
@@ -302,7 +309,7 @@ nav {
 
 .flexContact {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: black;
 }
 .contactForbes {
@@ -314,65 +321,51 @@ nav {
   font-size: 36px;
 }
 .ws {
-  padding-top: 30px;
-  padding-bottom: 40px;
-  margin-left: 40px;
+  padding-top: 80px;
   text-align: center;
-  width: 500px;
+  width: 450px;
 }
 .wsText {
   font-size: 24px;
   color: white;
-  padding: 10px;
+  padding-bottom: 25px;
 }
-textarea {
-  padding: 16px;
-  margin: 5px;
-  border-radius: 15px;
-  width: 300px;
-}
-.formularioIndex {
-  width: 300px;
-}
-input {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 15px;
-}
-.button {
-  background-color: #136c2b;
-  color: white;
-  margin-left: 150px;
-  width: 150px;
-}
-.formEmail {
-  color: white;
+#formMessage{
+  margin: 20px 20px 20px 80px;
+  width: 380px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #121413;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  border-color: #4caf50;
   border-style: solid;
-  border-radius: 15px;
-  padding: 10px;
-  border-color: #136c2b;
-  margin: 20px 100px 20px 0px;
 }
-.wsForm {
-  font-size: 24px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  margin-left: 40px;
-  text-align: center;
-  color: white;
-  border-color: #136c2b;
-  width: 500px;
+#formMessage label {
+	display: block;
+	margin-bottom: 10px;
 }
-.formEmail form {
-  margin: 0px;
+#formMessage input, textarea {
+  width: 320px; 
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
 }
-#texto {
-  background-color: black;
-  color: #0edc45;
-  margin: 0px;
-  padding: 0px;
-  border-radius: 0px;
-  font-size: 36px;
+#formMessage button {
+	background-color: #4caf50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+#formMessage button:hover {
+	background-color: #155724;
 }
 
 /*  ---------------------   Sección contacto  ---------------------  */
@@ -442,7 +435,6 @@ div h2 {
   margin: 20px;
   border-radius: 5px;
   width: 280px;
-
 }
 .centrado {
   color: white;
@@ -457,7 +449,6 @@ div h2 {
   height: 200px;
   width: 110px;
 }
-
 .WIA {
   width: 100%;
 }
@@ -545,6 +536,9 @@ form h2{
   font-size: 1rem;
   margin-top: 1rem;
 }
+.form-container button:hover {
+	background-color: #155724;
+}
 .form-container label {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
@@ -579,11 +573,6 @@ form h2{
   width: 110px;
 }
 
-
-
-
-
-
 .scroll-animation {
   opacity: 0; /* El div está inicialmente oculto */
   transform: translateY(100px); /* Mueve el div hacia abajo */
@@ -594,3 +583,13 @@ form h2{
   opacity: 1; /* El div está completamente visible */
   transform: translateY(0); /* El div se mueve a su posición final */
 }
+
+
+.footerRedesSociales a:hover{
+  transform: scale(1.2);
+}
+
+a:hover{
+  transform: scale(1.2);
+}
+
