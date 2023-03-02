@@ -1,7 +1,17 @@
-const boton = document.getElementById("buttonForm")
-boton.addEventListener("click", warn)
-const texto = document.getElementById("texto")
+const form = document.querySelector('#formMessage');
+const confirmationMessage = document.querySelector('.confirmation-message');
+form.addEventListener('submit', function() {
+    confirmationMessage.style.display = 'block';
+});
 
-function warn(){
-    texto.innerText = "El mensaje ha sido enviado."
-}
+document.addEventListener('scroll', function() {
+    let divs = document.querySelectorAll('.scroll-animation');
+    divs.forEach(function(div) {
+      let posicionDiv = div.getBoundingClientRect().top;
+      let alturaVentana = window.innerHeight;
+      if (posicionDiv < alturaVentana) {
+        div.classList.add('mostrar');
+      }
+    });
+  });
+  

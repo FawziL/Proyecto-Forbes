@@ -64,26 +64,44 @@
       </ul>
     </nav>
 
-    <div class="formularioEspacio">
-      <div class="formularioLogin">
-        <h1>Registro de Usuario</h1>
-        <form id="registerForm" action="/signup" method="post">
-          <h4>Ingrese sus datos:</h4>
-          <input type="text" name="username" placeholder="Username" />
-          <input type="password" name="password" placeholder="Password" />
-          <hr />
-          <input type="text" name="name" placeholder="Nombre" />
-          <input type="text" name="description" placeholder="Descripción" />
-          <input type="number" name="age" placeholder="Edad" />
-          <input id="phone" type="tel" name="phone" placeholder="Telf" />
-          <input type="text" name="avatar" placeholder="Avatar" />
-          <hr />
-          <input type="submit" class="boton" value="Registrarse" />
-        </form>
-        <br />
-        <a href="/login"><button class="boton">Login</button></a>
+      <div class="form-container color-rosa">
+        <div>
+          <form action="/signup" method="post">
+            <h2>Ingrese sus credenciales:</h2>
+            <hr>
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" name="username" placeholder="Usuario">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" name="password" placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+              <label for="name">Nombre y Apellido:</label>
+              <input type="text" name="name" placeholder="Nombre y Apellido">
+            </div>
+            <div class="form-group">
+              <label for="description">Descripción:</label>
+              <input type="text" name="description" placeholder="Descripción">
+            </div>
+            <div class="form-group">
+              <label for="age">Edad:</label>
+              <input type="text" name="age" placeholder="Edad">
+            </div>
+            <div class="form-group">
+              <label for="phone">Número Telefónico:</label>
+              <input type="text" name="phone" placeholder="Número Telefónico">
+            </div>
+            <div class="form-group">
+              <label for="avatar">Avatar:</label>
+              <input type="text" name="avatar" placeholder="Avatar">
+            </div>
+            <button type="submit">Registrarse</button>
+          </form>
+          <a href="/login"><button class="boton">Login</button></a>
+        </div>
       </div>
-    </div>
 
     <footer class="footer p-1 mt-auto footerIndex">
       <div class="footerRedesSociales">

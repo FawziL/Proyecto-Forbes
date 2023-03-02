@@ -52,37 +52,35 @@
       </ul>
     </nav>
 
-    <div class="displayFlexCenter color-rosa">
-      <div class="formularioVender">
-        <h2>¿ Deseas tener tu inmbueble en nuestros página?</h2>
+      <div class="form-container color-rosa">
         <form action="/sellHouse" method="POST">
-          <hr />
-          <h3>Datos generales</h3>
-          <div class="displayFlexCenter">
-            <p>Nombre y Apellido:</p>
-            <input type="text" name="name" placeholder="Nombre y Apellido" />
+          <h2>¿ Deseas tener tu inmbueble en nuestros página?</h2>
+          <hr>
+          <div class="form-group">
+            <label for="name">Nombre y Apellido:</label>
+            <input type="text" name="name" placeholder="Introduce tu nombre">
           </div>
-          <div class="displayFlexCenter">
-            <p>Número telefónico:</p>
-            <input type="number" name="phone" placeholder="Número telefónico" />
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" placeholder="Introduce tu email">
           </div>
-          <div class="displayFlexCenter">
-            <p>Correo electrónico:</p>
-            <input type="text" name="email" placeholder="Email" />
+          <div class="form-group">
+            <label for="phone">Número telefónico:</label>
+            <input type="number" name="phone" placeholder="Introduce tu contraseña">
           </div>
-          <div class="displayFlexCenter">
-            <p>Ubicación:</p>
-            <input type="text" name="location" placeholder="Ubicación" />
+          <div class="form-group">
+            <label for="location">Ubicación:</label>
+            <input type="text" name="location" placeholder="Ubicación">
           </div>
-          <div class="displayFlexCenter">
-            <p>Nombre del agente:</p>
-            <input type="text" name="agent" placeholder="Nombre del agente" />
+          <div class="form-group">
+            <label for="agent">Nombre del agente:</label>
+            <input type="text" name="agent" placeholder="Nombre del agente">
           </div>
-          <hr />
-          <input type="submit" class="buttonVender" />
+          <button type="submit">Enviar</button>
         </form>
       </div>
-    </div>
+
+
 
     <footer class="footer p-1 mt-auto footerIndex">
       <div class="footerRedesSociales">

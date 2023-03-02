@@ -60,7 +60,9 @@
       </div>
     </header>
 
-    <section class="porcentajes">
+
+    <div class="color-rosa">
+    <section class="scroll-animation porcentajes">
       <div class="text">
         <p>
           En Forbes Soluciones Inmobiliarias brindamos servicio, experiencia y
@@ -153,28 +155,30 @@
         </div>
       </div>
     </section>
+    </div>
+
 
     <section class="oferta">
       <div class="padding">
         <h2>OFERTA DEL MES</h2>
-        <h4>Inmbueble a precio de oportunidad.</h4>
+        <h4>Inmueble a precio de oportunidad.</h4>
         <div class="displayFlexCenter">
           <img src="./imgs/IMG_OFERTA.jpg" alt="" class="imagenOferta" />
           <div class="textOferta">
-            <p>Superficie Total 963 m2</p>
-            <p>Superficie Construida 487 m2</p>
-            <p>2 Niveles</p>
-            <p>4 Habitaciones</p>
-            <p>5 Baños</p>
-            <p>2 Puestos de Estacionamiento</p>
+            <p>Superficie Total 963 m2.</p>
+            <p>Superficie Construida 487 m2.</p>
+            <p>2 Niveles.</p>
+            <p>4 Habitaciones.</p>
+            <p>5 Baños.</p>
+            <p>2 Puestos de Estacionamiento.</p>
             <p>
               Cocina concepto abierto, Oficina, comedor, sala y área de
-              Lavandería
+              Lavandería.
             </p>
-            <p>Jardín con áreas verdes y parrillera</p>
-            <p>Urbanización cerrada con Vigilancia</p>
-            <p>Pozo de agua propio 10.000lts</p>
-            <p>Precio $240.000</p>
+            <p>Jardín con áreas verdes y parrillera.</p>
+            <p>Urbanización cerrada con Vigilancia.</p>
+            <p>Pozo de agua propio.</p>
+            <p>Precio: 190.000$</p>
           </div>
         </div>
       </div>
@@ -182,12 +186,14 @@
 
     <section class="back">
       <div class="center">
-        <h2>Inmuebles comerciales e industriales</h2>
-        <p class="textBack">
-          Galpones, Locales, Fondos de Comercio, Pisos industriales, Terrenos a
-          menos de un click.
-        </p>
-        <a href="ventas"><button class="welcomeButton">Buscar</button></a>
+        <div class="scroll-animation">
+          <h2>Inmuebles comerciales e industriales</h2>
+          <p class="textBack">
+            Galpones, Locales, Fondos de Comercio, Pisos industriales, Terrenos a
+            menos de un click.
+          </p>
+          <a href="ventas"><button class="welcomeButton">Buscar</button></a>
+        </div>
       </div>
     </section>
 
@@ -219,7 +225,7 @@
           </a>
         </div>
         <div class="formEmail">
-          <form action="/" method="POST">
+          <form action="/" method="POST" id="formMessage">
             <input
               class="formularioIndex"
               type="text"
@@ -244,7 +250,7 @@
           </form>
         </div>
       </div>
-      <h2 id="texto"></h2>
+      <div class="confirmation-message" style="display: none">¡Gracias por enviar tu formulario!</div>
     </div>
 
     <section class="contact">

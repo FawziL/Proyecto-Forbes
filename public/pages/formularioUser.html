@@ -15,8 +15,7 @@
     <title>Forbes</title>
   </head>
   <body>
-    <div>
-      <nav class="navbar navbar-dark navbar-expand-lg navIndex">
+    <nav class="navbar navbar-dark navbar-expand-lg navIndex">
         <a class="navbar-brand" href="/">
           <img
             src="./imgs/logo.png"
@@ -63,96 +62,116 @@
             <a href="/logout" class="nav-link">Salir</a>
           </l1>
         </ul>
-      </nav>
-    </div>
+    </nav>
 
-    <div class="formulario">
-      <h1>FORMULARIO DE INMUEBLES</h1>
+    <div class="form-container color-rosa">
       <form action="/createProduct" method="POST">
-        <hr />
-        <h3>Datos generales</h3>
-        <input type="text" name="title" placeholder="title" />
-        <input type="number" name="price" placeholder="price" />
-        <input type="text" name="location" placeholder="location" />
-        <input type="text" name="thumbnail" placeholder="thumbnail-miniatura" />
-        <hr />
-        <h3>Datos de bienvenida</h3>
-        <input
-          type="text"
-          name="welcomeThumbnail"
-          placeholder="welcomeThumbnail"
-        />
-        <input type="text" name="welcomeTitle" placeholder="welcomeTitle" />
-        <input type="text" name="welcomeContent" placeholder="welcomeContent" />
-        <hr />
-        <h3>Datos de beneficios</h3>
-        <p>Beneficio 1</p>
-        <input
-          type="text"
-          name="benefitThumbnail1"
-          placeholder="benefitThumbnail1"
-        />
-        <input type="text" name="benefitTitle1" placeholder="benefitTitle1" />
-        <input
-          type="text"
-          name="benefitContent1"
-          placeholder="benefitContent1"
-        />
+        <h2>FORMULARIO DE INMUEBLES</h2>
+        <hr>
+        <div class="form-group">
+          <h3>Datos generales</h3>
 
-        <p>Beneficio 2</p>
-        <input
-          type="text"
-          name="benefitThumbnail2"
-          placeholder="benefitThumbnail2"
-        />
-        <input type="text" name="benefitTitle2" placeholder="benefitTitle2" />
-        <input
-          type="text"
-          name="benefitContent2"
-          placeholder="benefitContent2"
-        />
+          <label for="title">Titulo:</label>
+          <input type="text" name="title" placeholder="Titulo">
 
-        <p>Beneficio 3</p>
-        <input
-          type="text"
-          name="benefitThumbnail3"
-          placeholder="benefitThumbnail3"
-        />
-        <input type="text" name="benefitTitle3" placeholder="benefitTitle3" />
-        <input
-          type="text"
-          name="benefitContent3"
-          placeholder="benefitContent3"
-        />
+          <label for="price">Precio:</label>
+          <input type="text" name="price" placeholder="Precio del inmbueble">
 
-        <hr />
-        <h3>Detalles</h3>
-        <input
-          type="text"
-          name="detailThumbnail"
-          placeholder="detailThumbnail"
-        />
+          <label for="location">Ubicación:</label>
+          <input type="text" name="location" placeholder="Ubicación del inmbueble">
 
-        <p>Caracterìstica 1</p>
-        <input type="text" name="detailTitle1" placeholder="detailTitle1" />
-        <input type="text" name="detailBenefit1" placeholder="detailBenefit1" />
+          <label for="thumbnail">Miniatura</label>
+          <input type="text" name="thumbnail" placeholder="Imagen pequeña-Miniatura">
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3>Datos de bienvenida</h3>
 
-        <p>Caracterìstica 2</p>
-        <input type="text" name="detailTitle2" placeholder="detailTitle2" />
-        <input type="text" name="detailBenefit2" placeholder="detailBenefit2" />
+          <label for="welcomeThumbnail">Imagen Principal:</label>
+          <input type="text" name="welcomeThumbnail" placeholder="Imagen de bienvenida">
 
-        <p>Caracterìstica 3</p>
-        <input type="text" name="detailTitle3" placeholder="detailTitle3" />
-        <input type="text" name="detailBenefit3" placeholder="detailBenefit3" />
+          <label for="welcomeTitle">Titulo Principal:</label>
+          <input type="text" name="welcomeTitle" placeholder="Titulo de bienvenida">
 
-        <p>Caracterìstica 4</p>
-        <input type="text" name="detailTitle4" placeholder="detailTitle4" />
-        <input type="text" name="detailBenefit4" placeholder="detailBenefit4" />
+          <label for="welcomeContent">Texto Principal:</label>
+          <input type="text" name="welcomeContent" placeholder="Texto de bienvenida">
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3>Datos de beneficios</h3>
 
-        <hr />
-        <input type="submit" />
+          <br>
+          <label for="benefitTitle1">Titulo beneficio 1:</label>
+          <input type="text" name="benefitTitle1" placeholder="Titulo beneficio">
+          
+          <label for="benefitContent1">Contenido beneficio 1:</label>
+          <input type="text" name="benefitContent1" placeholder="Contenido beneficio">
+
+          <label for="benefitThumbnail1">Imagen beneficio 1:</label>
+          <input type="text" name="benefitThumbnail1" placeholder="Imagen beneficio">
+
+          <br>
+          <label for="benefitTitle2">Titulo beneficio 2:</label>
+          <input type="text" name="benefitTitle2" placeholder="Titulo beneficio">
+          
+          <label for="benefitContent2">Contenido beneficio 2:</label>
+          <input type="text" name="benefitContent2" placeholder="Contenido beneficio">
+
+          <label for="benefitThumbnail2">Imagen beneficio 2:</label>
+          <input type="text" name="benefitThumbnail2" placeholder="Imagen beneficio">
+  
+          <br>
+          <label for="benefitTitle3">Titulo beneficio 3:</label>
+          <input type="text" name="benefitTitle3" placeholder="Titulo beneficio">
+          
+          <label for="benefitContent3">Contenido beneficio 3:</label>
+          <input type="text" name="benefitContent3" placeholder="Contenido beneficio">
+
+          <label for="benefitThumbnail3">Imagen beneficio 3:</label>
+          <input type="text" name="benefitThumbnail3" placeholder="Imagen beneficio">
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3>Imagen Características</h3>
+          <label for="detailThumbnail">Imagen de Características:</label>
+          <input type="text" name="detailThumbnail" placeholder="Última imagen">
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3>Características</h3>
+
+          <br>
+          <label for="detailTitle1">Titulo Característica 1:</label>
+          <input type="text" name="detailTitle1" placeholder="Titulo Característica">
+          
+          <label for="detailBenefit1">Texto Característica 1:</label>
+          <input type="text" name="detailBenefit1" placeholder="Texto Característica">
+
+          <br>
+          <label for="detailTitle2">Titulo Característica 2:</label>
+          <input type="text" name="detailTitle2" placeholder="Titulo Característica">
+          
+          <label for="detailBenefit2">Texto Característica 2:</label>
+          <input type="text" name="detailBenefit2" placeholder="Texto Característica">
+
+          <br>
+          <label for="detailTitle3">Titulo Característica 3:</label>
+          <input type="text" name="detailTitle3" placeholder="Titulo Característica">
+          
+          <label for="detailBenefit3">Texto Característica 3:</label>
+          <input type="text" name="detailBenefit3" placeholder="Texto Característica">
+
+          <br>
+          <label for="detailTitle4">Titulo Característica 4:</label>
+          <input type="text" name="detailTitle4" placeholder="Titulo Característica">
+          
+          <label for="detailBenefit4">Texto Característica 4:</label>
+          <input type="text" name="detailBenefit4" placeholder="Texto Característica">
+        </div>
+        <button type="submit">Enviar</button>
       </form>
     </div>
+
     <footer class="footer p-1 mt-auto footerIndex">
       <div class="footerRedesSociales">
         <a href="/"><img

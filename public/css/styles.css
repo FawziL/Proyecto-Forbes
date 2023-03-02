@@ -207,7 +207,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 30px 100px 30px 100px;
-  background-color: #f4f1e9;
 }
 .verde {
   color: #136c2b;
@@ -499,32 +498,68 @@ div h2 {
   border-style: solid;
   width: 600px;
 }
+
+
+/*  ---------------------   Formulario Vender  ---------------------  */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
 .color-rosa{
   background-color: #f4f1e9;
 }
-.formularioVender {
-  background-color: #c9cac9;
-  width: 650px;
-  margin: 20px;
+.form-container form {
+  background-color: #edededbd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: 420px;
+}
+form h2{
+  font-size: 1.5rem;
+  margin: 0px;
   text-align: center;
-  border-radius: 25px;
-  border-style: solid;
+  background-color: #edededbd;
+  padding: 0px;
 }
-.formularioVender h2{
-  background-color: #c9cac9;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
-.formularioVender p{
-  font-size: 20px;
-  padding-top: 10px;
-  width: 200px;
+.form-container input {
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
-.buttonVender{
-  background-color: #136c2b;
+.form-container button {
+  background-color: #4caf50;
   color: white;
-  margin-left: 320px;
-  width: 100px;
-  margin-bottom: 20px;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
+.form-container label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.confirmation-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 1rem;
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 
 
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
@@ -542,4 +577,20 @@ div h2 {
   border-radius: 5px;
   height: 200px;
   width: 110px;
+}
+
+
+
+
+
+
+.scroll-animation {
+  opacity: 0; /* El div está inicialmente oculto */
+  transform: translateY(100px); /* Mueve el div hacia abajo */
+  transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
+}
+
+.scroll-animation.mostrar {
+  opacity: 1; /* El div está completamente visible */
+  transform: translateY(0); /* El div se mueve a su posición final */
 }
