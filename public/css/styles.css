@@ -83,6 +83,11 @@ nav, footer{
   opacity: 0.8;
   color: transparent;
 }
+.logoFooter{
+  padding-top: 5px;
+  width: 120px;
+  height: 80px;
+}
 .seguir{
   text-align: center;
   color: rgb(255, 255, 255);
@@ -182,6 +187,10 @@ nav, footer{
 }
 .buttonCategry {
   margin: 0px;
+  border-style: none;
+}
+.x button:hover{
+  transform: scale(1.2);
 }
 .categorias a {
   color: white;
@@ -585,11 +594,6 @@ form h2{
 }
 
 
-.footerRedesSociales a:hover{
-  transform: scale(1.2);
-}
-
 a:hover{
   transform: scale(1.2);
 }
-
