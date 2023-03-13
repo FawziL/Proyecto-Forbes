@@ -19,7 +19,7 @@ module.exports = function (passport) {
             password: hashPassword(password),
             name: req.body.name,
             description: req.body.description,
-            age: req.body.age,
+            cargo: req.body.cargo,
             phone: req.body.phone,
             avatar: req.body.avatar,
           };

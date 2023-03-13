@@ -21,7 +21,9 @@ const renderProducts = async (req, res) => {
 
 const createProduct = async (req, res) => {
   try {
-    res.json(await houseService.createProduct(req.body, req.user));
+    const product = await houseService.createProduct(req.body, req.user);
+    console.log(product)
+    res.render("houseCreated", { product });
   } catch (err) {
     console.log(err);
   }
@@ -44,6 +46,7 @@ const getByName = async (req, res) => {
     console.log(err);
   }
 };
+
 const updateProducts = async (req, res) => {
   try {
     res.json(await houseService.updateProducts(req.body, req.params.id));
@@ -69,6 +72,7 @@ const getByLocation = async (req, res) => {
     console.log(err);
   }
 };
+
 const getByPriceMenor = async (req, res) => {
   try {
     const products = await houseService.getByPriceMenor(req.params.price);
@@ -89,7 +93,8 @@ const getByPriceMayor = async (req, res) => {
 
 const deleteById = async (req, res) => {
   try {
-    res.json(await houseService.deleteById(req.params._id));
+    await houseService.deleteById(req.params._id);
+    res.redirect('/micuenta')
   } catch (err) {
     console.log(err);
   }

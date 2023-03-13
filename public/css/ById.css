@@ -67,21 +67,25 @@ h3{
 }
 .espacios img{
     width: 700px;
-    height: 800px;
+    height: 90vh;
     border-radius: 15px;
     margin: 30px;
 }
 .izquierda{
     text-align: right;
     width: 30%;
-    margin: 20px;
-    margin-top: 250px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 .derecha{
     text-align: left;
     width: 30%;
-    margin: 20px;
-    margin-top: 250px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 .citas{
     background-color: #1d4934;

@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/ById.css" rel="stylesheet" />
+  </head>
+  <body>
+  {{> navbarUser }}
+    <div class="created">
+      <h1>¡Los datos han sido enviados a nuestro servidor!</h1>
+
+      <div class="displayFlexCenter">
+        <div class="sectionForm">
+          <div class="displayFlex">
+            <p>Miniatura:</p><h5>{{product.thumbnail}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Precio:</p><h5>{{product.price}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Ubicación: </p><h5>{{product.location}}</h5>
+          </div>
+          <hr />
+
+          <h3>Datos de bienvenida</h3>
+
+          <div class="displayFlex">
+            <p>Imagen Principal:</p><h5>{{product.welcomeThumbnail}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Titulo Principal:</p><h5>{{product.welcomeTitle}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Texto Principal: </p><h5>{{product.welcomeContent}}</h5>
+          </div>
+          <hr />
+
+          <h3>Datos de beneficios</h3>
+
+          <div class="displayFlex">
+            <p>Titulo beneficio 1:</p><h5>{{product.benefitTitle1}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Contenido beneficio 1:</p><h5>{{product.benefitThumbnail1}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Imagen beneficio 1:</p><h5>{{product.benefitContent1}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Titulo beneficio 2:</p><h5>{{product.benefitTitle2}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Contenido beneficio 2:</p><h5>{{product.benefitThumbnail2}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Imagen beneficio 2:</p><h5>{{product.benefitContent2}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Titulo beneficio 3:</p><h5>{{product.benefitTitle3}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>AContenido beneficio 3: </p><h5>{{product.benefitThumbnail3}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Imagen beneficio 3:</p><h5>{{product.benefitContent3}}</h5>
+          </div>
+          <hr />
+          
+          <h3>Imagen Características</h3>
+
+          <div class="displayFlex">
+            <p>Imagen de Características: </p><h5>{{product.detailThumbnail}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Titulo Característica 1:</p><h5>{{product.detailTitle1}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Texto Característica 1:</p><h5>{{product.detailBenefit1}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Titulo Característica 2:</p><h5>{{product.detailTitle2}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Texto Característica 2:</p><h5>{{product.detailBenefit2}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Titulo Característica 3:</p><h5>{{product.detailTitle3}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Texto Característica 3:</p><h5>{{product.detailBenefit3}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Titulo Característica 4:</p><h5>{{product.detailTitle4}}</h5>
+          </div>
+          <div class="displayFlex">
+            <p>Texto Característica 4:</p><h5>{{product.detailBenefit4}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{> footer }}
+  </body>
+</html>
