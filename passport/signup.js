@@ -21,7 +21,7 @@ module.exports = function (passport) {
             description: req.body.description,
             cargo: req.body.cargo,
             phone: req.body.phone,
-            avatar: req.body.avatar,
+            avatar: `/imgs/users/${req.body.avatar}`,
           };
 
           const createdUser = await User.create(newUser);

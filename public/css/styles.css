@@ -52,7 +52,7 @@ input, textarea {
   background-size: cover;
 }
 .welcomeText {
-  padding: 20vh;
+  padding: 25vh;
   font-size: 24px;
   text-align: center;
   color: white;
@@ -69,7 +69,7 @@ input, textarea {
   background-color: #ca852b;
 }
 header {
-  height: 96vh;
+  height: 100vh;
 }
 nav img {
   margin-left: 80px;
@@ -447,11 +447,15 @@ div h2 {
 }
 .centrado {
   color: white;
-  width: 160px;
-  padding: 5px;
+  width: 170px;
+  padding: 0px 0px 0px 10px;
+  text-align: justify;
 }
 .centrado p{
   margin: 0px;
+}
+.centrado h5{
+  color: #2cce50;
 }
 .personalImg {
   border-radius: 5px;

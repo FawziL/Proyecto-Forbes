@@ -6,12 +6,22 @@ const {createProduct, getByLocation, getByPriceMenor, getByPriceMayor, renderPro
 const {getAll, sellHouse} = require("../controllers/sellHouseController.js")
 const {formContact} = require("../controllers/mailerController.js")
 const routerUser = require("./routerUser.js")
+const compression = require('compression');
+const upload = require ('../multer/loadFile.js')
 
+routes.use(compression());
 routes.use(routerUser);
 
 routes.get('/ventas', renderProducts)
 
-routes.post('/createProduct', createProduct)
+routes.post('/createProduct',upload.fields([
+    { name: 'thumbnailArray', maxCount: 1 },
+    { name: 'welcomeThumbnailArray', maxCount: 1 },
+    { name: 'benefitThumbnail1Array', maxCount: 1 },
+    { name: 'benefitThumbnail2Array', maxCount: 1 },
+    { name: 'benefitThumbnail3Array', maxCount: 1 },
+    { name: 'detailThumbnailArray', maxCount: 1 },
+  ]), createProduct)
 
 routes.get('/micuenta', auth, getByName)
 

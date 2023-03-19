@@ -21,8 +21,7 @@ const renderProducts = async (req, res) => {
 
 const createProduct = async (req, res) => {
   try {
-    const product = await houseService.createProduct(req.body, req.user);
-    console.log(product)
+    const product = await houseService.createProduct(req.body, req.user, req.files);
     res.render("houseCreated", { product });
   } catch (err) {
     console.log(err);

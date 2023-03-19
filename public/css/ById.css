@@ -131,6 +131,11 @@ button:hover {
     padding: 40px;
     text-align: center;
 }
+.created img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
 .sectionForm{
     background-color: white;
     border-radius: 15px;

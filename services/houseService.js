@@ -17,11 +17,18 @@ class HouseMongoDAO {
     }
   };
 
-  createProduct = async (newProduct, user) => {
+  createProduct = async (newProduct, user, imgs) => {
     try {
+      const {thumbnailArray, welcomeThumbnailArray, benefitThumbnail1Array, benefitThumbnail2Array, benefitThumbnail3Array, detailThumbnailArray} = imgs;
+      const thumbnail = `/imgs/property/${thumbnailArray[0].filename}`;
+      const welcomeThumbnail = `/imgs/property/${welcomeThumbnailArray[0].filename}`;
+      const benefitThumbnail1 = `/imgs/property/${benefitThumbnail1Array[0].filename}`;
+      const benefitThumbnail2 = `/imgs/property/${benefitThumbnail2Array[0].filename}`;
+      const benefitThumbnail3 = `/imgs/property/${benefitThumbnail3Array[0].filename}`;
+      const detailThumbnail = `/imgs/property/${detailThumbnailArray[0].filename}`;
+
       const { name, phone, description, avatar } = user;
-      console.log(avatar);
-      const product = { ...newProduct, name, phone, description, avatar };
+      const product = { ...newProduct, name, phone, description, avatar, thumbnail, welcomeThumbnail, benefitThumbnail1, benefitThumbnail2, benefitThumbnail3, detailThumbnail};
       const createdProduct = await this.collection.create(product);
       return createdProduct;
     } catch (err) {
