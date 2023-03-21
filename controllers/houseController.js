@@ -21,7 +21,11 @@ const renderProducts = async (req, res) => {
 
 const createProduct = async (req, res) => {
   try {
-    const product = await houseService.createProduct(req.body, req.user, req.files);
+    const product = await houseService.createProduct(
+      req.body,
+      req.user,
+      req.files
+    );
     res.render("houseCreated", { product });
   } catch (err) {
     console.log(err);
@@ -29,7 +33,8 @@ const createProduct = async (req, res) => {
 };
 const getByName = async (req, res) => {
   try {
-    const { username, name, address, age, phone, description, avatar } = req.user;
+    const { username, name, address, age, phone, description, avatar } =
+      req.user;
     const housesByName = await houseService.getByName(req.user.name);
     res.render("userInfo", {
       username,
@@ -39,8 +44,17 @@ const getByName = async (req, res) => {
       phone,
       description,
       avatar,
-      housesByName
+      housesByName,
     });
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const updateProductsPlantilla = async (req, res) => {
+  try {
+    const productId = req.params._id;
+    res.render("formularioUserUpdate", { id: productId });
   } catch (err) {
     console.log(err);
   }
@@ -48,7 +62,10 @@ const getByName = async (req, res) => {
 
 const updateProducts = async (req, res) => {
   try {
-    res.json(await houseService.updateProducts(req.body, req.params.id));
+    res.json(
+      await houseService.updateProducts(req.body, req.params._id, req.files)
+    );
+    res.redirect("/micuenta");
   } catch (err) {
     console.log(err);
   }
@@ -93,7 +110,7 @@ const getByPriceMayor = async (req, res) => {
 const deleteById = async (req, res) => {
   try {
     await houseService.deleteById(req.params._id);
-    res.redirect('/micuenta')
+    res.redirect("/micuenta");
   } catch (err) {
     console.log(err);
   }
@@ -113,6 +130,7 @@ module.exports = {
   getAll,
   getById,
   createProduct,
+  updateProductsPlantilla,
   updateProducts,
   deleteById,
   getByPriceMenor,
@@ -120,5 +138,5 @@ module.exports = {
   renderProducts,
   getByLocation,
   renderProductById,
-  getByName
+  getByName,
 };

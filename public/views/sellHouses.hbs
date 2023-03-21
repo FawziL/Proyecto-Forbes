@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../css/ById.css' rel='stylesheet' />
-</head>
-<body>
-  {{> navbarUser }}
-
-    <div class="products">
-      <div id="productos">
-        <div class="productosprueba2">
-          <h2>Clientes captados:</h2>
-        <div class="productosprueba">
-          {{#each products}} 
+{{> navbarUser }}
+<div class="products">
+  <div id="productos">
+    <div class="productosprueba2">
+      <h2>Clientes captados:</h2>
+      <div class="productosprueba">
+      {{#each products}} 
             <div class='productSectionSell' style='width: 18rem;'>
               <div class= "productInfo">
                 <p class='card-text'>Agente: {{agent}}</p>
@@ -29,8 +19,4 @@
       </div>
       </div>
 </div>
-
-</div>
-    {{> footer }}
-</body>
-</html>
+{{> footer }}

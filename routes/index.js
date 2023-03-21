@@ -2,7 +2,7 @@ const { Router } = require('express')
 const routes = Router()
 const path = require('path')
 const auth = require("../middlewares/isAuth")
-const {createProduct, getByLocation, getByPriceMenor, getByPriceMayor, renderProducts, renderProductById, getByName, deleteById} = require("../controllers/houseController.js")
+const {createProduct, getByLocation, getByPriceMenor, getByPriceMayor, renderProducts, renderProductById, getByName, deleteById, updateProductsPlantilla, updateProducts} = require("../controllers/houseController.js")
 const {getAll, sellHouse} = require("../controllers/sellHouseController.js")
 const {formContact} = require("../controllers/mailerController.js")
 const routerUser = require("./routerUser.js")
@@ -38,6 +38,10 @@ routes.get('/ventas/category/:location', getByLocation)
 routes.get('/ventas/:_id', renderProductById)
 
 routes.get('/delete/:_id', deleteById)
+
+routes.get('/update/:_id', updateProductsPlantilla)
+
+routes.post('/update/:_id/update', updateProducts)
 
 routes.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"))

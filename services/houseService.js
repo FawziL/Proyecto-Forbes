@@ -1,5 +1,4 @@
 const House = require("../models/houseModel.js");
-
 let instance;
 
 class HouseMongoDAO {
@@ -19,7 +18,14 @@ class HouseMongoDAO {
 
   createProduct = async (newProduct, user, imgs) => {
     try {
-      const {thumbnailArray, welcomeThumbnailArray, benefitThumbnail1Array, benefitThumbnail2Array, benefitThumbnail3Array, detailThumbnailArray} = imgs;
+      const {
+        thumbnailArray,
+        welcomeThumbnailArray,
+        benefitThumbnail1Array,
+        benefitThumbnail2Array,
+        benefitThumbnail3Array,
+        detailThumbnailArray,
+      } = imgs;
       const thumbnail = `/imgs/property/${thumbnailArray[0].filename}`;
       const welcomeThumbnail = `/imgs/property/${welcomeThumbnailArray[0].filename}`;
       const benefitThumbnail1 = `/imgs/property/${benefitThumbnail1Array[0].filename}`;
@@ -28,7 +34,19 @@ class HouseMongoDAO {
       const detailThumbnail = `/imgs/property/${detailThumbnailArray[0].filename}`;
 
       const { name, phone, description, avatar } = user;
-      const product = { ...newProduct, name, phone, description, avatar, thumbnail, welcomeThumbnail, benefitThumbnail1, benefitThumbnail2, benefitThumbnail3, detailThumbnail};
+      const product = {
+        ...newProduct,
+        name,
+        phone,
+        description,
+        avatar,
+        thumbnail,
+        welcomeThumbnail,
+        benefitThumbnail1,
+        benefitThumbnail2,
+        benefitThumbnail3,
+        detailThumbnail,
+      };
       const createdProduct = await this.collection.create(product);
       return createdProduct;
     } catch (err) {
@@ -48,7 +66,7 @@ class HouseMongoDAO {
     const doc = await this.collection.find({ location: location });
     return doc;
   };
-  
+
   getByName = async (name) => {
     const doc = await this.collection.find({ name: name });
     return doc;
@@ -57,8 +75,18 @@ class HouseMongoDAO {
   updateProducts = async (product, id) => {
     try {
       const document = this.collection.findById(id);
-      const updatedProduct = await document.updateOne(product);
-      return updatedProduct;
+      const updateFields = {};
+      for (const [key, value] of Object.entries(product)) {
+        if (value !== "") {
+          if (!isNaN(value)) {
+            updateFields[key] = parseFloat(value);
+          } else {
+            updateFields[key] = value;
+          }
+        }
+      }
+      await document.updateOne(updateFields);
+      return updateFields;
     } catch (error) {
       console.log(error);
     }

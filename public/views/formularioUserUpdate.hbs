@@ -1,0 +1,80 @@
+{{> navbarUser }}
+  <div class="form-container color-rosa">
+  <form action="/update/{{id}}/update" method="POST">
+    <h4>Modificar: {{id}}</h4>
+    <hr>
+        <div class="form-group">
+
+          <h3>Datos generales</h3>
+          <label for="price">Precio:</label>
+          <input type="text" name="price" placeholder="Precio del inmbueble">
+          <label for="location">Ubicación:</label>
+          <input type="text" name="location" placeholder="Ubicación del inmbueble">
+        </div>
+
+        <div class="form-group">
+
+          <h3>Datos de bienvenida</h3>
+          <label for="welcomeTitle">Titulo Principal:</label>
+          <input type="text" name="welcomeTitle" placeholder="Titulo de bienvenida">
+          <label for="welcomeContent">Texto Principal:</label>
+          <input type="text" name="welcomeContent" placeholder="Texto de bienvenida">
+        </div>
+
+        <div class="form-group">
+
+          <h3>Datos de beneficios</h3>
+          <label for="benefitTitle1">Titulo beneficio 1:</label>
+          <input type="text" name="benefitTitle1" placeholder="Titulo beneficio">
+          <label for="benefitContent1">Contenido beneficio 1:</label>
+          <input type="text" name="benefitContent1" placeholder="Contenido beneficio">
+
+          <br>
+          <label for="benefitTitle2">Titulo beneficio 2:</label>
+          <input type="text" name="benefitTitle2" placeholder="Titulo beneficio">
+          <label for="benefitContent2">Contenido beneficio 2:</label>
+          <input type="text" name="benefitContent2" placeholder="Contenido beneficio">
+  
+          <br>
+          <label for="benefitTitle3">Titulo beneficio 3:</label>
+          <input type="text" name="benefitTitle3" placeholder="Titulo beneficio">
+          <label for="benefitContent3">Contenido beneficio 3:</label>
+          <input type="text" name="benefitContent3" placeholder="Contenido beneficio">
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+          <h3>Características</h3>
+          <label for="detailTitle1">Titulo Característica 1:</label>
+          <input type="text" name="detailTitle1" placeholder="Titulo Característica">
+          <label for="detailBenefit1">Texto Característica 1:</label>
+          <input type="text" name="detailBenefit1" placeholder="Texto Característica">
+
+          <br>
+          <label for="detailTitle2">Titulo Característica 2:</label>
+          <input type="text" name="detailTitle2" placeholder="Titulo Característica">
+          <label for="detailBenefit2">Texto Característica 2:</label>
+          <input type="text" name="detailBenefit2" placeholder="Texto Característica">
+
+          <br>
+          <label for="detailTitle3">Titulo Característica 3:</label>
+          <input type="text" name="detailTitle3" placeholder="Titulo Característica">
+          <label for="detailBenefit3">Texto Característica 3:</label>
+          <input type="text" name="detailBenefit3" placeholder="Texto Característica">
+
+          <br>
+          <label for="detailTitle4">Titulo Característica 4:</label>
+          <input type="text" name="detailTitle4" placeholder="Titulo Característica">
+          <label for="detailBenefit4">Texto Característica 4:</label>
+          <input type="text" name="detailBenefit4" placeholder="Texto Característica">
+        </div>
+
+      <button type="submit">Enviar</button>
+      <div>
+        <p>Por favor, llenar todas las imagenes del formulario, sino no se enviará a la base de datos.</p>
+      </div>
+  </form>
+  </div>
+{{> footer }}
+
