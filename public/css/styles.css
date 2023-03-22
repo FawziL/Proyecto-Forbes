@@ -273,6 +273,10 @@ nav, footer{
   text-align: center;
   color: #2cce50;
 }
+.ofertaFlex{
+  display: flex;
+  justify-content: center;
+}
 .imagenOferta {
   width: 350px;
   height: 320px;
@@ -300,7 +304,7 @@ nav, footer{
   background-image: url(../imgs/back.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   text-align: center;
 }
 .textBack {
@@ -320,6 +324,7 @@ nav, footer{
   display: flex;
   justify-content: center;
   background-color: black;
+  padding: 20px;
 }
 .contactForbes {
   background-color: black;
@@ -394,15 +399,29 @@ nav, footer{
   justify-content: space-evenly;
   padding: 10px;
 }
+.infoContacto {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
 .contact h3 {
   color: #136c2b;
 }
 .contactos {
-  width: 30%;
+  width: 33%;
 }
-.contactos a {
+.info {
+  width: 33%;
+}
+.contactos a, .info a {
   color: black;
   text-decoration: underline;
+}
+.email{
+  width: 100px;
+  padding-left: 130px;
+  display: block;
+  justify-content: center;
 }
 
 /*  ---------------------   Sección Carrusel  ---------------------  */

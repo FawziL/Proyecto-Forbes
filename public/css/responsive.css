@@ -1,0 +1,127 @@
+@media screen and (max-width: 767px){
+    nav img{
+        margin-left: 10px;
+    }
+    .welcomeText {
+        padding: 5vh;
+        font-size: 16px;
+        margin-top: 15vh;
+    }
+    .welcomeButton{
+        padding: 5px;
+        width: 160px;
+        font-size: 16px;
+    }
+    .welcome {
+        background-size: 100% 100%;
+      }
+    /*Seccion Porcentajes*/
+    .porcentajes {
+        display: block;
+        padding: 20px;
+    }
+    .text {
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .verde {
+        display: block;
+    }
+    .verde p {
+        width: 240px;
+    }
+    .bordeVerde {
+        width: 280px;
+        margin: auto;
+        margin-top: 10px;
+        padding: 0px;
+    }
+    /*Seccion Oferta*/
+    .padding{
+        padding: 10px;
+    }
+    .ofertaFlex{
+        display: block;
+    }
+    .imagenOferta {
+        width: 250px;
+        height: 220px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .textOferta {
+        font-size: 16px;
+        width: 220px;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: justify;
+    }
+    /*Seccion Back*/
+    .center {
+        padding: 40px;
+    }
+    .textBack {
+        font-size: 20px;
+        padding: 10x;
+    }
+    .back {
+        background-size: 100% 100%;
+      }
+    /*Seccion Contact Forbes*/
+    .contactForbes {
+        padding: 10px;
+        font-size: 22px;
+    }
+    .flexContact {
+        display: block;
+        padding: 10px;
+    }
+    #formMessage {
+        margin: auto;
+        width: 300px;
+        padding: 20px;
+    }
+    #formMessage input, textarea {
+        width: 250px;
+        font-size: 16px;
+    }
+    .ws{
+        padding-top: 10px;
+        width: 240px;
+        margin: auto;
+    }
+    .wsText {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    /*Seccion Contact*/
+    .contact {
+        padding: 10px;
+    }
+    .infoContacto{
+        display: block;
+    }
+    .info{
+        width: 100%;
+    }
+    .email{
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
