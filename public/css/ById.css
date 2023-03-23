@@ -156,3 +156,67 @@ button:hover {
     margin: 20px 10px 20px 10px;
     text-align: center;
 }
+
+
+@media screen and (max-width: 767px){
+    .dContainer {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .imgProductId {
+        width: 250px;
+        height: 200px;
+        margin: auto;
+    }
+    .carProduct {
+        margin: auto;
+        font-size: 18px;
+    }
+    .carD {
+        width: 500px;
+    }
+    .beneficios img {
+        width: 280px;
+        height: 150px;
+    }
+    .textHouse {
+        padding: 15px;
+        width: 100%
+    }
+    .espacios {
+        display: block;
+    }
+    .espacios img {
+        width: 280px;
+        height: 70vh;
+        margin: 20px;
+    }
+    .izquierda {
+        text-align: justify;
+        width: 100%; 
+        margin: 0px;
+        padding: 10px;
+    }
+    .derecha {
+        text-align: justify;
+        width: 100%; 
+        margin: 0px;
+        padding: 10px;
+    }
+    .citas {
+        padding: 30px;
+    }
+    .citas p {
+        font-size: 18px;
+        text-align: justify;
+        padding: 10px;
+    }
+    .seller img {
+        height: 200px;
+        width: 110px;
+        border-radius: 45%;
+        margin: 20px;
+    }
+}

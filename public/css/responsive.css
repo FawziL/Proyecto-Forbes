@@ -111,7 +111,39 @@
         padding: 0px;
         padding-bottom: 10px;
     }
-
+    .seguir{
+        font-size: 14px;
+    }
+    .logo{
+        padding-top: 5px;
+        width: 90px;
+        height: 60px;
+    }
+    /*Html Productos*/
+    #productos {
+        display: block;
+    }
+    .categorias {
+        font-size: 20px;
+        padding-left: 56px;
+    }
+    /*Html AboutUs*/
+    .WIA p {
+        margin: 0px;
+    }
+    .opiniones {
+        padding: 20px; 
+    }
+    .carruselP {
+        font-size: 18px;
+    }
+    /*Html UserAccount*/
+    .displayFlex {
+        display: block;
+    }
+    .form-container form {
+        padding: 15px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
