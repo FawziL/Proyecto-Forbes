@@ -85,8 +85,8 @@ nav, footer{
 }
 .logo{
   padding-top: 5px;
-  width: 120px;
-  height: 80px;
+  width: 110px;
+  height: 70px;
 }
 .seguir{
   text-align: center;
@@ -418,12 +418,11 @@ nav, footer{
   text-decoration: underline;
 }
 .email{
-  width: 100px;
-  padding-left: 130px;
-  display: block;
-  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  width: auto;
 }
-
 /*  ---------------------   Sección Carrusel  ---------------------  */
 
 .opiniones {
@@ -538,7 +537,9 @@ div h2 {
   background-color: #edededbd;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-  padding: 2rem;
+  padding: 25px;
+  max-width: 450px;
+  margin: auto;
 }
 form h2{
   font-size: 1.5rem;
@@ -566,6 +567,20 @@ form h2{
   border-radius: 5px;
   font-size: 1rem;
   margin-top: 1rem;
+}
+.buttonMove{
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 50px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.buttonMove button{
+  margin: 0px;
+  width: 100%;
 }
 .form-container button:hover {
 	background-color: #155724;

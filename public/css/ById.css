@@ -220,3 +220,110 @@ button:hover {
         margin: 20px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .dContainer {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .imgProductId {
+        width: 450px;
+        height: 400px;
+        margin: auto;
+    }
+    .carProduct {
+        font-size: 18px;
+    }
+    .beneficios img {
+        width: 350px;
+        height: 250px;
+    }
+    .textHouse {
+        padding: 15px;
+        width: 100%
+    }
+    .espacios img {
+        width: 420px;
+        height: 70vh;
+        margin: 20px;
+    }
+    .izquierda {
+        text-align: justify;
+        margin: 0px;
+        padding: 10px;
+    }
+    .derecha {
+        text-align: justify;
+        margin: 0px;
+        padding: 10px;
+    }
+    .citas {
+        padding: 60px;
+    }
+    .citas p {
+        font-size: 20px;
+        text-align: justify;
+        padding: 10px;
+    }
+    .seller img {
+        height: 200px;
+        width: 110px;
+        border-radius: 45%;
+        margin: 20px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .dContainer {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .imgProductId {
+        width: 550px;
+        height: 500px;
+        margin: auto;
+    }
+    .carProduct {
+        font-size: 18px;
+    }
+    .beneficios img {
+        width: 400px;
+        height: 320px;
+    }
+    .textHouse {
+        padding: 15px;
+        width: 100%
+    }
+    .espacios img {
+        width: 480px;
+        height: 70vh;
+        margin: 20px;
+    }
+    .izquierda {
+        text-align: justify;
+        margin: 0px;
+        padding: 10px;
+    }
+    .derecha {
+        text-align: justify;
+        margin: 0px;
+        padding: 10px;
+    }
+    .citas {
+        padding: 80px;
+    }
+    .citas p {
+        font-size: 20px;
+        text-align: justify;
+        padding: 10px;
+    }
+    .seller img {
+        height: 200px;
+        width: 110px;
+        border-radius: 45%;
+        margin: 20px;
+    }
+    p{
+        font-size: 22px;
+    }
+}
