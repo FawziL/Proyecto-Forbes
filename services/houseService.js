@@ -53,6 +53,7 @@ class HouseMongoDAO {
       console.log(err);
     }
   };
+  
   getById = async (id) => {
     try {
       const doc = await this.collection.findById(id);

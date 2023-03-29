@@ -638,3 +638,34 @@ form h2{
 a:hover{
   transform: scale(1.2);
 }
+
+.created{
+  background-color:  #f4f1e9;
+  padding: 40px;
+  text-align: center;
+}
+.created img{
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+.sectionForm{
+  background-color: white;
+  border-radius: 15px;
+  border-style: solid;
+  width: 600px;
+  margin: 15px;
+}
+
+.sectionForm p, h5{
+  font-size: 20px;
+  width: 300px;
+  padding-top: 10px;
+}
+.productSectionSell{
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #454141;
+  margin: 20px 10px 20px 10px;
+  text-align: center;
+}

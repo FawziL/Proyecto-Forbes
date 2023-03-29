@@ -62,10 +62,8 @@ const updateProductsPlantilla = async (req, res) => {
 
 const updateProducts = async (req, res) => {
   try {
-    res.json(
-      await houseService.updateProducts(req.body, req.params._id, req.files)
-    );
-    res.redirect("/micuenta");
+    const product = await houseService.updateProducts(req.body, req.params._id)
+    res.render("houseUpdated", { product });
   } catch (err) {
     console.log(err);
   }
