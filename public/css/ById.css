@@ -106,7 +106,7 @@ h3{
 .seller img{
     height: 200px;
     width: 110px;
-    border-radius: 48%;
+    border-radius: 5px;
     margin: 40px;
 }
 .seller p{
@@ -125,6 +125,9 @@ button{
 }
 button:hover {
     background-color: #ca852b;
+}
+p{
+    font-size: 20px;
 }
 
 

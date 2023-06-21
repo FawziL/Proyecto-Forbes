@@ -80,8 +80,11 @@ nav {
 }
 nav, footer{
   background-color: #146128;
-  opacity: 0.8;
+  opacity: 0.9;
   color: transparent;
+}
+.welcome nav{
+  opacity: 0.8;
 }
 .logo{
   padding-top: 5px;
@@ -123,7 +126,7 @@ nav, footer{
 .imgProduct {
   width: 268px;
   height: 200px;
-  border-radius: 15px;
+  border-radius: 12px 12px 0px 0px;
   margin: 0px;
 }
 .buttonPreview {
@@ -143,7 +146,7 @@ nav, footer{
 }
 .productSection {
   background-color: rgb(255, 255, 255);
-  border-radius: 15px;
+  border-radius: 12px;
   box-shadow: 5px 5px 5px #454141;
   margin: 20px 10px 20px 10px;
   max-width: 268px;
@@ -635,7 +638,10 @@ form h2{
 }
 
 
-a:hover{
+li a:hover{
+  transform: scale(1.03);
+}
+.redSocial:hover{
   transform: scale(1.2);
 }
 
@@ -668,4 +674,38 @@ a:hover{
   box-shadow: 5px 5px 5px #454141;
   margin: 20px 10px 20px 10px;
   text-align: center;
+}
+
+.progress-bar {
+  background-color: rgb(255, 255, 255);
+  height: 15px;
+  margin: 20px;
+  border-radius: 5px;
+  width: 90%;
+  animation: grow 4s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+}
+#carouselExampleAutoplaying{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.carousel-inner{
+  height: 350px;
+  width: 80vh;
+  margin: auto;
+  background-color: #136c2b;
+  border-radius: 40px;
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+#carouselExampleAutoplaying p{
+  color: white;
 }
