@@ -500,6 +500,9 @@ div h2 {
   font-size: 22px;
   margin: 0px 60px 0px 60px;
 }
+.vh100{
+  height: 70vh;
+}
 
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
 .formulario {
