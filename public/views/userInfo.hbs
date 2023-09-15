@@ -1,35 +1,37 @@
 {{> navbarUser }}
-<h1 class="textAlign">Bienvenido {{username}}</h1>
-<div class="displayFlex">
-    <div class="userAccount">
-          <h3>Datos personales:</h3>
-          <hr>
-          <h4>Nombre: {{name}}</h4>
-          <hr>
-          <h4>Cargo: {{cargo}}</h4>
-          <hr>
-          <h4>Descripción: {{description}}</h4>
-          <hr>
-          <h4>Tlf: {{phone}}</h4>
-          <hr>
-          <img src="{{avatar}}" class="imgUserAccount" alt="avatar">
-    </div>
-    <div>
-      <h2>Propiedades subidas por {{name}}:</h2>
-      <div class="productosprueba">
-        {{#each housesByName}} 
-          <div class='productSection' style='width: 18rem;'>
-            <img src='{{thumbnail}}' class='imgProduct' alt='...' />
-            <div class= "productInfo">
-              <p class='card-text'>Precio: ${{price}}</p>
-              <p class='card-text'>Ubicación: {{location}}</p>
-            </div>
-            <a href="/ventas/{{_id}}"><button class="buttonPreview">Ver detalles</button></a>
-            <a href="/update/{{_id}}"><button class="buttonPreview">Actualizar</button></a>
-            <a href="/delete/{{_id}}"><button class="buttonPreview">Eliminar</button></a>
-          </div> 
-        {{/each}}
+<div class="user">
+  <h1 class="textAlign">Bienvenido {{username}}</h1>
+  <div class="displayFlexCenter">
+      <div class="userAccount">
+            <h3>Datos personales:</h3>
+            <hr>
+            <h4>Nombre: {{name}}</h4>
+            <hr>
+            <h4>Cargo: {{cargo}}</h4>
+            <hr>
+            <h4>Descripción: {{description}}</h4>
+            <hr>
+            <h4>Tlf: {{phone}}</h4>
+            <hr>
+            <img src="{{avatar}}" class="imgUserAccount" alt="avatar">
       </div>
-    </div>
+      <div>
+        <h2>Propiedades subidas por {{name}}:</h2>
+        <div class="productosprueba">
+          {{#each housesByName}} 
+            <div class='productSection' style='width: 18rem;'>
+              <img src='{{thumbnail}}' class='imgProduct' alt='...' />
+              <div class= "productInfo">
+                <p class='card-text'>Precio: ${{price}}</p>
+                <p class='card-text'>Ubicación: {{location}}</p>
+              </div>
+              <a href="/ventas/{{_id}}"><button class="buttonPreview">Ver detalles</button></a>
+              <a href="/update/{{_id}}"><button class="buttonPreview">Actualizar</button></a>
+              <a href="/delete/{{_id}}"><button class="buttonPreview">Eliminar</button></a>
+            </div> 
+          {{/each}}
+        </div>
+      </div>
+  </div>
 </div>
 {{> footer }}

@@ -33,63 +33,78 @@
     <title>Forbes</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark navbar-expand-lg navIndex">
-      <a href="/">
-        <img
-          src="../imgs/logo.png"
-          alt="logo"
-          width="120"
-          height="80"
-          class="logo"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <ul
-        class="navbar-nav justify-content-around collapse navbar-collapse"
-        id="navbarNav"
-      >
-        <li class="nav-item">
-          <a class="nav-link" href="ventas">Comprar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="vender">Vender</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutUs">Sobre nosotros...</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar-dark navbar-expand-lg navIndex">
+        <a href="/">
+          <img
+            src="../imgs/logo.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3500">
-          <div class="progress-bar"></div>
-          <p class="carruselT">
-            Nuestra Misión
-          </p> 
-          <p class="carruselP">
-            Satisfacer las necesidades de nuestros clientes con una gestión personalizada y de calidad. 
-          </p> 
-        </div> 
-        <div class="carousel-item" data-bs-interval="3500">
-          <div class="progress-bar"></div>
-          <p class="carruselT">
-            Nuestra Visión
-          </p> 
-          <p class="carruselP">
-            Mantener el reconocimiento y preferencia de nuestros clientes por el profesionalismo, eficacia, asertividad de nuestros servicios y diferenciarnos por ir a la vanguardia tecnológica del área inmobiliaria y de negocios. 
-          </p> 
-        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="navbar-nav justify-content-evenly collapse navbar-collapse marginNav" id="navbarNav">
+          <li class="nav-item">
+            <a class="nav-link" href="ventas">Comprar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vender">Vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs">Nosotros</a>
+          </li>
+          <div class="RedesSociales">
+            <a href="https://www.facebook.com/forbesinmobiliaria" target="_blank" class="redSocial">
+              <img
+                src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor"
+                alt="facebook logo"
+              />
+            </a>
+            <a href="https://www.instagram.com/forbesinmobiliaria/" target="_blank" class="redSocial">
+                <img
+                src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor"
+                alt="instagram logo"
+              />
+            </a>
+            <a href="https://www.tiktok.com/@forbesinmobiliaria" target="_blank" class="redSocial">
+                <img
+                  src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor"
+                  alt="tiktok logo"
+                />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes" target="_blank" class="redSocial">
+                <img
+                  src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor"
+                  alt="whatsapp logo"
+                />
+            </a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="WIA displayFlex color-black">
+      <img src="../imgs/socias.jpg" alt="Forbes_Socias">
+      <div class="aboutUs">
+        <h2>¿ Quiénes somos?</h2>
+        <p>
+          Somos una empresa que nace por la asociación de 3 asesoras inmobiliarias
+          de reconocida y larga trayectoria en la zona de los Altos mirandinos,
+          con el objetivo común de innovar tecnológicamente en el área
+          inmobiliaria y de negocios.
+        </p>
       </div>
     </div>
 
@@ -192,63 +207,69 @@
           <div class="centrado"> 
             <h5>Yerlin Montoya</h5>
             <p>Práctica en atención al cliente, demostración y seguimiento.</p>
-            <p>Zona de atención: Club de Campo, San Antonio de los Altos en general y Gran Caracas.</p>
+            <p>Zona de atención: Club de Campo, San Antonio de los Altos y Gran Caracas.</p>
           </div>
         </div>
       </section>
     </div>
 
-    <div class="WIA displayFlexCenter scroll-animation">
-      <div>
-        <h2>¿ Quiénes somos?</h2>
-        <p>
-               Somos una empresa que nace por la asociación de 3 asesoras inmobiliarias
-          de reconocida y larga trayectoria en la zona de los Altos mirandinos,
-          con el objetivo común de innovar tecnológicamente en el área
-          inmobiliaria y de negocios.
-        </p>
-      </div>
+    <div class="color-black mission">
+      <div class="div">
+        <h2>Nuestra Misión</h2>
+        <p class="aboutUs">
+          Satisfacer las necesidades de nuestros clientes con una gestión personalizada y de calidad.
+        </p> 
     </div>
+    </div> 
 
-    <div class="areaPersonal">
-      <img src="../imgs/socias.jpg" alt="" class="vh100">
+    <div class="color-black mission">
+      <h2>Nuestra Visión</h2>
+      <p class="aboutUs">
+        Mantener el reconocimiento y preferencia de nuestros clientes por el profesionalismo, eficacia, asertividad de nuestros servicios y diferenciarnos por ir a la vanguardia tecnológica del área inmobiliaria y de negocios. 
+      </p> 
     </div>
 
     <footer>
-      <div class="footerRedesSociales">
-        <a href="/"
-          ><img
-            src="../../imgs/logo.png"
-            alt="logo"
-            class="logo"
-        /></a>
-        <a href="https://www.facebook.com/forbesinmobiliaria" target="_blank" class="redSocial">
-            <img
-              src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor"
-              alt="facebook logo"
-            />
-        </a>
-        <a href="https://www.instagram.com/forbesinmobiliaria/" target="_blank" class="redSocial">
-            <img
-            src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor"
-            alt="instagram logo"
-          />
-        </a>
-        <a href="https://www.tiktok.com/@forbesinmobiliaria" target="_blank" class="redSocial">
-            <img
-              src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor"
-              alt="tiktok logo"
-            />
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes" target="_blank" class="redSocial">
-            <img
-              src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor"
-              alt="whatsapp logo"
-            />
-        </a>
+      <a href="/">
+        <img
+        src="../../imgs/logo.png"
+        alt="logo"
+        class="logoFooter"/>
+      </a>
+      <div>
+        <p>Rif: J-56464684456</p>
+        <p>Forbes Inmobiliaria</p>
+        <p>Todos los derechos reservados © 2023</p>
       </div>
-      <p class="seguir">Síguenos en nuestras redes sociales!</p>
-      <p class="textFooter">Forbes Inmobiliaria</p>
+      <div>       
+        <p>Síguenos en nuestras redes sociales!</p>
+        <div class="RedesSociales">
+          <a href="https://www.facebook.com/forbesinmobiliaria" target="_blank" class="redSocial">
+              <img
+                src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor"
+                alt="facebook logo"
+              />
+          </a>
+          <a href="https://www.instagram.com/forbesinmobiliaria/" target="_blank" class="redSocial">
+              <img
+              src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor"
+              alt="instagram logo"
+            />
+          </a>
+          <a href="https://www.tiktok.com/@forbesinmobiliaria" target="_blank" class="redSocial">
+              <img
+                src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor"
+                alt="tiktok logo"
+              />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes" target="_blank" class="redSocial">
+              <img
+                src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor"
+                alt="whatsapp logo"
+              />
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script

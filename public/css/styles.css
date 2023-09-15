@@ -6,7 +6,10 @@
 }
 
 /* --------------------- Cosas generales ---------------------  */
-
+body{
+  height: 100%;
+  width: 100%;
+}
 h1,
 h2,
 h3 {
@@ -19,11 +22,6 @@ a {
 }
 * {
   font-family: "Times New Roman", Times, serif;
-}
-h2 {
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
 }
 .navbar-dark .navbar-toggler {
   margin-right: 30px;
@@ -42,182 +40,94 @@ input, textarea {
   padding: 10px;
   border-radius: 15px;
 }
+.color-black{
+  background-color: rgb(20, 18, 18);
+}
+.padding{
+  padding: 30px;
+}
 
 /* --------------------- Welcome, header, navBar --------------------- */
 
 .welcome {
   background-image: url(../imgs/Imagen1.png);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+}
+.welcome h2 {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 .welcomeText {
-  padding: 25vh;
+  padding: 35vh;
   font-size: 24px;
   text-align: center;
   color: white;
 }
 .welcomeButton {
-  background-color: #ffad40;
-  padding: 10px;
-  border-radius: 7px;
+  background-color: #1e8617;
+  padding: 6px;
   color: white;
-  width: 220px;
+  width: 180px;
   font-size: 22px;
+  border-style: solid;
+  border-color: #1e4a1b;
+  border-radius: 5px;
 }
 .welcomeButton:hover {
-  background-color: #ca852b;
-}
-header {
-  height: 100vh;
-}
-nav img {
-  margin-left: 80px;
+  transition: 1000ms;
+  background-color: #095005;
 }
 nav {
   color: black;
-  font-size: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 nav, footer{
   background-color: #146128;
-  opacity: 0.9;
-  color: transparent;
-}
-.welcome nav{
-  opacity: 0.8;
 }
 .logo{
-  padding-top: 5px;
-  width: 110px;
-  height: 70px;
+  padding: 0px;
+  margin: 2px;
+  width: 80px;
+  height: 50px;
+  margin-left: 120px;
 }
-.seguir{
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-family: "neogrey";
-}
-.footerRedesSociales{
+.RedesSociales{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 5px;
 }
-.textFooter{
-  text-align: center;
-  margin: 0px;
-  color: #000000;
+.RedesSociales img{
+  margin: 5px;
 }
-/* --------------------- Productos, secciòn ventas --------------------- */
-
-#productos {
+footer{
   display: flex;
-}
-.productosprueba {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.productosprueba2 {
-  width: 100%;
-}
-.imgProduct {
-  width: 268px;
-  height: 200px;
-  border-radius: 12px 12px 0px 0px;
-  margin: 0px;
-}
-.buttonPreview {
-  margin: 15px;
-  padding: 4px;
-  border-radius: 15px;
-  background-color: #ffad40;
-  border-color: white;
-  color: white;
-}
-.buttonPreview:hover {
-  background-color: #ca852b;
-}
-.products {
-  background-color: #f4f1e9;
-  border-style: solid;
-}
-.productSection {
-  background-color: rgb(255, 255, 255);
-  border-radius: 12px;
-  box-shadow: 5px 5px 5px #454141;
-  margin: 20px 10px 20px 10px;
-  max-width: 268px;
-  text-align: center;
-}
-.productSection a{
-  color: #000000;
-}
-.productInfo {
-  text-align: center;
-  font-size: 24px;
-  margin: 10px;
-}
-.products h2 {
-  padding: 10px;
-  color: white;
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #101111,
-    #252a2a,
-    #3c3f3f,
-    #585858
-  );
-}
-.categorias {
-  font-size: 22px;
-  padding: 26px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #101111,
-    #252a2a,
-    #3c3f3f,
-    #585858
-  );
-  height: 100%;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  color: #ffffff;
+  height: 20vh;
 }
-.buttonCategry {
-  margin: 0px;
-  border-style: none;
+footer p{
+  margin: 5px;
+  font-size: 18px;
 }
-.x button:hover{
-  transform: scale(1.2);
-}
-.categorias a {
-  color: white;
-  text-decoration: none;
-  padding-top: 15px;
-}
-.categorias h3 {
-  color: white;
-}
-.togleCategory {
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #101111,
-    #252a2a,
-    #3c3f3f,
-    #585858
-  );
-}
-.togleCategory svg {
-  color: #f4f1e9;
-  height: 35px;
-  width: 35px;
-  border-radius: 15px;
+.logoFooter{
+  height: 120px;
+  width: 200px;
 }
 
 /*  ---------------------   Sección Porcentajes  ---------------------  */
@@ -225,10 +135,12 @@ nav, footer{
 .porcentajes {
   display: flex;
   justify-content: space-between;
-  padding: 30px 100px 30px 100px;
+  height: 80vh;
+  padding: 20vh;
+  color: white;
 }
 .verde {
-  color: #136c2b;
+  color: white;
   text-align: center;
 }
 .verderSvg {
@@ -242,9 +154,10 @@ nav, footer{
   margin-top: 0px;
 }
 .bordeVerde {
+  background-color: #188635;
   border-radius: 15px;
   border-style: solid;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
 }
 .verde svg {
@@ -257,68 +170,59 @@ nav, footer{
 }
 .verde p {
   width: 150px;
+  font-size: 18px;
 }
 .verdeP {
   margin-bottom: 0px;
 }
 .text {
-  width: 60%;
+  width: 50%;
   text-align: justify;
-  font-size: 26px;
-  padding-top: 70px;
-  font-weight: bold;
+  font-size: 22px;
+  margin: auto;
+  padding: 3vh;
 }
+.titleText{
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+}
+.porcentaje{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+} 
 
 /*  ---------------------   Sección Oferta  ---------------------  */
 
 .oferta {
-  background-color: black;
+  background-color: #f4f1e9;
   text-align: center;
-  color: #2cce50;
-}
-.ofertaFlex{
+  color: #000000;
   display: flex;
-  justify-content: center;
+  height: 75vh;
+  width: 100%;
+}
+.ofertText{
+  width: 50%;
+  text-align: center;
+  margin: auto;
 }
 .imagenOferta {
-  width: 350px;
-  height: 320px;
-  border-radius: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 75%;
+  height: 100%;
 }
 .textOferta {
   font-size: 18px;
-  width: 320px;
-  margin-top: 20px;
-  margin-left: 30px;
+  width: 280px;
   text-align: justify;
+  margin: auto;
 }
 .textOferta p{
   margin-bottom: 0px;
-}
-.padding {
-  padding: 30px;
-}
-
-/*  ---------------------   Sección Back  ---------------------  */
-
-.back {
-  background-image: url(../imgs/back.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-.textBack {
-  font-size: 24px;
-  font-weight: bold;
-  padding: 15px;
-}
-.center {
-  padding: 140px;  
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*  ---------------------   Sección contacto Ws y Mail  ---------------------  */
@@ -326,21 +230,20 @@ nav, footer{
 .flexContact {
   display: flex;
   justify-content: center;
-  background-color: black;
   padding: 20px;
 }
 .contactForbes {
-  background-color: black;
   color: white;
   margin: 0px;
   border-radius: 0px;
   padding: 20px;
   font-size: 36px;
+  background-color: rgb(20, 18, 18);
 }
 .ws {
-  padding-top: 80px;
+  padding: 40px;
   text-align: center;
-  width: 450px;
+  width: 50%;
 }
 .wsText {
   font-size: 24px;
@@ -352,15 +255,16 @@ nav, footer{
   width: 380px;
 	padding: 20px;
 	border-radius: 10px;
-	background-color: #121413;
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   color: #ffffff;
   border-color: #4caf50;
   border-style: solid;
+  background-color: black;
 }
 #formMessage label {
 	display: block;
 	margin-bottom: 10px;
+  font-size: 18px;
 }
 #formMessage input, textarea {
   width: 320px; 
@@ -383,6 +287,33 @@ nav, footer{
 }
 #formMessage button:hover {
 	background-color: #155724;
+  transition: 1000ms;
+}
+
+/*  ---------------------   Sección Back  ---------------------  */
+
+.back {
+  background-image: url(../imgs/back.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 65vh;
+}
+.back h2 {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.textBack {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px;
+}
+.center {
+  padding: 20vh;  
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*  ---------------------   Sección contacto  ---------------------  */
@@ -426,6 +357,105 @@ nav, footer{
   word-wrap: break-word;
   width: auto;
 }
+
+/* --------------------- Productos, secciòn ventas --------------------- */
+
+#productos {
+  display: flex;
+}
+.productosprueba {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.productosprueba2 {
+  width: 100%;
+}
+.imgProduct {
+  width: 268px;
+  border-radius: 12px 0px 0px 0px;
+  margin: 0px;
+}
+.buttonPreview {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ffad40;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+}
+.buttonPreview:hover {
+  background-color: #ca852b;
+  transition: 1000ms;
+}
+.products {
+  background-color: #f4f1e9;
+  border-style: solid;
+  min-height: 92vh;
+  margin-top: 50px;
+}
+.productSection {
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px 0px 12px 0px;
+  box-shadow: 5px 5px 5px 3px #454141;
+  margin: 20px 5px 20px 5px;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+}
+.productInfo {
+  text-align: center;
+  font-size: 22px;
+  margin: 10px;
+}
+.products h2 {
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+}
+.categorias {
+  font-size: 22px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  height: 100%;
+}
+.categorias a {
+  color: white;
+  text-decoration: none;
+  padding-top: 15px;
+}
+.categorias h3 {
+  color: white;
+}
+.togleCategory {
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+}
+
 /*  ---------------------   Sección Carrusel  ---------------------  */
 
 .opiniones {
@@ -447,11 +477,33 @@ div h2 {
 }
 
 /*  ---------------------   Sección personas, AboutUs  ---------------------  */
+.WIA {
+  width: 100%;
+  margin-top: 50px;
+  height: 75vh;
+  color: white;
+}
+.WIA img{
+  width: 30%;
+  height: 100%;
+}
+.WIA p {
+  font-size: 24px;
+}
+.WIA h2{
+  margin-bottom: 20px;
+}
+.aboutUs{
+  margin: auto;
+  max-width: 50%;
+}
 .areaPersonal{
-  background-color: black;
+  background-color: #f4f1e9;
   text-align: center;
-  color: rgb(255, 255, 255);
-  padding: 40px;
+  color: rgb(0, 0, 0);
+}
+.areaPersonal h3{
+  padding-top: 15px;
 }
 .personal {
   display: flex;
@@ -460,48 +512,43 @@ div h2 {
 }
 .contenedor {
   display: flex;
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
   margin: 20px;
-  border-radius: 5px;
-  width: 280px;
+  border-radius: 12px 0px 12px 0px;
+  width: 300px;
+  box-shadow: 5px 5px 5px 3px #454141;
 }
 .centrado {
-  color: white;
   width: 170px;
   padding: 0px 0px 0px 10px;
   text-align: justify;
 }
 .centrado p{
   margin: 0px;
+  font-size: 16px;
 }
 .centrado h5{
-  color: #2cce50;
+  color: #217533;
 }
 .personalImg {
-  border-radius: 5px;
-  height: 200px;
+  border-radius: 12px 0px 0px 0px;
+  height: 210px;
   width: 110px;
 }
-.WIA {
-  width: 100%;
+.mission{
+  color: white;
+  min-height: 25vh;
 }
-.WIA div{
-  width: 1000px;
-  padding: 50px;
-  text-align: justify;
+.mission h2{
+  margin: 0px;
+  padding: 10px;
 }
-.WIA h2 {
-  background-color: white;
-  padding-top: 0px;
-  margin-top: 0px;
+.mission p{
+  font-size: 20px;
 }
-.WIA p {
-  font-size: 22px;
-  margin: 0px 60px 0px 60px;
-}
-.vh100{
-  height: 70vh;
+.div{
+  height: 100%;
+  margin: auto;
 }
 
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
@@ -535,9 +582,8 @@ div h2 {
   justify-content: center;
   align-items: center;
   padding: 15px;
-}
-.color-rosa{
-  background-color: #f4f1e9;
+  min-height: 92vh;
+  margin-top: 50px;
 }
 .form-container form {
   background-color: #edededbd;
@@ -590,6 +636,7 @@ form h2{
 }
 .form-container button:hover {
 	background-color: #155724;
+  transition: 1000ms;
 }
 .form-container label {
   font-size: 1.2rem;
@@ -629,12 +676,15 @@ form h2{
   margin: 10px;
   border-radius: 4px;
 }
+.user{
+  min-height: 92vh;
+  margin-top: 50px;
+}
 .scroll-animation {
   opacity: 0; /* El div está inicialmente oculto */
   transform: translateY(100px); /* Mueve el div hacia abajo */
   transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
 }
-
 .scroll-animation.mostrar {
   opacity: 1; /* El div está completamente visible */
   transform: translateY(0); /* El div se mueve a su posición final */
@@ -643,9 +693,11 @@ form h2{
 
 li a:hover{
   transform: scale(1.03);
+  transition: 1000ms;
 }
 .redSocial:hover{
   transform: scale(1.2);
+  transition: 1000ms;
 }
 
 .created{
