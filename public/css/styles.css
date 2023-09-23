@@ -230,36 +230,35 @@ footer p{
 .flexContact {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  height: 75vh;
 }
 .contactForbes {
   color: white;
-  margin: 0px;
-  border-radius: 0px;
-  padding: 20px;
+  margin: auto;
   font-size: 36px;
-  background-color: rgb(20, 18, 18);
 }
 .ws {
-  padding: 40px;
   text-align: center;
-  width: 50%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
 }
 .wsText {
   font-size: 24px;
-  color: white;
+  color: rgb(255, 255, 255);
   padding-bottom: 25px;
 }
 #formMessage{
-  margin: 20px 20px 20px 80px;
-  width: 380px;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	padding: 12vh;
   color: #ffffff;
-  border-color: #4caf50;
-  border-style: solid;
-  background-color: black;
+  background-color: #3d3d3b;
+  width: 35%;
+}
+#formMessage div{
+  padding: 22px;
+  border-radius: 5px;
 }
 #formMessage label {
 	display: block;
@@ -267,7 +266,7 @@ footer p{
   font-size: 18px;
 }
 #formMessage input, textarea {
-  width: 320px; 
+  width: 300px; 
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
@@ -288,6 +287,15 @@ footer p{
 #formMessage button:hover {
 	background-color: #155724;
   transition: 1000ms;
+}
+.confirmation-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 5px;
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /*  ---------------------   Sección Back  ---------------------  */
@@ -411,6 +419,8 @@ footer p{
   margin: 10px;
 }
 .products h2 {
+  text-align: center;
+  margin: 10px;
   padding: 10px;
   color: white;
   background-image: linear-gradient(
@@ -456,59 +466,45 @@ footer p{
   );
 }
 
-/*  ---------------------   Sección Carrusel  ---------------------  */
-
-.opiniones {
-  padding: 60px 300px 60px 300px;
-  text-align: center;
-}
-div h2 {
-  margin: 10px;
-  text-align: center;
-}
-.carruselT {
-  font-size: 28px;
-  font-weight: bold;
-}
-.carruselP {
-  color: black;
-  font-size: 22px;
-  text-align: justify;
-}
-
 /*  ---------------------   Sección personas, AboutUs  ---------------------  */
+
 .WIA {
   width: 100%;
   margin-top: 50px;
-  height: 75vh;
+  height: 80vh;
   color: white;
 }
 .WIA img{
-  width: 30%;
+  width: 35%;
   height: 100%;
 }
 .WIA p {
-  font-size: 24px;
+  font-size: 26px;
+  text-align: justify;
 }
 .WIA h2{
+  font-size: 36px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .aboutUs{
   margin: auto;
   max-width: 50%;
 }
 .areaPersonal{
-  background-color: #f4f1e9;
   text-align: center;
   color: rgb(0, 0, 0);
 }
 .areaPersonal h3{
   padding-top: 15px;
+  color: white;
 }
 .personal {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
+  width: 90%;
 }
 .contenedor {
   display: flex;
@@ -516,7 +512,7 @@ div h2 {
   margin: 20px;
   border-radius: 12px 0px 12px 0px;
   width: 300px;
-  box-shadow: 5px 5px 5px 3px #454141;
+  box-shadow: 5px 5px 5px 2px #414040;
 }
 .centrado {
   width: 170px;
@@ -529,6 +525,7 @@ div h2 {
 }
 .centrado h5{
   color: #217533;
+  margin-top: 5px;
 }
 .personalImg {
   border-radius: 12px 0px 0px 0px;
@@ -536,22 +533,32 @@ div h2 {
   width: 110px;
 }
 .mission{
-  color: white;
-  min-height: 25vh;
+  color: rgb(1, 1, 1);
+  min-height: 30vh;
+  width: 100%;
+  background-color: #f4f1e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+}
+.mission div{
+  width: 100%;
 }
 .mission h2{
   margin: 0px;
+  margin-bottom: 10px;
+}
+/*  ---------------------   Formulario de propiedades - Admins .mission h2{
+
   padding: 10px;
-}
-.mission p{
-  font-size: 20px;
-}
-.div{
-  height: 100%;
   margin: auto;
 }
+.mission p{
 
-/*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
+} ---------------------  */
 .formulario {
   background-color: #c9cac9;
   text-align: center;
@@ -643,15 +650,7 @@ form h2{
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
-.confirmation-message {
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-  padding: 1rem;
-  display: none;
-  text-align: center;
-  font-size: 1.2rem;
-}
+
 
 
 
@@ -718,7 +717,7 @@ li a:hover{
   margin: 15px;
 }
 
-.sectionForm p, h5{
+.sectionForm p, .sectionForm h5{
   font-size: 20px;
   width: 300px;
   padding-top: 10px;

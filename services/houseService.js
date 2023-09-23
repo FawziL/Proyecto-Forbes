@@ -64,8 +64,18 @@ class HouseMongoDAO {
   };
 
   getByLocation = async (location) => {
-    const doc = await this.collection.find({ location: location });
-    return doc;
+    const searchValue = new RegExp(location, 'i');
+
+    try {
+      const results = await this.collection.find({
+        $or: [{ location: searchValue }]
+      });
+  
+      return results;
+    }catch (error) {
+      console.error("Error en la búsqueda:", error);
+      return [];
+    }
   };
 
   getByName = async (name) => {

@@ -224,8 +224,9 @@
       </div>
     </section>
 
-    <div class="color-black flexContact">
+    <div class="flexContact">
       <form action="/" method="POST" id="formMessage">
+        <div class="color-black">
           <label for="name">Nombre:</label>
           <input type="text" name="name" placeholder="Ingrese su nombre">
       
@@ -236,8 +237,11 @@
           <textarea id="message" name="message" placeholder="Ingrese su mensaje"></textarea>
       
           <button type="submit">Enviar</button>
+        </div>
+          <div class="confirmation-message" style="display: none">¡Gracias por enviar tu formulario!</div>
       </form>
-      <div class="ws">
+      <div class="ws color-black">
+        <div>
           <h2 class="contactForbes">Atenderle es nuestra prioridad</h2>
           <p class="wsText">
             Comuníquese a nuestro WhatsApp y le atenderemos a la brevedad posible.
@@ -251,7 +255,8 @@
             </a>
           </div>
         </div>
-      <div class="confirmation-message" style="display: none">¡Gracias por enviar tu formulario!</div>
+      </div>
+
     </div>
 
     <section class="back">

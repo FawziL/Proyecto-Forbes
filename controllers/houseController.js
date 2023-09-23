@@ -33,8 +33,7 @@ const createProduct = async (req, res) => {
 };
 const getByName = async (req, res) => {
   try {
-    const { username, name, address, age, phone, description, avatar } =
-      req.user;
+    const { username, name, address, age, phone, description, avatar } = req.user;
     const housesByName = await houseService.getByName(req.user.name);
     res.render("userInfo", {
       username,
