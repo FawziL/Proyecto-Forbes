@@ -140,36 +140,31 @@ footer p{
   padding: 20vh;
   color: white;
 }
-.verde {
-  color: white;
-  text-align: center;
-}
 .verderSvg {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-.verderSvgNoMargin {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-}
 .bordeVerde {
   background-color: #188635;
+  color: white;
+  text-align: center;
   border-radius: 15px;
   border-style: solid;
   margin: 20px;
-  padding: 10px;
+  padding: 0px;
+  width: 180px;
+  height: 100px;
 }
-.verde svg {
+.bordeVerde svg {
   height: 35px;
   width: 25px;
   margin-left: 10px;
 }
-.verde h4 {
+.bordeVerde h4 {
   font-size: 34px;
 }
-.verde p {
+.bordeVerde p {
   font-size: 18px;
 }
 .verdeP {
@@ -182,18 +177,12 @@ footer p{
   margin: auto;
   padding: 3vh;
 }
-.titleText{
-  font-weight: bold;
-  font-size: 32px;
-  text-align: center;
-  padding: 10px;
-  padding-top: 0px;
-}
 .porcentaje{
-  width: 50%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: auto;
+  width: 50%;
 } 
 
 /*  ---------------------   Sección Oferta  ---------------------  */
@@ -218,13 +207,18 @@ footer p{
 .textOferta {
   font-size: 18px;
   width: 280px;
-  text-align: justify;
   margin: auto;
 }
 .textOferta p{
   margin-bottom: 0px;
 }
-
+.titleText{
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 0px;
+}
 /*  ---------------------   Sección contacto Ws y Mail  ---------------------  */
 
 .flexContact {
@@ -451,6 +445,7 @@ footer p{
   color: white;
   text-decoration: none;
   padding-top: 15px;
+  margin-left: 20px;
 }
 .categorias h3 {
   color: white;
@@ -761,4 +756,18 @@ li a:hover{
 }
 #carouselExampleAutoplaying p{
   color: white;
+}
+
+
+
+
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow .15s ease-in-out;
 }

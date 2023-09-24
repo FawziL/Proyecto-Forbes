@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px){
-    nav img{
-        margin-left: 10px;
+    .logo{
+        margin-left: 20px;
     }
     .welcomeText {
         padding: 5vh;
@@ -22,19 +22,20 @@
         padding: 30px;
     }
     .porcentaje{
-        display: block;
+        width: 100%;
     }
     .text {
         width: 100%;
         font-size: 18px;
         padding: 10px;
     }
-    .verde {
-        display: block;
-    }
     .bordeVerde {
-        margin-top: 10px;
         padding: 0px;
+        justify-content: center;
+    }
+    .bordeVerde p{
+        text-align: center;
+        margin: auto;
     }
     /*Seccion Oferta*/
     .oferta {
@@ -53,7 +54,11 @@
     }
     .textOferta {
         width: 80%;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+    }
+    .titleText {
+        margin-bottom: 0px;
+        padding-bottom: 5px;
     }
     /*Seccion Contact Forbes*/
     .contactForbes {
@@ -63,7 +68,7 @@
     #formMessage {
         width: 50%;
         padding: 20px;
-        padding-top: 40px;
+        margin: auto;
     }
     #formMessage input, textarea {
         width: 100%;
@@ -76,6 +81,9 @@
     .wsText {
         font-size: 18px;
         padding-bottom: 5px;
+    }
+    .flexContact{
+        background-color: #3d3d3b;
     }
     /*Seccion Back*/
     .back{
@@ -114,37 +122,60 @@
     footer{
         height: 100%;
     }
+
+
     /*Html Productos*/
     #productos {
         display: block;
     }
-    .categorias {
-        font-size: 20px;
-        padding-left: 56px;
+    .productSection {
+        margin: 10px 5px 10px 5px;
+        max-width: 350px;
     }
+    .imgProduct {
+        width: 150px;
+    }
+    .productInfo {
+        text-align: center;
+        font-size: 22px;
+        margin: 10px;
+    }
+    .categorias{
+        margin-left: 25px;
+    }
+    
     /*Html AboutUs*/
-    .WIA p {
-        margin: 0px;
+    .WIA {
+        height: 100%;
     }
-    .opiniones {
-        padding: 20px; 
+    .aboutUs {
+        max-width: 70%;
+        padding-top: 25px;
     }
-    .carruselP {
-        font-size: 18px;
+    .WIA img {
+        width: 100%;
+        height: 45vh;
     }
-    .togleCategory svg {
-        transform: rotate(90deg);
-      }
+    .centrado {
+        width: 170px;
+        padding: 0px 10px 0px 10px;
+        text-align: justify;
+    }
     /*Html UserAccount*/
     .displayFlex {
         display: block;
     }
+    .form-container {
+        display: block;
+    }
+    .sellerSection {
+        height: 93vh;
+        width: 100%;
+        padding: 10px;
+    }
     .form-container form {
         padding: 15px;
-    }
-    .form-container form{
-    
-        margin: auto;
+        width: 100%;
     }
 }
 
@@ -242,9 +273,6 @@
         font-size: 18px;
         margin: auto;
         padding: 20px;
-    }
-    .verde p {
-        width: 200px;
     }
     .bordeVerde {
         margin-top: 10px;
