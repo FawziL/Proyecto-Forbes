@@ -86,6 +86,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 header{
   position: fixed;
@@ -169,7 +170,6 @@ footer p{
   font-size: 34px;
 }
 .verde p {
-  width: 150px;
   font-size: 18px;
 }
 .verdeP {
@@ -551,14 +551,7 @@ footer p{
   margin: 0px;
   margin-bottom: 10px;
 }
-/*  ---------------------   Formulario de propiedades - Admins .mission h2{
-
-  padding: 10px;
-  margin: auto;
-}
-.mission p{
-
-} ---------------------  */
+/*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
 .formulario {
   background-color: #c9cac9;
   text-align: center;
@@ -588,32 +581,38 @@ footer p{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  min-height: 92vh;
+  min-height: 93vh;
   margin-top: 50px;
+  padding: 0px;
+  background-color: hsl(0, 2%, 84%)
+}
+.sellerSection{
+  height: 93vh;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.sellerSection p{
+  font-size: 26px;
 }
 .form-container form {
-  background-color: #edededbd;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-  padding: 25px;
-  max-width: 450px;
+  padding: 20px;
+  width: 350px;
   margin: auto;
-}
-form h2{
-  font-size: 1.5rem;
-  margin: 0px;
-  text-align: center;
-  background-color: #edededbd;
-  padding: 0px;
+  background-color:white
 }
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .form-container input {
-  border: none;
+  border-style: solid;
   border-radius: 3px;
   font-size: 1rem;
   padding: 0.5rem;
