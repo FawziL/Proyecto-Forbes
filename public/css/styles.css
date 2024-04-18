@@ -53,28 +53,31 @@ input, textarea {
   background-image: url(../imgs/Imagen1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 .welcome h2 {
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  font-size: 34px;
 }
 .welcomeText {
-  padding: 35vh;
+  padding: 40vh;
   font-size: 24px;
   text-align: center;
   color: white;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .welcomeButton {
   background-color: #1e8617;
   padding: 6px;
   color: white;
-  width: 180px;
+  width: 190px;
   font-size: 22px;
-  border-style: solid;
+  border-style: none;
+  box-shadow: 2px 2px 15px #000000; 
   border-color: #1e4a1b;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .welcomeButton:hover {
   transition: 1000ms;
@@ -87,6 +90,10 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 0 10px #000
+}
+.marginNav{
+  margin-left: 110px;
 }
 header{
   position: fixed;
@@ -364,6 +371,9 @@ footer p{
 
 #productos {
   display: flex;
+  background-color: #f4f1e9;
+  min-height: 92vh;
+  padding-top: 50px;
 }
 .productosprueba {
   display: flex;
@@ -391,12 +401,6 @@ footer p{
 .buttonPreview:hover {
   background-color: #ca852b;
   transition: 1000ms;
-}
-.products {
-  background-color: #f4f1e9;
-  border-style: solid;
-  min-height: 92vh;
-  margin-top: 50px;
 }
 .productSection {
   background-color: rgb(255, 255, 255);
@@ -547,28 +551,10 @@ footer p{
   margin-bottom: 10px;
 }
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
-.formulario {
-  background-color: #c9cac9;
-  text-align: center;
-  width: 550px;
-  margin: 0 auto;
+.formContainerTop{
   padding: 20px;
+  margin-top: 20px;
 }
-.formularioEspacio{
-  width: 100%;
-  display: flex;
-  justify-content: center ;
-}
-.formularioLogin {
-  background-color: #c9cac9;
-  text-align: center;
-  padding: 20px;
-  margin: 40px;
-  border-radius: 15px;
-  border-style: solid;
-  width: 600px;
-}
-
 
 /*  ---------------------   Formulario Vender  ---------------------  */
 
@@ -577,13 +563,12 @@ footer p{
   justify-content: center;
   align-items: center;
   min-height: 93vh;
-  margin-top: 50px;
-  padding: 0px;
+  padding-top: 50px;
   background-color: hsl(0, 2%, 84%)
 }
 .sellerSection{
   height: 93vh;
-  width: 70%;
+  width: 64%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -673,6 +658,20 @@ footer p{
   min-height: 92vh;
   margin-top: 50px;
 }
+.cardProduct{
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px 0px 12px 0px;
+  box-shadow: 5px 5px 5px 3px #454141;
+  margin: 20px 5px 20px 5px;
+  width: 300px;
+  text-align: center;
+}
+.cardProduct img{
+  width: 100%;
+}
+
+
+
 .scroll-animation {
   opacity: 0; /* El div está inicialmente oculto */
   transform: translateY(100px); /* Mueve el div hacia abajo */
@@ -723,43 +722,6 @@ li a:hover{
   margin: 20px 10px 20px 10px;
   text-align: center;
 }
-
-.progress-bar {
-  background-color: rgb(255, 255, 255);
-  height: 15px;
-  margin: 20px;
-  border-radius: 5px;
-  width: 90%;
-  animation: grow 4s linear infinite;
-  transform-origin: left;
-}
-
-@keyframes grow {
-  0% {
-    transform: scaleX(0);
-  }
-}
-#carouselExampleAutoplaying{
-  display: flex;
-  justify-content: center;
-  height: 400px;
-}
-.carousel-inner{
-  height: 350px;
-  width: 80vh;
-  margin: auto;
-  background-color: #136c2b;
-  border-radius: 40px;
-  text-align: center;
-  padding: 40px;
-  color: white;
-}
-#carouselExampleAutoplaying p{
-  color: white;
-}
-
-
-
 
 
 .navbar-toggler {

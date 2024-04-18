@@ -31,6 +31,7 @@ const createProduct = async (req, res) => {
     console.log(err);
   }
 };
+
 const getByName = async (req, res) => {
   try {
     const { username, name, address, age, phone, description, avatar } = req.user;
@@ -52,8 +53,8 @@ const getByName = async (req, res) => {
 
 const updateProductsPlantilla = async (req, res) => {
   try {
-    const productId = req.params._id;
-    res.render("formularioUserUpdate", { id: productId });
+    const product = await houseService.getById(req.params._id)
+    res.render("formularioUserUpdate", { product });
   } catch (err) {
     console.log(err);
   }

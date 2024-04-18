@@ -1,6 +1,6 @@
 {{> navbarUser }}
 <div class="user">
-  <h1 class="textAlign">Bienvenido {{username}}</h1>
+  <h1 class="textAlign">Bienvenido Admin: {{username}}</h1>
   <div class="displayFlexCenter">
       <div class="userAccount">
             <h3>Datos personales:</h3>
@@ -16,11 +16,10 @@
             <img src="{{avatar}}" class="imgUserAccount" alt="avatar">
       </div>
       <div>
-        <h2>Propiedades subidas por {{name}}:</h2>
         <div class="productosprueba">
           {{#each housesByName}} 
-            <div class='productSection' style='width: 18rem;'>
-              <img src='{{thumbnail}}' class='imgProduct' alt='...' />
+            <div class='cardProduct'>
+              <img src='{{thumbnail}}' alt='{{title}}' class="imgProduct" />
               <div class= "productInfo">
                 <p class='card-text'>Precio: ${{price}}</p>
                 <p class='card-text'>Ubicación: {{location}}</p>
@@ -34,4 +33,3 @@
       </div>
   </div>
 </div>
-{{> footer }}

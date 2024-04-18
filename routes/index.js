@@ -14,7 +14,7 @@ routes.use(routerUser);
 
 routes.get('/ventas', renderProducts)
 
-routes.post('/createProduct',upload.fields([
+routes.post('/createProduct', auth, upload.fields([
     { name: 'thumbnailArray', maxCount: 1 },
     { name: 'welcomeThumbnailArray', maxCount: 1 },
     { name: 'benefitThumbnail1Array', maxCount: 1 },
@@ -37,11 +37,11 @@ routes.get('/ventas/category/:location', getByLocation)
 
 routes.get('/ventas/:_id', renderProductById)
 
-routes.get('/delete/:_id', deleteById)
+routes.get('/delete/:_id', auth, deleteById)
 
-routes.get('/update/:_id', updateProductsPlantilla)
+routes.get('/update/:_id', auth, updateProductsPlantilla)
 
-routes.post('/update/:_id/update', updateProducts)
+routes.post('/update/:_id/update', auth, updateProducts)
 
 routes.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"))

@@ -1,22 +1,16 @@
 {{> navbarUser }}
-<div class="products">
-  <div id="productos">
-    <div class="productosprueba2">
-      <h2>Clientes captados:</h2>
-      <div class="productosprueba">
-      {{#each products}} 
-            <div class='productSectionSell' style='width: 18rem;'>
-              <div class= "productInfo">
-                <p class='card-text'>Agente: {{agent}}</p>
-                <p class='card-text'>Nombre y Apellido: {{name}}</p>
-                <p class='card-text'>Telefóno: {{phone}}</p>
-                <p class='card-text'>Email: {{email}}</p>
-                <p class='card-text'>Ubicación: {{location}}</p>
-              </div>
-            </div> 
-          {{/each}}
-        </div>
+<h2 style="text-align: center;">Clientes Formulario:</h2>
+  <div class="productosprueba">
+  {{#each products}} 
+    <div class='productSectionSell' style='width: 18rem;'>
+      <div class= "productInfo">
+        <p class='card-text'>Agente: {{agent}}</p>
+        <p class='card-text'>Nombre y Apellido: {{name}}</p>
+        <p class='card-text'>Telefóno: {{phone}}</p>
+        <p class='card-text'>Email: {{email}}</p>
+        <p class='card-text'>Ubicación: {{location}}</p>
       </div>
-      </div>
+    </div> 
+  {{/each}}
 </div>
 {{> footer }}

@@ -1,80 +1,96 @@
 {{> navbarUser }}
-  <div class="form-container color-rosa">
-  <form action="/update/{{id}}/update" method="POST">
-    <h4>Modificar: {{id}}</h4>
-    <hr>
+<div class="color-rosa form-container">
+  <form action="/update/{{product._id}}/update" method="POST">
+      <h4>Modificar: {{product._id}}</h4>
         <div class="form-group">
-
           <h3>Datos generales</h3>
+    
           <label for="price">Precio:</label>
           <input type="text" name="price" placeholder="Precio del inmueble">
+          <label for="price">Precio Actual:</label>
+          <p>{{product.price}}</p>
           <label for="location">Ubicación:</label>
           <input type="text" name="location" placeholder="Ubicación del inmueble">
+          <label for="price">Ubicación Actual:</label>
+          <p>{{product.location}}</p>
         </div>
-
         <div class="form-group">
-
           <h3>Datos de bienvenida</h3>
           <label for="welcomeTitle">Titulo Principal:</label>
           <input type="text" name="welcomeTitle" placeholder="Titulo de bienvenida">
+          <label for="price">Titulo Actual:</label>
+          <p>{{product.welcomeTitle}}</p>
           <label for="welcomeContent">Texto Principal:</label>
           <input type="text" name="welcomeContent" placeholder="Texto de bienvenida">
+          <label for="price">Texto Principal Actual:</label>
+          <p>{{product.welcomeContent}}</p>
         </div>
-
         <div class="form-group">
-
           <h3>Datos de beneficios</h3>
           <label for="benefitTitle1">Titulo beneficio 1:</label>
           <input type="text" name="benefitTitle1" placeholder="Titulo beneficio">
+          <label for="price">Titulo beneficio 1 Actual:</label>
+          <p>{{product.benefitTitle1}}</p>
           <label for="benefitContent1">Contenido beneficio 1:</label>
           <input type="text" name="benefitContent1" placeholder="Contenido beneficio">
-
-          <br>
+          <label for="price">Contenido beneficio 1 Actual:</label>
+          <p>{{product.benefitContent1}}</p>
           <label for="benefitTitle2">Titulo beneficio 2:</label>
           <input type="text" name="benefitTitle2" placeholder="Titulo beneficio">
+          <label for="price">Titulo beneficio 2 Actual:</label>
+          <p>{{product.benefitTitle2}}</p>
           <label for="benefitContent2">Contenido beneficio 2:</label>
           <input type="text" name="benefitContent2" placeholder="Contenido beneficio">
-  
-          <br>
+          <label for="price">Contenido beneficio 2 Actual:</label>
+          <p>{{product.benefitContent2}}</p>
           <label for="benefitTitle3">Titulo beneficio 3:</label>
           <input type="text" name="benefitTitle3" placeholder="Titulo beneficio">
+          <label for="price">Titulo beneficio 3 Actual:</label>
+          <p>{{product.benefitTitle3}}</p>
           <label for="benefitContent3">Contenido beneficio 3:</label>
           <input type="text" name="benefitContent3" placeholder="Contenido beneficio">
+          <label for="price">Contenido beneficio 3 Actual:</label>
+          <p>{{product.benefitContent3}}</p>
         </div>
-
         <hr>
-
         <div class="form-group">
           <h3>Características</h3>
           <label for="detailTitle1">Titulo Característica 1:</label>
           <input type="text" name="detailTitle1" placeholder="Titulo Característica">
+          <label for="price">Titulo Característica 1 Actual:</label>
+          <p>{{product.detailTitle1}}</p>
           <label for="detailBenefit1">Texto Característica 1:</label>
           <input type="text" name="detailBenefit1" placeholder="Texto Característica">
-
-          <br>
+          <label for="price">Texto Característica 1 Actual:</label>
+          <p>{{product.detailBenefit1}}</p>
           <label for="detailTitle2">Titulo Característica 2:</label>
           <input type="text" name="detailTitle2" placeholder="Titulo Característica">
+          <label for="price">Titulo Característica 2 Actual:</label>
+          <p>{{product.detailTitle2}}</p>
           <label for="detailBenefit2">Texto Característica 2:</label>
           <input type="text" name="detailBenefit2" placeholder="Texto Característica">
-
-          <br>
+          <label for="price">Texto Característica 2 Actual:</label>
+          <p>{{product.detailBenefit2}}</p>
           <label for="detailTitle3">Titulo Característica 3:</label>
           <input type="text" name="detailTitle3" placeholder="Titulo Característica">
+          <label for="price">Titulo Característica 3 Actual:</label>
+          <p>{{product.detailTitle3}}</p>
           <label for="detailBenefit3">Texto Característica 3:</label>
           <input type="text" name="detailBenefit3" placeholder="Texto Característica">
-
-          <br>
+          <label for="price">Texto Característica 3 Actual:</label>
+          <p>{{product.detailBenefit3}}</p>
+          
           <label for="detailTitle4">Titulo Característica 4:</label>
           <input type="text" name="detailTitle4" placeholder="Titulo Característica">
+          <label for="price">Titulo Característica 4 Actual:</label>
+          <p>{{product.detailTitle4}}</p>
           <label for="detailBenefit4">Texto Característica 4:</label>
           <input type="text" name="detailBenefit4" placeholder="Texto Característica">
+          <label for="price">Texto Característica 4 Actual:</label>
+          <p>{{product.detailBenefit4}}</p>            
         </div>
-
       <button type="submit">Enviar</button>
-      <div>
-        <p>En este formulario solo es posible modificar texto y titulos del inmueble.</p>
-      </div>
   </form>
-  </div>
+</div>
 {{> footer }}
 

@@ -1,23 +1,22 @@
 {{> navBar }}
 
-  <div id="productos" class="products">
-    {{> categories }}
-    <div class="productosprueba2">
-      <h2>Resultados</h2>
-      <div class="productosprueba">
-      {{#each products}} 
-            <div class='productSection'>
-                <img src='{{thumbnail}}' class='imgProduct' alt='propiedad {{_id}}' />
-                <div class= "productInfo">
-                  <p class='card-text'>Precio: ${{price}}</p>
-                  <p class='card-text'>Ubicación: {{location}}</p>
-                  <a href="/ventas/{{_id}}"><button  class="buttonPreview">Ver detalles</button></a>
-                </div>
-
-            </div> 
-          {{/each}}
-      </div>
+<div id="productos" class="products">
+  {{> categories }}
+  <div class="productosprueba2">
+    <h2>Resultados</h2>
+    <div class="productosprueba">
+    {{#each products}} 
+          <div class='productSection'>
+              <img src='{{thumbnail}}' class='imgProduct' alt='propiedad {{_id}}' />
+              <div class= "productInfo">
+                <p class='card-text'>Precio: ${{price}}</p>
+                <p class='card-text'>Ubicación: {{location}}</p>
+                <a href="/ventas/{{_id}}"><button  class="buttonPreview">Ver detalles</button></a>
+              </div>
+          </div> 
+        {{/each}}
     </div>
   </div>
+</div>
 
 {{> footer }}

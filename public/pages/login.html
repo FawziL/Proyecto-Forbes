@@ -20,7 +20,7 @@
       <nav class="navbar-dark navbar-expand-lg navIndex">
         <a href="/">
           <img
-            src="../imgs/logo.png"
+            src="./imgs/logo.png"
             alt="logo"
             class="logo"
           />
@@ -40,58 +40,69 @@
 
         <ul class="navbar-nav justify-content-evenly collapse navbar-collapse marginNav" id="navbarNav">
           <li class="nav-item">
-            <a class="nav-link" href="/ventas">Comprar</a>
+            <a class="nav-link" href="ventas">Comprar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/vender">Vender</a>
+            <a class="nav-link" href="vender">Vender</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/aboutUs">Sobre nosotros...</a>
+            <a class="nav-link" href="aboutUs">Nosotros</a>
           </li>
-          <l1>
-            <a href="/clientes" class="nav-link">Clientes</a>
-          </l1>
-          <l1>
-            <a href="/micuenta" class="nav-link">Mi perfil</a>
-          </l1>
-          <l1>
-            <a href="/formulario" class="nav-link">Formulario</a>
-          </l1>
-          <l1>
-            <a href="/logout" class="nav-link">Salir</a>
-          </l1>
+          <div class="RedesSociales">
+            <a href="https://www.facebook.com/forbesinmobiliaria" target="_blank" class="redSocial">
+              <img
+                src="./svgs/facebook.svg"
+                alt="facebook logo"
+              />
+            </a>
+            <a href="https://www.instagram.com/forbesinmobiliaria/" target="_blank" class="redSocial">
+                <img
+                src="./svgs/instagram.svg"
+                alt="instagram logo"
+              />
+            </a>
+            <a href="https://www.tiktok.com/@forbesinmobiliaria" target="_blank" class="redSocial">
+                <img
+                  src="./svgs/tiktok.svg"
+                  alt="tiktok logo"
+                />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes" target="_blank" class="redSocial">
+                <img
+                src="./svgs/whatsapp.svg"
+                  alt="whatsapp logo"
+                />
+            </a>
+          </div>
         </ul>
       </nav>
     </header>
 
-
-      <div class="form-container">
-        <div>
-          <form id="formLogIn" action="/login" method="post">
-            <h2>Ingrese sus credenciales:</h2>
-            <hr>
-            <div class="form-group">
-              <label for="username">Username:</label>
-              <input type="text" name="username" placeholder="Usuario">
-            </div>
-            <div class="form-group">
-              <label for="password">Password:</label>
-              <input type="password" name="password" placeholder="Contraseña">
-            </div>
-            <button type="submit">Iniciar sesión</button>
-          </form>
-          <div class="buttonMove">
-            <a href="/signup"><button>Registrarse</button></a>
+    <div class="form-container">
+      <div>
+        <form id="formLogIn" action="/login" method="post">
+          <h2>Iniciar sesión:</h2>
+          <hr>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Usuario" required>
           </div>
-          
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Contraseña" required>
+          </div>
+          <button type="submit">Iniciar sesión</button>
+        </form>
+        <div class="buttonMove">
+          <a href="/signup"><button>Registrarse</button></a>
         </div>
       </div>
-
-
-      <footer>
+    </div>
+    
+    <footer>
         <a href="/">
           <img
-          src="../../imgs/logo.png"
+          src="./imgs/logo.png"
           alt="logo"
           class="logoFooter"/>
         </a>
@@ -105,36 +116,36 @@
           <div class="RedesSociales">
             <a href="https://www.facebook.com/forbesinmobiliaria" target="_blank" class="redSocial">
                 <img
-                  src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor"
+                  src="./svgs/facebook.svg"
                   alt="facebook logo"
                 />
             </a>
             <a href="https://www.instagram.com/forbesinmobiliaria/" target="_blank" class="redSocial">
                 <img
-                src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor"
+                src="./svgs/instagram.svg"
                 alt="instagram logo"
               />
             </a>
             <a href="https://www.tiktok.com/@forbesinmobiliaria" target="_blank" class="redSocial">
                 <img
-                  src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor"
+                  src="./svgs/tiktok.svg"
                   alt="tiktok logo"
                 />
             </a>
             <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes" target="_blank" class="redSocial">
                 <img
-                  src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor"
+                  src="./svgs/whatsapp.svg"
                   alt="whatsapp logo"
                 />
             </a>
           </div>
         </div>
-      </footer>
-      
-      <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
+    </footer>
+    
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
     ></script>
   </body>
 </html>

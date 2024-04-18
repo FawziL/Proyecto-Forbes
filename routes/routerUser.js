@@ -18,7 +18,7 @@ router.post('/signup',passport.authenticate('register',{ failureRedirect: '/fail
  
 router.get('/failedSignup', failedSignup);
 
-router.get('/logout', logout) 
+router.get('/logout', auth, logout) 
 
 module.exports = router;
 

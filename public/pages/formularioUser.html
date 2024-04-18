@@ -64,7 +64,7 @@
       </nav>
     </header>
 
-    <div class="form-container color-rosa">
+    <div class="form-container color-rosa formContainerTop">
       <form action="/createProduct" method="POST" enctype="multipart/form-data">
         <h2>FORMULARIO DE INMUEBLES</h2>
         <hr>
@@ -72,26 +72,26 @@
           <h3>Datos generales</h3>
           
           <label for="price">Precio:</label>
-          <input type="text" name="price" placeholder="Precio del inmbueble">
+          <input required type="text" name="price" placeholder="Precio del inmbueble">
 
           <label for="location">Ubicación:</label>
-          <input type="text" name="location" placeholder="Ubicación del inmbueble">
+          <input required type="text" name="location" placeholder="Ubicación del inmbueble">
 
           <label for="thumbnail">Miniatura</label>
-          <input type="file" name="thumbnailArray" placeholder="Imagen pequeña-Miniatura">
+          <input required type="file" name="thumbnailArray" placeholder="Imagen pequeña-Miniatura">
         </div>
         <hr>
         <div class="form-group">
           <h3>Datos de bienvenida</h3>
 
           <label for="welcomeThumbnail">Imagen Principal:</label>
-          <input type="file" name="welcomeThumbnailArray" placeholder="Imagen de bienvenida">
+          <input required type="file" name="welcomeThumbnailArray" placeholder="Imagen de bienvenida">
 
           <label for="welcomeTitle">Titulo Principal:</label>
-          <input type="text" name="welcomeTitle" placeholder="Titulo de bienvenida">
+          <input required type="text" name="welcomeTitle" placeholder="Titulo de bienvenida">
 
           <label for="welcomeContent">Texto Principal:</label>
-          <input type="text" name="welcomeContent" placeholder="Texto de bienvenida">
+          <input required type="text" name="welcomeContent" placeholder="Texto de bienvenida">
         </div>
         <hr>
         <div class="form-group">
@@ -99,39 +99,39 @@
 
           <br>
           <label for="benefitTitle1">Titulo beneficio 1:</label>
-          <input type="text" name="benefitTitle1" placeholder="Titulo beneficio">
+          <input required type="text" name="benefitTitle1" placeholder="Titulo beneficio">
           
           <label for="benefitContent1">Contenido beneficio 1:</label>
-          <input type="text" name="benefitContent1" placeholder="Contenido beneficio">
+          <input required type="text" name="benefitContent1" placeholder="Contenido beneficio">
 
           <label for="benefitThumbnail1">Imagen beneficio 1:</label>
-          <input type="file" name="benefitThumbnail1Array" placeholder="Imagen beneficio">
+          <input required type="file" name="benefitThumbnail1Array" placeholder="Imagen beneficio">
 
           <br>
           <label for="benefitTitle2">Titulo beneficio 2:</label>
-          <input type="text" name="benefitTitle2" placeholder="Titulo beneficio">
+          <input required type="text" name="benefitTitle2" placeholder="Titulo beneficio">
           
           <label for="benefitContent2">Contenido beneficio 2:</label>
-          <input type="text" name="benefitContent2" placeholder="Contenido beneficio">
+          <input required type="text" name="benefitContent2" placeholder="Contenido beneficio">
 
           <label for="benefitThumbnail2">Imagen beneficio 2:</label>
-          <input type="file" name="benefitThumbnail2Array" placeholder="Imagen beneficio">
+          <input required type="file" name="benefitThumbnail2Array" placeholder="Imagen beneficio">
   
           <br>
           <label for="benefitTitle3">Titulo beneficio 3:</label>
-          <input type="text" name="benefitTitle3" placeholder="Titulo beneficio">
+          <input required type="text" name="benefitTitle3" placeholder="Titulo beneficio">
           
           <label for="benefitContent3">Contenido beneficio 3:</label>
-          <input type="text" name="benefitContent3" placeholder="Contenido beneficio">
+          <input required type="text" name="benefitContent3" placeholder="Contenido beneficio">
 
           <label for="benefitThumbnail3">Imagen beneficio 3:</label>
-          <input type="file" name="benefitThumbnail3Array" placeholder="Imagen beneficio">
+          <input required type="file" name="benefitThumbnail3Array" placeholder="Imagen beneficio">
         </div>
         <hr>
         <div class="form-group">
           <h3>Imagen Características</h3>
           <label for="detailThumbnail">Imagen de Características:</label>
-          <input type="file" name="detailThumbnailArray" placeholder="Última imagen">
+          <input required type="file" name="detailThumbnailArray" placeholder="Última imagen">
         </div>
         <hr>
         <div class="form-group">
@@ -139,36 +139,33 @@
 
           <br>
           <label for="detailTitle1">Titulo Característica 1:</label>
-          <input type="text" name="detailTitle1" placeholder="Titulo Característica">
+          <input required type="text" name="detailTitle1" placeholder="Titulo Característica">
           
           <label for="detailBenefit1">Texto Característica 1:</label>
-          <input type="text" name="detailBenefit1" placeholder="Texto Característica">
+          <input required type="text" name="detailBenefit1" placeholder="Texto Característica">
 
           <br>
           <label for="detailTitle2">Titulo Característica 2:</label>
-          <input type="text" name="detailTitle2" placeholder="Titulo Característica">
+          <input required type="text" name="detailTitle2" placeholder="Titulo Característica">
           
           <label for="detailBenefit2">Texto Característica 2:</label>
-          <input type="text" name="detailBenefit2" placeholder="Texto Característica">
+          <input required type="text" name="detailBenefit2" placeholder="Texto Característica">
 
           <br>
           <label for="detailTitle3">Titulo Característica 3:</label>
-          <input type="text" name="detailTitle3" placeholder="Titulo Característica">
+          <input required type="text" name="detailTitle3" placeholder="Titulo Característica">
           
           <label for="detailBenefit3">Texto Característica 3:</label>
-          <input type="text" name="detailBenefit3" placeholder="Texto Característica">
+          <input required type="text" name="detailBenefit3" placeholder="Texto Característica">
 
           <br>
           <label for="detailTitle4">Titulo Característica 4:</label>
-          <input type="text" name="detailTitle4" placeholder="Titulo Característica">
+          <input required type="text" name="detailTitle4" placeholder="Titulo Característica">
           
           <label for="detailBenefit4">Texto Característica 4:</label>
-          <input type="text" name="detailBenefit4" placeholder="Texto Característica">
+          <input required type="text" name="detailBenefit4" placeholder="Texto Característica">
         </div>
         <button type="submit">Enviar</button>
-        <div>
-          <p>Por favor, llenar todas las imágenes del formulario, de no ser así, no será posible crear el producto.</p>
-        </div>
       </form>
 
     </div>
@@ -176,7 +173,7 @@
     <footer>
       <a href="/">
         <img
-        src="../../imgs/logo.png"
+        src="./imgs/logo.png"
         alt="logo"
         class="logoFooter"/>
       </a>
@@ -190,25 +187,25 @@
         <div class="RedesSociales">
           <a href="https://www.facebook.com/forbesinmobiliaria" target="_blank" class="redSocial">
               <img
-                src="https://icongr.am/simple/facebook.svg?size=30&color=currentColor"
+                src="./svgs/facebook.svg"
                 alt="facebook logo"
               />
           </a>
           <a href="https://www.instagram.com/forbesinmobiliaria/" target="_blank" class="redSocial">
               <img
-              src="https://icongr.am/simple/instagram.svg?size=30&color=currentColor"
+              src="./svgs/instagram.svg"
               alt="instagram logo"
             />
           </a>
           <a href="https://www.tiktok.com/@forbesinmobiliaria" target="_blank" class="redSocial">
               <img
-                src="https://icongr.am/simple/tiktok.svg?size=30&color=currentColor"
+                src="./svgs/tiktok.svg"
                 alt="tiktok logo"
               />
           </a>
           <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes" target="_blank" class="redSocial">
               <img
-                src="https://icongr.am/simple/whatsapp.svg?size=30&color=currentColor"
+                src="./svgs/whatsapp.svg"
                 alt="whatsapp logo"
               />
           </a>
