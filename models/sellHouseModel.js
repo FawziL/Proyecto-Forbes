@@ -1,13 +1,12 @@
 const mongoose = require("mongoose");
 
-const sellHouseSchema = new mongoose.Schema({
+const clientSchema = new mongoose.Schema({
     location:{type:String, required: true},
     name:{type:String, required: true},
     email:{type:String, required: true},
-    phone:{type:Number, required: true},
-    agent:{type:String, required: true},
+    phone:{type:String, required: true},
 });
 
-const sellHouseModel = mongoose.model('sellHouse', sellHouseSchema);
+const clientModel = mongoose.model('client', clientSchema);
 
-module.exports = sellHouseModel
+module.exports = clientModel

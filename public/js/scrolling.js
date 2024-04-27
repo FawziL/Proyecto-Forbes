@@ -1,11 +1,18 @@
 document.addEventListener('scroll', function() {
-    let divs = document.querySelectorAll('.scroll-animation');
-    divs.forEach(function(div) {
-      let posicionDiv = div.getBoundingClientRect().top;
-      let alturaVentana = window.innerHeight;
-      if (posicionDiv < alturaVentana) {
-        div.classList.add('mostrar');
-      }
-    });
+  const divs = document.querySelectorAll('.scroll-animation');
+  const alturaVentana = window.innerHeight - 100;
+
+  divs.forEach(function(div) {
+    const posicionDivInicial = div.getBoundingClientRect().top;
+    let posicionDiv = posicionDivInicial;
+
+    if (posicionDiv < alturaVentana) {
+      div.classList.add('mostrar');
+    } else {
+      div.classList.remove('mostrar');
+    }
+
+    posicionDiv = div.getBoundingClientRect().top;
   });
+});
   

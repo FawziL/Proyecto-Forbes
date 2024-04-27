@@ -4,17 +4,17 @@ let instance;
 
 class mailerDAO {
 
-formContact = async(name, email, message) => {
+formContact = async(name, email, phone) => {
   const mailOptions = {
     from: "pg394261@gmail.com",
     to: "xerxeszerofjlr11@gmail.com",
     subject: `Nuevo mensaje de ${name}`,
     html: 
     `
-    <h2>Hola, te escribe: ${name}</h2>
-    <h3>Te escribo por: ${message}</h3>
+    <h2>Hola, me llamo: ${name}</h2>
     <h3>Mis datos de contacto son:</h3>
     <p>${email}</p>
+    <p>${phone}</p>
     `,
   };
     await transporter.sendMail(mailOptions);

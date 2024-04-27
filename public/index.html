@@ -14,23 +14,6 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <!-- Meta Pixel Code -->
-      <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '655197935847537');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=655197935847537&ev=PageView&noscript=1"
-        /></noscript>
-      <!-- End Meta Pixel Code -->
     <title>Forbes Soluciones Inmobiliarias</title>
   </head>
   <body>
@@ -58,13 +41,13 @@
 
         <ul class="navbar-nav justify-content-evenly collapse navbar-collapse marginNav" id="navbarNav">
           <li class="nav-item">
-            <a class="nav-link" href="ventas">Comprar</a>
+            <a href="ventas">Comprar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vender">Vender</a>
+            <a href="vender">Vender</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aboutUs">Nosotros</a>
+            <a href="aboutUs">Nosotros</a>
           </li>
           <div class="RedesSociales">
             <a href="https://www.facebook.com/forbesinmobiliaria" target="_blank" class="redSocial">
@@ -105,8 +88,8 @@
     
     <section class="porcentajes color-black">
       <div class="text">
-        <p class="titleText">TU BIENESTAR Y COMODIDAD ES NUESTRA PRIORIDAD</p>
-        <p>
+        <p class="titleText scroll-animation top">TU BIENESTAR Y COMODIDAD ES NUESTRA PRIORIDAD</p>
+        <p class="scroll-animation left">
           En Forbes Soluciones Inmobiliarias brindamos servicio, experiencia y
           conocimiento, contribuimos a mantener un mercado inmobiliario de
           calidad.
@@ -115,7 +98,7 @@
       
       <div class="porcentaje">
 
-        <div class="bordeVerde">
+        <div class="bordeVerde scroll-animation right">
           <div class="verderSvg">
             <h4>9.5%</h4>
             <svg
@@ -135,7 +118,7 @@
           <p>Crecimiento anual</p>
         </div>
 
-        <div class="bordeVerde">
+        <div class="bordeVerde scroll-animation right">
           <div class="verderSvg">
             <h4>137</h4>
             <svg
@@ -157,7 +140,7 @@
           <p>Inmuebles vendidos</p>
         </div>
 
-        <div class="bordeVerde">
+        <div class="bordeVerde scroll-animation right">
           <div class="verderSvg">
             <h4>99%</h4>
             <svg
@@ -176,7 +159,7 @@
           <p>Clientes satisfechos</p>
         </div>
 
-        <div class="bordeVerde">
+        <div class="bordeVerde scroll-animation right">
           <div class="verderSvg">
             <h4>30+</h4>
             <svg
@@ -201,54 +184,34 @@
     <section class="oferta">
       <img src="./imgs/IMG_OFERTA.jpg" alt="oferta" class="imagenOferta"/>
       <div class="ofertText">
-        <p class="titleText">OFERTA DEL MES</p>
+        <p class="titleText scroll-animation left">OFERTA DEL MES</p>
         <div class="textOferta">
-            <p>Sala, comedor y cocina en concepto abierto</p>
-            <p>Moderna cocina completa en el área social</p>
-            <p>Espacio para sala de juegos</p>
-            <p>Área de parrillera</p>
-            <p>Excelente ubicación</p>
-            <p>Instalaciones eléctricas y tuberias  totalmente nuevas.</p>
-            <p>7 habitaciones</p>
-            <p>4 baños</p>
-            <p>Precio: 150.000$</p>
+            <p class="scroll-animation left">Sala, comedor y cocina en concepto abierto.</p>
+            <p class="scroll-animation left">Moderna cocina completa en el área social.</p>
+            <p class="scroll-animation left">Espacio para sala de juegos.</p>
+            <p class="scroll-animation left">Área de parrillera.</p>
+            <p class="scroll-animation left">Excelente ubicación.</p>
+            <p class="scroll-animation left">Instalaciones eléctricas y tuberias  totalmente nuevas.</p>
+            <p class="scroll-animation left">7 habitaciones.</p>
+            <p class="scroll-animation left">4 baños.</p>
+            <p class="scroll-animation left">Precio: 150.000$</p>
         </div>
       </div>
     </section>
 
-    <div class="flexContact">
-      <form action="/" method="POST" id="formMessage">
-        <div class="color-black">
-          <label for="name">Nombre:</label>
-          <input required type="text" name="name" placeholder="Ingrese su nombre">
-      
-          <label for="email">Correo electrónico:</label>
-          <input required type="text" name="email" placeholder="Ingrese su correo electrónico">
-      
-          <label for="message">Mensaje:</label>
-          <textarea required id="message" name="message" placeholder="Ingrese su mensaje"></textarea>
-      
-          <button type="submit">Enviar</button>
-        </div>
-          <div class="confirmation-message" style="display: none">¡Gracias por enviar tu formulario!</div>
-      </form>
-      <div class="ws color-black">
-        <div>
+    <div class="flexContact  color-black">
+        <div class="scroll-animation top">
           <h2 class="contactForbes">Atenderle es nuestra prioridad</h2>
           <p class="wsText">
             Comuníquese a nuestro WhatsApp y le atenderemos a la brevedad posible.
           </p>
-          <div class="displayFlexCenter">
             <a href="https://api.whatsapp.com/send?phone=584143105450&text=Buenas%20tardes">
               <img
                 src="https://icongr.am/simple/whatsapp.svg?size=60&color=1cab25"
                 alt="whatsapp logo"
               />
             </a>
-          </div>
         </div>
-      </div>
-
     </div>
 
     <section class="back">
@@ -265,7 +228,7 @@
     </section>
 
     <section class="contact">
-      <div class="infoContacto scroll-animation">
+      <div class="infoContacto scroll-animation bottom">
         <div class="info">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +301,7 @@
 
       <div>
         <h3>Conctactos</h3>
-        <div class="contacto scroll-animation">
+        <div class="contacto scroll-animation bottom">
           <div class="contactos">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -394,7 +357,7 @@
     <footer>
       <a href="/">
         <img
-        src="./imgs/logo.png"
+        src="./imgs/logo200x158.png"
         alt="logo"
         class="logoFooter"/>
       </a>
@@ -440,6 +403,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/scrolling.js"></script>
-    <script src="./js/msg.js"></script>
   </body>
 </html>

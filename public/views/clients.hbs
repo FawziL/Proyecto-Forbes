@@ -1,0 +1,15 @@
+{{> navbarUser }}
+<h2 style="text-align: center;">Clientes Formulario:</h2>
+  <div class="productosprueba">
+  {{#each products}} 
+    <div class='productSectionSell' style='width: 18rem;'>
+      <div class= "productInfo">
+        <p class='card-text'>Nombre: {{name}}</p>
+        <p class='card-text'>Telefóno: {{phone}}</p>
+        <p class='card-text'>Email: {{email}}</p>
+        <p class='card-text'>Ubicación: {{location}}</p>
+      </div>
+    </div> 
+  {{/each}}
+</div>
+{{> footer }}

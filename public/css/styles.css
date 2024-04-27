@@ -47,42 +47,8 @@ input, textarea {
   padding: 30px;
 }
 
-/* --------------------- Welcome, header, navBar --------------------- */
+/* --------------------- Header, NavBar --------------------- */
 
-.welcome {
-  background-image: url(../imgs/Imagen1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-}
-.welcome h2 {
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 34px;
-}
-.welcomeText {
-  padding: 40vh;
-  font-size: 24px;
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.welcomeButton {
-  background-color: #1e8617;
-  padding: 6px;
-  color: white;
-  width: 190px;
-  font-size: 22px;
-  border-style: none;
-  box-shadow: 2px 2px 15px #000000; 
-  border-color: #1e4a1b;
-  border-radius: 8px;
-}
-.welcomeButton:hover {
-  transition: 1000ms;
-  background-color: #095005;
-}
 nav {
   color: black;
   font-size: 16px;
@@ -92,6 +58,18 @@ nav {
   justify-content: space-between;
   box-shadow: 0 0 10px #000
 }
+nav a{
+  color: rgba(255, 255, 255, 0.955);
+}
+li a:hover{
+  transform: scale(1.03);
+  transition: 500ms;
+  color: #000;
+}
+.redSocial:hover{
+  transform: scale(1.1);
+  transition: 500ms;
+}
 .marginNav{
   margin-left: 110px;
 }
@@ -99,6 +77,7 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 nav, footer{
   background-color: #146128;
@@ -136,6 +115,43 @@ footer p{
 .logoFooter{
   height: 120px;
   width: 200px;
+}
+
+/* --------------------- Welcome --------------------- */
+
+.welcome {
+  background-image: url(../imgs/Imagen1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.welcome h2 {
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 34px;
+}
+.welcomeText {
+  padding: 40vh;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.welcomeButton {
+  background-color: #1e8617;
+  padding: 6px;
+  color: white;
+  width: 190px;
+  font-size: 22px;
+  border-style: none;
+  box-shadow: 2px 2px 15px #000000; 
+  border-color: #1e4a1b;
+  border-radius: 8px;
+}
+.welcomeButton:hover {
+  transition: 1000ms;
+  background-color: #095005;
 }
 
 /*  ---------------------   Sección Porcentajes  ---------------------  */
@@ -213,7 +229,7 @@ footer p{
 }
 .textOferta {
   font-size: 18px;
-  width: 280px;
+  width: 320px;
   margin: auto;
 }
 .textOferta p{
@@ -227,76 +243,28 @@ footer p{
   padding-bottom: 0px;
 }
 /*  ---------------------   Sección contacto Ws y Mail  ---------------------  */
-
 .flexContact {
   display: flex;
+  height: 60vh;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  height: 75vh;
+  text-align: center;
+}
+.flexContact a img:hover{
+  transform: scale(1.1);
+  transition: 400ms;
 }
 .contactForbes {
   color: white;
   margin: auto;
   font-size: 36px;
-}
-.ws {
-  text-align: center;
-  width: 65%;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
+  padding: 10px;
 }
 .wsText {
   font-size: 24px;
   color: rgb(255, 255, 255);
   padding-bottom: 25px;
-}
-#formMessage{
-	padding: 12vh;
-  color: #ffffff;
-  background-color: #3d3d3b;
-  width: 35%;
-}
-#formMessage div{
-  padding: 22px;
-  border-radius: 5px;
-}
-#formMessage label {
-	display: block;
-	margin-bottom: 10px;
-  font-size: 18px;
-}
-#formMessage input, textarea {
-  width: 300px; 
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #444;
-  color: #fff;
-  font-size: 16px;
-  resize: none;
-}
-#formMessage button {
-	background-color: #4caf50;
-	color: #fff;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	font-size: 16px;
-	cursor: pointer;
-}
-#formMessage button:hover {
-	background-color: #155724;
-  transition: 1000ms;
-}
-.confirmation-message {
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-  padding: 5px;
-  display: none;
-  text-align: center;
-  font-size: 1.2rem;
 }
 
 /*  ---------------------   Sección Back  ---------------------  */
@@ -372,7 +340,7 @@ footer p{
 #productos {
   display: flex;
   background-color: #f4f1e9;
-  min-height: 92vh;
+  min-height: 95vh;
   padding-top: 50px;
 }
 .productosprueba {
@@ -380,6 +348,7 @@ footer p{
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
+  min-height: 75vh;
 }
 .productosprueba2 {
   width: 100%;
@@ -390,45 +359,43 @@ footer p{
   margin: 0px;
 }
 .buttonPreview {
-  margin: 5px;
   padding: 5px;
   border-radius: 5px;
   background-color: #ffad40;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   border-style: none;
+  margin-top: 5px;
+  width: 100%;
 }
 .buttonPreview:hover {
   background-color: #ca852b;
-  transition: 1000ms;
+  transition: 500ms;
 }
 .productSection {
   background-color: rgb(255, 255, 255);
   border-radius: 12px 0px 12px 0px;
-  box-shadow: 5px 5px 5px 3px #454141;
+  box-shadow: 5px 5px 14px 4px #454141;
   margin: 20px 5px 20px 5px;
-  max-width: 500px;
+  max-width: 480px;
+  height: 220px;
   text-align: center;
   display: flex;
 }
 .productInfo {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
   font-size: 22px;
   margin: 10px;
+  padding: 6px;
 }
 .products h2 {
   text-align: center;
   margin: 10px;
   padding: 10px;
-  color: white;
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #101111,
-    #252a2a,
-    #3c3f3f,
-    #585858
-  );
+  color: rgb(0, 0, 0);
 }
 .categorias {
   font-size: 22px;
@@ -451,7 +418,7 @@ footer p{
   padding-top: 15px;
   margin-left: 20px;
 }
-.categorias h3 {
+.categorias h3, .categorias h2 {
   color: white;
 }
 .togleCategory {
@@ -558,17 +525,10 @@ footer p{
 
 /*  ---------------------   Formulario Vender  ---------------------  */
 
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 93vh;
-  padding-top: 50px;
-  background-color: hsl(0, 2%, 84%)
-}
 .sellerSection{
-  height: 93vh;
-  width: 64%;
+  min-height: 95vh;
+  padding: 20px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -577,6 +537,33 @@ footer p{
 }
 .sellerSection p{
   font-size: 26px;
+}
+.sellerSection form{
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 320px;
+  margin: auto;
+  background-color:rgba(255, 255, 255, 0.952);
+  color:#000
+}
+.buttonClient{
+  display: flex;
+  justify-content: end;
+}
+
+/*  ---------------------   Formularios  ---------------------  */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin-top: 50px;
+  padding: 25px;
+  background-color: hsl(0, 2%, 84%)
+}
+.form-container h2{
+  text-align: center;
 }
 .form-container form {
   border-radius: 5px;
@@ -591,13 +578,13 @@ footer p{
   flex-direction: column;
   margin-bottom: 0.5rem;
 }
-.form-container input {
+input {
   border-style: solid;
   border-radius: 3px;
   font-size: 1rem;
   padding: 0.5rem;
 }
-.form-container button {
+form button {
   background-color: #4caf50;
   color: white;
   border: none;
@@ -620,18 +607,16 @@ footer p{
   margin: 0px;
   width: 100%;
 }
-.form-container button:hover {
+form button:hover {
 	background-color: #155724;
   transition: 1000ms;
 }
-.form-container label {
+label {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  text-align: start;
 }
-
-
-
 
 /*  ---------------------   Formulario de propiedades - Admins  ---------------------  */
 
@@ -670,32 +655,44 @@ footer p{
   width: 100%;
 }
 
-
+/*  ---------------------   Animations  ---------------------  */
 
 .scroll-animation {
-  opacity: 0; /* El div está inicialmente oculto */
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animation.bottom {
   transform: translateY(100px); /* Mueve el div hacia abajo */
-  transition: opacity 0.6s ease, transform 0.6s ease; /* Transición suave */
 }
+
+.scroll-animation.top {
+  transform: translateY(-100px); /* Mueve el div hacia abajo */
+}
+
+.scroll-animation.left {
+  transform: translateX(-100px); /* Mueve el div hacia la izquierda */
+}
+
+.scroll-animation.right {
+  transform: translateX(100px); /* Mueve el div hacia la derecha */
+}
+
 .scroll-animation.mostrar {
-  opacity: 1; /* El div está completamente visible */
-  transform: translateY(0); /* El div se mueve a su posición final */
+  opacity: 1;
+  transform: translateY(0) translateX(0); /* Aplica transformaciones de abajo, izquierda y derecha */
 }
 
 
-li a:hover{
-  transform: scale(1.03);
-  transition: 1000ms;
-}
-.redSocial:hover{
-  transform: scale(1.2);
-  transition: 1000ms;
-}
+/*  ---------------------   Animations  ---------------------  */
+
 
 .created{
   background-color:  #f4f1e9;
   padding: 40px;
   text-align: center;
+  margin-top: 50px;
+  min-height: 75vh;
 }
 .created img{
   height: 200px;
@@ -709,7 +706,6 @@ li a:hover{
   width: 600px;
   margin: 15px;
 }
-
 .sectionForm p, .sectionForm h5{
   font-size: 20px;
   width: 300px;

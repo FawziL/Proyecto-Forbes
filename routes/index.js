@@ -3,8 +3,7 @@ const routes = Router()
 const path = require('path')
 const auth = require("../middlewares/isAuth")
 const {createProduct, getByLocation, getByPriceMenor, getByPriceMayor, renderProducts, renderProductById, getByName, deleteById, updateProductsPlantilla, updateProducts} = require("../controllers/houseController.js")
-const {getAll, sellHouse} = require("../controllers/sellHouseController.js")
-const {formContact} = require("../controllers/mailerController.js")
+const {getAll, newClient} = require("../controllers/clientController.js")
 const routerUser = require("./routerUser.js")
 const compression = require('compression');
 const upload = require ('../multer/loadFile.js')
@@ -27,7 +26,7 @@ routes.get('/micuenta', auth, getByName)
 
 routes.get('/clientes', auth, getAll)
 
-routes.post('/sellHouse', sellHouse)
+routes.post('/newClient', newClient)
 
 routes.get('/ventas/priceLower/:price', getByPriceMenor)
 
@@ -46,7 +45,6 @@ routes.post('/update/:_id/update', auth, updateProducts)
 routes.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/index.html"))
 })
-routes.post('/', formContact)
 
 routes.get('/contacto', (req, res) => {
     res.sendFile(path.join(__dirname, "../public/pages/contacto.html"))

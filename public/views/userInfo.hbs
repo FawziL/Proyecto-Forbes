@@ -23,10 +23,10 @@
               <div class= "productInfo">
                 <p class='card-text'>Precio: ${{price}}</p>
                 <p class='card-text'>Ubicación: {{location}}</p>
+                <a href="/ventas/{{_id}}"><button class="buttonPreview">Ver detalles</button></a>
+                <a href="/update/{{_id}}"><button class="buttonPreview">Actualizar</button></a>
+                <a href="/delete/{{_id}}"><button class="buttonPreview">Eliminar</button></a>
               </div>
-              <a href="/ventas/{{_id}}"><button class="buttonPreview">Ver detalles</button></a>
-              <a href="/update/{{_id}}"><button class="buttonPreview">Actualizar</button></a>
-              <a href="/delete/{{_id}}"><button class="buttonPreview">Eliminar</button></a>
             </div> 
           {{/each}}
         </div>
