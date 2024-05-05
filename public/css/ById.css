@@ -5,9 +5,10 @@ a{
 }
 .imgProductId{
     width: 650px;
-    height: 370px;
+    height: 380px;
     border-radius: 2px;
-    margin: 80px;
+    margin: 40px;
+    margin-top: 60px;
     margin-right: 20px;
 }
 .carProduct{
@@ -19,6 +20,7 @@ a{
 .dContainer{
     display: flex;
     background-color:  #f4f1e9;
+    margin-top: 35px;
 }
 .titeId{
     margin: 15px;
@@ -54,6 +56,7 @@ h3{
 .detalles{
     background-color:  #f4f1e9;
     text-align: center;
+    padding: 10px;
 }
 .detalles h2{
     background-color:  #f4f1e9;
@@ -112,6 +115,7 @@ h3{
 .seller p{
     max-width: 600px;
     text-align: justify;
+    margin-bottom: 6px;
 }
 .seller h3{
     padding: 0px;
@@ -134,12 +138,19 @@ p{
 @media screen and (max-width: 767px){
     .dContainer {
         display: block;
+        padding: 20px;
+        padding-top: 35px;
         width: 100%;
-        padding: 10px;
         text-align: center;
     }
+    button{
+        padding: 6px;
+    }
+    h3{
+        padding: 0px;
+    }
     .imgProductId {
-        width: 250px;
+        width: 300px;
         height: 200px;
         margin: auto;
     }
@@ -152,19 +163,23 @@ p{
     }
     .beneficios img {
         width: 280px;
-        height: 150px;
+        height: 180px;
     }
     .textHouse {
-        padding: 15px;
+        padding-bottom: 10px;
         width: 100%
+    }
+    .detalles{
+        padding: 10px;
     }
     .espacios {
         display: block;
     }
     .espacios img {
-        width: 280px;
-        height: 70vh;
-        margin: 20px;
+        width: 320px;
+        height: 50vh;
+        margin: 0px;
+        border-radius: 6px;
     }
     .izquierda {
         text-align: justify;
@@ -189,8 +204,10 @@ p{
     .seller img {
         height: 200px;
         width: 110px;
-        border-radius: 45%;
         margin: 20px;
+    }
+    .seller p{
+        margin-bottom: 0px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -293,7 +310,6 @@ p{
     .seller img {
         height: 200px;
         width: 110px;
-        border-radius: 45%;
         margin: 20px;
     }
     p{

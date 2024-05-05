@@ -73,7 +73,7 @@ li a:hover{
 .marginNav{
   margin-left: 110px;
 }
-header{
+nav{
   position: fixed;
   top: 0;
   width: 100%;
@@ -410,26 +410,19 @@ footer p{
     #3c3f3f,
     #585858
   );
-  height: 100%;
+  box-shadow: 10px 0 16px 0 rgba(0, 0, 0, 0.5)
 }
 .categorias a {
   color: white;
   text-decoration: none;
-  padding-top: 15px;
+  padding-top: 6px;
   margin-left: 20px;
 }
 .categorias h3, .categorias h2 {
   color: white;
 }
-.togleCategory {
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #101111,
-    #252a2a,
-    #3c3f3f,
-    #585858
-  );
+.categorias h3{
+  margin-top: 20px;
 }
 
 /*  ---------------------   Sección personas, AboutUs  ---------------------  */
