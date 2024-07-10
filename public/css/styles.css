@@ -79,7 +79,13 @@ nav{
   width: 100%;
   z-index: 1;
 }
-nav, footer{
+nav{
+  background-color: #146128af;
+}
+.nav{
+  background-color: #146128ea;
+}
+footer{
   background-color: #146128;
 }
 .logo{
@@ -124,7 +130,7 @@ footer p{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  height: 90vh;
 }
 .welcome h2 {
   padding: 15px;
@@ -132,7 +138,7 @@ footer p{
   font-size: 34px;
 }
 .welcomeText {
-  padding: 40vh;
+  padding: 35vh;
   font-size: 24px;
   text-align: center;
   color: white;
@@ -146,11 +152,10 @@ footer p{
   font-size: 22px;
   border-style: none;
   box-shadow: 2px 2px 15px #000000; 
-  border-color: #1e4a1b;
   border-radius: 8px;
 }
 .welcomeButton:hover {
-  transition: 1000ms;
+  transition: 500ms;
   background-color: #095005;
 }
 
@@ -159,8 +164,8 @@ footer p{
 .porcentajes {
   display: flex;
   justify-content: space-between;
-  height: 80vh;
-  padding: 20vh;
+  height: 70vh;
+  padding: 10vh 15vh 10vh 15vh;
   color: white;
 }
 .verderSvg {
@@ -341,7 +346,7 @@ footer p{
   display: flex;
   background-color: #f4f1e9;
   min-height: 95vh;
-  padding-top: 50px;
+  padding-top: 55px;
 }
 .productosprueba {
   display: flex;
@@ -429,7 +434,7 @@ footer p{
 
 .WIA {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 54px;
   height: 80vh;
   color: white;
 }
@@ -521,7 +526,7 @@ footer p{
 .sellerSection{
   min-height: 95vh;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
